@@ -1,5 +1,5 @@
 ---
-title: Untitled
+title: Functions
 date: 2025-01-02
 author: Your Name
 cell_count: 6

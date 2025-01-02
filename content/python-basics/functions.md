@@ -1,8 +1,8 @@
 ---
 title: Functions
-date: 2025-01-02
+date: 2025-01-03
 author: Your Name
-cell_count: 6
+cell_count: 7
 score: 5
 ---
 
@@ -32,21 +32,33 @@ text
 
 
 ```python
-def name():
-    return "hi jeirn"
+def add_num():
+    one = int(input("enter the nummber"))
+    two = int(input("enter another number"))
+    total = one + two
+    return (f"the total of the number is {total}")
 ```
 
 
 ```python
-name()
+add_num()
 ```
 
+    enter the nummber 3
+    enter another number 3
 
 
 
-    'hi jeirn'
 
 
+    'the total of the number is 6'
+
+
+
+
+```python
+
+```
 
 
 ```python

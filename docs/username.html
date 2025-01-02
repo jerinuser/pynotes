@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8" />
+    <!-- Set the viewport width to device width for mobile -->
+    <meta name="viewport" content="width=device-width" />
+
+    <title>Username</title>
+
+    <link rel="stylesheet" href="https://jerinuser.github.io/pynotes/theme/css/normalize.css" />
+    <link rel="stylesheet" href="https://jerinuser.github.io/pynotes/theme/css/foundation.min.css" />
+    <link rel="stylesheet" href="https://jerinuser.github.io/pynotes/theme/css/style.css" />
+    <link rel="stylesheet" href="https://jerinuser.github.io/pynotes/theme/css/pygments.css" />	
+    <script src="https://jerinuser.github.io/pynotes/theme/js/modernizr.js"></script>
+</head>
+
+<body>
+
+<!-- Nav Bar -->
+<nav>
+<div class="top-bar">
+<div class="row">
+    <div class="large-9 large-centered columns">
+	    <h1><a href="https://jerinuser.github.io/pynotes">My Python Notes</a></h1>
+    </div>
+</div>
+</div>
+
+<!-- Show menu items and pages -->
+<div class="row">
+<div class="large-9 columns">
+    <ul class="button-group navigation">
+
+    </ul>
+</div>
+</div>
+</nav>
+<!-- End Nav -->
+
+
+<!-- Main Page Content and Sidebar -->
+<div class="row">
+
+    <!-- Main Blog Content -->
+    <div class="large-9 columns">
+<article>
+    <header>
+        <h3 class="article-title"><a href="https://jerinuser.github.io/pynotes/username.html" rel="bookmark"
+        title="Permalink to Username">Username</a></h3>
+    </header>
+
+<h6 class="subheader" title="2025-01-03T00:00:00-05:00">Fri 03 January 2025
+</h6>
+
+
+    <div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">re</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">valid_username</span><span class="p">(</span><span class="n">username</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">username</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">isdigit</span><span class="p">():</span>
+        <span class="k">return</span> <span class="kc">False</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">username</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">15</span><span class="p">:</span>
+        <span class="k">return</span> <span class="kc">False</span>
+    <span class="k">return</span> <span class="kc">True</span>
+
+<span class="n">usernames_input</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Enter usernames separated by commas: &quot;</span><span class="p">)</span>
+
+<span class="n">usernames</span> <span class="o">=</span> <span class="n">usernames_input</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;,&#39;</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">username</span> <span class="ow">in</span> <span class="n">usernames</span><span class="p">:</span>
+    <span class="n">username</span> <span class="o">=</span> <span class="n">username</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>  
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Username: </span><span class="si">{</span><span class="n">username</span><span class="si">}</span><span class="s2"> -&gt; Valid&quot;</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">Enter</span><span class="w"> </span><span class="n">usernames</span><span class="w"> </span><span class="n">separated</span><span class="w"> </span><span class="n">by</span><span class="w"> </span><span class="n">commas</span><span class="o">:</span><span class="w">  </span><span class="n">jerin</span><span class="p">,</span><span class="n">dass</span>
+
+
+<span class="n">Username</span><span class="o">:</span><span class="w"> </span><span class="n">jerin</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n">Valid</span>
+<span class="n">Username</span><span class="o">:</span><span class="w"> </span><span class="n">dass</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="n">Valid</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>
+</code></pre></div>
+
+<hr>
+<p><strong>Score: 0</strong></p>
+<p class="subheader">Category: <a href="https://jerinuser.github.io/pynotes/category/python-basics.html">python-basics</a>
+
+</p>
+
+
+
+
+</article>
+    </div>
+    <!-- End Main Content -->
+
+    <!-- Sidebar -->
+    <aside class="large-3 columns">
+        <h5 class="sidebar-title">Site</h5>
+        <ul class="side-nav">
+            <li><a href="https://jerinuser.github.io/pynotes/archives.html">Archives</a>
+            <li><a href="https://jerinuser.github.io/pynotes/tags.html">Tags</a>
+        </ul>
+
+		
+        <h5 class="sidebar-title">Categories</h5>
+        <ul class="side-nav">
+            <li><a href="https://jerinuser.github.io/pynotes/category/basics.html">basics</a></li>
+            <li><a href="https://jerinuser.github.io/pynotes/category/pandas-work.html">pandas-work</a></li>
+            <li><a href="https://jerinuser.github.io/pynotes/category/python-basics.html">python-basics</a></li>
+   
+        </ul>
+
+		
+        <h5 class="sidebar-title">Social</h5>
+        <ul class="side-nav">
+            <li><a href="https://github.com/jerinuser/">GitHub</a></li>
+            <li><a href="<linkedin handle>">LinkedIn</a></li>
+        </ul>
+
+    </aside> <!-- End Sidebar -->
+
+</div> <!-- End Main Content and Sidebar -->
+
+
+<!-- Footer -->
+<footer class="row">
+    <div class="large-12 columns">
+        <hr />
+        <div class="row">
+            <div class="large-6 columns">
+              <!--                  <p>My Python Notes by Jerin</p> -->
+            </div>
+            </div>
+    </div>
+</footer>
+</body>
+</html>

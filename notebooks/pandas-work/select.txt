@@ -1,0 +1,233 @@
+
+
+<select id="retailerdomain" name="retailer">
+                        
+    <option value="abt.com">
+        Abt US
+    </option>
+
+    <option value="albertsons.com">
+        Albertsons US
+    </option>
+
+    <option value="amazon.ca">
+        Amazon CA
+    </option>
+
+    <option value="amazon.com">
+        Amazon US
+    </option>
+
+    <option value="apple.com/ca/">
+        Apple CA CA
+    </option>
+
+    <option value="att.com">
+        Att US
+    </option>
+
+    <option value="bedbathandbeyond.com">
+        Bed Bath and Beyond US
+    </option>
+
+    <option value="bestbuy.ca">
+        Bestbuy CA
+    </option>
+
+    <option value="bestbuy.com">
+        Bestbuy US
+    </option>
+
+    <option value="biglots.com">
+        Big Lots US
+    </option>
+
+    <option value="bjs.com">
+        BJ's US
+    </option>
+
+    <option value="boxed.com">
+        Boxed US
+    </option>
+
+    <option value="buybuybaby.com">
+        Buy Buy Baby US
+    </option>
+
+    <option value="chewy.com">
+        Chewy US
+    </option>
+
+    <option value="conns.com">
+        Conn's US
+    </option>
+
+    <option value="costco.com">
+        Costco US
+    </option>
+
+    <option value="costcobusinessdelivery.com">
+        Costco Business US
+    </option>
+
+    <option value="costco.ca">
+        Costco CA CA
+    </option>
+
+    <option value="cvs.com">
+        CVS US
+    </option>
+
+    <option value="cymax.com">
+        Cymax US
+    </option>
+
+    <option value="dickssportinggoods.com">
+        DICK's Sporting Goods US
+    </option>
+
+    <option value="familydollar.com">
+        Family Dollar US
+    </option>
+
+    <option value="gopuff.com">
+        GoPuff US
+    </option>
+
+    <option value="heb.com">
+        Heb US
+    </option>
+
+    <option value="homedepot.com">
+        Home Depot US
+    </option>
+
+    <option value="hy-vee.com">
+        Hy-Vee US
+    </option>
+
+    <option value="instacart.com">
+        Instacart US
+    </option>
+
+    <option value="jewelosco.com">
+        Jewel Osco US
+    </option>
+
+    <option value="kohls.com">
+        Kohls US
+    </option>
+
+    <option value="kroger.com">
+        Kroger US
+    </option>
+
+    <option value="lowes.com">
+        Lowes US
+    </option>
+
+    <option value="meijer.com">
+        Meijer US
+    </option>
+
+    <option value="www.microsoft.com/en-ca">
+        Microsoft CA CA
+    </option>
+
+    <option value="newegg.com">
+        Newegg US
+    </option>
+
+    <option value="newegg.ca">
+        NewEgg CA CA
+    </option>
+
+    <option value="nfm.com">
+        NFM US
+    </option>
+
+    <option value="overstock.com">
+        Overstock US
+    </option>
+
+    <option value="pcrichard.com">
+        PC Richard US
+    </option>
+
+    <option value="publix.com">
+        Publix US
+    </option>
+
+    <option value="safeway.com">
+        Safeway US
+    </option>
+
+    <option value="samsclub.com">
+        Sam's Club US
+    </option>
+
+    <option value="samsung.com">
+        Samsung US
+    </option>
+
+    <option value="shop.shoprite.com">
+        Shop Rite US
+    </option>
+
+    <option value="staples.com">
+        Staples US
+    </option>
+
+    <option value="staples.ca">
+        Staples CA CA
+    </option>
+
+    <option value="target.com">
+        Target US
+    </option>
+
+    <option value="t-mobile.com">
+        T-Mobile US
+    </option>
+
+    <option value="ulta.com">
+        Ulta US
+    </option>
+
+    <option value="verizon.com">
+        Verizon US
+    </option>
+
+    <option value="vons.com">
+        Vons US
+    </option>
+
+    <option value="walgreens.com">
+        Walgreens US
+    </option>
+
+    <option value="walmart.ca">
+        Walmart CA
+    </option>
+
+    <option value="walmart.com">
+        Walmart US
+    </option>
+
+    <option value="wayfair.ca">
+        Wayfair CA
+    </option>
+
+    <option value="wayfair.co.uk">
+        Wayfair GB
+    </option>
+
+    <option value="wayfair.com">
+        Wayfair US
+    </option>
+
+    <option value="shop.wegmans.com">
+        Wegman's US
+    </option>
+
+</select>

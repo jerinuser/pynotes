@@ -1,6 +1,6 @@
 ---
 title: Execte-Time
-date: 2025-01-03
+date: 2025-01-12
 author: Your Name
 cell_count: 3
 score: 0
@@ -28,7 +28,7 @@ print_even_numbers()
 ```
 
     0 2 4 6 8 10 12 14 16 18 
-    Time: 0.0001862049102783203
+    Time: 0.00019240379333496094
 
 
 

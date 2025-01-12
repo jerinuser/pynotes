@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8" />
+    <!-- Set the viewport width to device width for mobile -->
+    <meta name="viewport" content="width=device-width" />
+
+    <title>Facker-Pandas</title>
+
+    <link rel="stylesheet" href="https://jerinuser.github.io/pynotes/theme/css/normalize.css" />
+    <link rel="stylesheet" href="https://jerinuser.github.io/pynotes/theme/css/foundation.min.css" />
+    <link rel="stylesheet" href="https://jerinuser.github.io/pynotes/theme/css/style.css" />
+    <link rel="stylesheet" href="https://jerinuser.github.io/pynotes/theme/css/pygments.css" />	
+    <script src="https://jerinuser.github.io/pynotes/theme/js/modernizr.js"></script>
+</head>
+
+<body>
+
+<!-- Nav Bar -->
+<nav>
+<div class="top-bar">
+<div class="row">
+    <div class="large-9 large-centered columns">
+	    <h1><a href="https://jerinuser.github.io/pynotes">My Python Notes</a></h1>
+    </div>
+</div>
+</div>
+
+<!-- Show menu items and pages -->
+<div class="row">
+<div class="large-9 columns">
+    <ul class="button-group navigation">
+
+    </ul>
+</div>
+</div>
+</nav>
+<!-- End Nav -->
+
+
+<!-- Main Page Content and Sidebar -->
+<div class="row">
+
+    <!-- Main Blog Content -->
+    <div class="large-9 columns">
+<article>
+    <header>
+        <h3 class="article-title"><a href="https://jerinuser.github.io/pynotes/facker-pandas.html" rel="bookmark"
+        title="Permalink to Facker-Pandas">Facker-Pandas</a></h3>
+    </header>
+
+<h6 class="subheader" title="2025-01-12T00:00:00-05:00">Sun 12 January 2025
+</h6>
+
+
+    <div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">pyutil</span> <span class="k">as</span> <span class="nn">pyu</span>
+<span class="n">pyu</span><span class="o">.</span><span class="n">get_local_pyinfo</span><span class="p">()</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="s1">&#39;conda env: py311; pyv: 3.11.9 (main, Apr 19 2024, 16:48:06) </span><span class="cp">[</span><span class="nx">GCC</span><span class="w"> </span><span class="mf">11.2.0</span><span class="cp">]</span><span class="s1">&#39;</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="n">pyu</span><span class="o">.</span><span class="n">ps2</span><span class="p">(</span><span class="s2">&quot;pandas&quot;</span><span class="p">))</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>pandas==2.2.3
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">enum</span> <span class="kn">import</span> <span class="n">Enum</span>
+<span class="kn">from</span> <span class="nn">faker</span> <span class="kn">import</span> <span class="n">Faker</span>
+<span class="kn">import</span> <span class="nn">random</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">fake</span> <span class="o">=</span> <span class="n">Faker</span><span class="p">()</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">JobRole</span><span class="p">(</span><span class="n">Enum</span><span class="p">):</span>
+    <span class="n">ENGINEER</span> <span class="o">=</span> <span class="s2">&quot;Engineer&quot;</span>
+    <span class="n">MANAGER</span> <span class="o">=</span> <span class="s2">&quot;Manager&quot;</span>
+    <span class="n">ANALYST</span> <span class="o">=</span> <span class="s2">&quot;Analyst&quot;</span>
+    <span class="n">CONSULTANT</span> <span class="o">=</span> <span class="s2">&quot;Consultant&quot;</span>
+    <span class="n">DEVELOPER</span> <span class="o">=</span> <span class="s2">&quot;Developer&quot;</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">generate_data</span><span class="p">(</span><span class="n">num_records</span><span class="p">):</span>
+    <span class="n">data</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">num_records</span><span class="p">):</span>
+        <span class="n">record</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="n">fake</span><span class="o">.</span><span class="n">name</span><span class="p">(),</span>
+            <span class="s2">&quot;email&quot;</span><span class="p">:</span> <span class="n">fake</span><span class="o">.</span><span class="n">email</span><span class="p">(),</span>
+            <span class="s2">&quot;address&quot;</span><span class="p">:</span> <span class="n">fake</span><span class="o">.</span><span class="n">address</span><span class="p">(),</span>
+            <span class="s2">&quot;job_role&quot;</span><span class="p">:</span> <span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="n">JobRole</span><span class="p">))</span><span class="o">.</span><span class="n">value</span><span class="p">,</span>
+            <span class="s2">&quot;company&quot;</span><span class="p">:</span> <span class="n">fake</span><span class="o">.</span><span class="n">company</span><span class="p">(),</span>
+            <span class="s2">&quot;phone_number&quot;</span><span class="p">:</span> <span class="n">fake</span><span class="o">.</span><span class="n">phone_number</span><span class="p">()</span>
+        <span class="p">}</span>
+        <span class="n">data</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">record</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">data</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">generate_batch</span><span class="p">():</span>
+    <span class="n">batch</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">):</span>
+        <span class="n">record</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="n">fake</span><span class="o">.</span><span class="n">name</span><span class="p">(),</span>
+            <span class="s2">&quot;email&quot;</span><span class="p">:</span> <span class="n">fake</span><span class="o">.</span><span class="n">email</span><span class="p">(),</span>
+            <span class="s2">&quot;address&quot;</span><span class="p">:</span> <span class="n">fake</span><span class="o">.</span><span class="n">address</span><span class="p">(),</span>
+            <span class="s2">&quot;job_role&quot;</span><span class="p">:</span> <span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="n">JobRole</span><span class="p">))</span><span class="o">.</span><span class="n">value</span><span class="p">,</span>
+            <span class="s2">&quot;company&quot;</span><span class="p">:</span> <span class="n">fake</span><span class="o">.</span><span class="n">company</span><span class="p">(),</span>
+            <span class="s2">&quot;phone_number&quot;</span><span class="p">:</span> <span class="n">fake</span><span class="o">.</span><span class="n">phone_number</span><span class="p">()</span>
+        <span class="p">}</span>
+        <span class="n">batch</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">record</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">batch</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">startpy</span><span class="p">():</span>
+
+    <span class="c1"># Initialize an empty CSV file and write headers first</span>
+    <span class="n">csv_file_path_incremental</span> <span class="o">=</span> <span class="s1">&#39;user1.csv&#39;</span>
+    <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">generate_batch</span><span class="p">())</span>  <span class="c1"># Generate initial 5 rows for headers</span>
+    <span class="n">df</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="n">csv_file_path_incremental</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">mode</span><span class="o">=</span><span class="s1">&#39;w&#39;</span><span class="p">)</span>  <span class="c1"># Write headers with initial data</span>
+
+    <span class="c1"># Generate remaining 995 rows in increments of 5 and append to CSV</span>
+    <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">199</span><span class="p">):</span>  <span class="c1"># Remaining 199 batches of 5 rows each = 995 rows</span>
+        <span class="n">batch_data</span> <span class="o">=</span> <span class="n">generate_batch</span><span class="p">()</span>
+        <span class="n">batch_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">batch_data</span><span class="p">)</span>
+        <span class="n">batch_df</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="n">csv_file_path_incremental</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">mode</span><span class="o">=</span><span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="n">header</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span> 
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">startpy</span><span class="p">()</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>
+</code></pre></div>
+
+<hr>
+<p><strong>Score: 10</strong></p>
+<p class="subheader">Category: <a href="https://jerinuser.github.io/pynotes/category/pandas-work.html">pandas-work</a>
+
+</p>
+
+
+
+
+</article>
+    </div>
+    <!-- End Main Content -->
+
+    <!-- Sidebar -->
+    <aside class="large-3 columns">
+        <h5 class="sidebar-title">Site</h5>
+        <ul class="side-nav">
+            <li><a href="https://jerinuser.github.io/pynotes/archives.html">Archives</a>
+            <li><a href="https://jerinuser.github.io/pynotes/tags.html">Tags</a>
+        </ul>
+
+		
+        <h5 class="sidebar-title">Categories</h5>
+        <ul class="side-nav">
+            <li><a href="https://jerinuser.github.io/pynotes/category/basics.html">basics</a></li>
+            <li><a href="https://jerinuser.github.io/pynotes/category/pandas-work.html">pandas-work</a></li>
+            <li><a href="https://jerinuser.github.io/pynotes/category/python-basics.html">python-basics</a></li>
+            <li><a href="https://jerinuser.github.io/pynotes/category/stockmarket.html">stockmarket</a></li>
+   
+        </ul>
+
+		
+        <h5 class="sidebar-title">Social</h5>
+        <ul class="side-nav">
+            <li><a href="https://github.com/jerinuser/">GitHub</a></li>
+            <li><a href="<linkedin handle>">LinkedIn</a></li>
+        </ul>
+
+    </aside> <!-- End Sidebar -->
+
+</div> <!-- End Main Content and Sidebar -->
+
+
+<!-- Footer -->
+<footer class="row">
+    <div class="large-12 columns">
+        <hr />
+        <div class="row">
+            <div class="large-6 columns">
+              <!--                  <p>My Python Notes by Jerin</p> -->
+            </div>
+            </div>
+    </div>
+</footer>
+</body>
+</html>

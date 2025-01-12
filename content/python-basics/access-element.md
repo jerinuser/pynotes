@@ -1,13 +1,18 @@
 ---
 title: Access-Element
-date: 2025-01-03
+date: 2025-01-12
 author: Your Name
-cell_count: 3
-score: 0
+cell_count: 7
+score: 5
 ---
 
 ```python
 
+
+```
+
+
+```python
 
 ```
 
@@ -21,15 +26,34 @@ def access_list_element(lst, index):
     except TypeError:
         print("Error: Invalid index type.")
 
+
+
+```
+
+
+```python
 # Example usage
 access_list_element([1, 2, 3], 1)
-access_list_element([1, 2, 3], 5)
-access_list_element([1, 2, 3], "a")
 
 ```
 
     Element: 2
+
+
+
+```python
+access_list_element([1, 2, 3], 5)
+
+```
+
     Error: Index out of range.
+
+
+
+```python
+access_list_element([1, 2, 3], "a")
+```
+
     Error: Invalid index type.
 
 
@@ -40,4 +64,4 @@ access_list_element([1, 2, 3], "a")
 
 
 ---
-**Score: 0**
+**Score: 5**

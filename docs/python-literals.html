@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8" />
+    <!-- Set the viewport width to device width for mobile -->
+    <meta name="viewport" content="width=device-width" />
+
+    <title>Python-Literals</title>
+
+    <link rel="stylesheet" href="https://jerinuser.github.io/pynotes/theme/css/normalize.css" />
+    <link rel="stylesheet" href="https://jerinuser.github.io/pynotes/theme/css/foundation.min.css" />
+    <link rel="stylesheet" href="https://jerinuser.github.io/pynotes/theme/css/style.css" />
+    <link rel="stylesheet" href="https://jerinuser.github.io/pynotes/theme/css/pygments.css" />	
+    <script src="https://jerinuser.github.io/pynotes/theme/js/modernizr.js"></script>
+</head>
+
+<body>
+
+<!-- Nav Bar -->
+<nav>
+<div class="top-bar">
+<div class="row">
+    <div class="large-9 large-centered columns">
+	    <h1><a href="https://jerinuser.github.io/pynotes">My Python Notes</a></h1>
+    </div>
+</div>
+</div>
+
+<!-- Show menu items and pages -->
+<div class="row">
+<div class="large-9 columns">
+    <ul class="button-group navigation">
+
+    </ul>
+</div>
+</div>
+</nav>
+<!-- End Nav -->
+
+
+<!-- Main Page Content and Sidebar -->
+<div class="row">
+
+    <!-- Main Blog Content -->
+    <div class="large-9 columns">
+<article>
+    <header>
+        <h3 class="article-title"><a href="https://jerinuser.github.io/pynotes/python-literals.html" rel="bookmark"
+        title="Permalink to Python-Literals">Python-Literals</a></h3>
+    </header>
+
+<h6 class="subheader" title="2025-01-12T00:00:00-05:00">Sun 12 January 2025
+</h6>
+
+
+    <div class="highlight"><pre><span></span><code><span class="c1">#  created : 20250112</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1">#  https://www.scientecheasy.com/2022/09/reserved-keywords-in-python.html/</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1">#  python literals</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1"># Types of literals</span>
+
+<span class="c1"># String literals</span>
+<span class="c1"># Numeric literals</span>
+<span class="c1"># Boolean literalsb</span>
+<span class="c1"># Literal Collections</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1">#  single line string</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">sigle_line_string</span> <span class="o">=</span> <span class="s1">&#39;Welcome </span><span class="se">\</span>
+<span class="s1">to </span><span class="se">\</span>
+<span class="s1">Scientech Easy&#39;</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="n">sigle_line_string</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>Welcome to Scientech Easy
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">multi_line_string</span> <span class="o">=</span> <span class="s1">&#39;&#39;&#39;Welcome </span><span class="se">\</span>
+<span class="s1">to </span><span class="se">\</span>
+<span class="s1">Scientech Easy, </span><span class="se">\</span>
+<span class="s1">Dhanbad&#39;&#39;&#39;</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="n">multi_line_string</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>Welcome to Scientech Easy, Dhanbad
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1">#  Numeric literals</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">decimal_int</span> <span class="o">=</span> <span class="mi">100</span>        
+<span class="n">negative_int</span> <span class="o">=</span> <span class="o">-</span><span class="mi">45</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;decimal literals :</span><span class="si">{</span><span class="n">decimal_int</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;negative literals :</span><span class="si">{</span><span class="n">negative_int</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="s s-Atom">decimal</span> <span class="s s-Atom">literals</span> <span class="o">:</span><span class="mi">100</span>
+<span class="s s-Atom">negative</span> <span class="nf">literals</span> <span class="o">:-</span><span class="mi">45</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">positive_float</span> <span class="o">=</span> <span class="mf">3.14</span>   
+<span class="n">negative_float</span> <span class="o">=</span> <span class="o">-</span><span class="mf">0.001</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;positive floating literals :</span><span class="si">{</span><span class="n">positive_float</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>positive floating literals :3.14
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;positive negativ literals :</span><span class="si">{</span><span class="n">negative_float</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="s s-Atom">positive</span> <span class="s s-Atom">negativ</span> <span class="nf">literals</span> <span class="o">:-</span><span class="mf">0.001</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1">#  Boolean literals</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">greater_than</span> <span class="o">=</span> <span class="mi">10</span> <span class="o">&gt;</span> <span class="mi">5</span>    
+<span class="n">less_than</span> <span class="o">=</span> <span class="mi">3</span> <span class="o">&lt;</span> <span class="mi">1</span>        
+<span class="n">equal_to</span> <span class="o">=</span> <span class="mi">4</span> <span class="o">==</span> <span class="mi">4</span>        
+<span class="n">not_equal_to</span> <span class="o">=</span> <span class="mi">7</span> <span class="o">!=</span> <span class="mi">7</span> 
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="n">greater_than</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">less_than</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">equal_to</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">not_equal_to</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>True
+False
+True
+False
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>
+</code></pre></div>
+
+<hr>
+<p><strong>Score: 15</strong></p>
+<p class="subheader">Category: <a href="https://jerinuser.github.io/pynotes/category/python-basics.html">python-basics</a>
+
+</p>
+
+
+
+
+</article>
+    </div>
+    <!-- End Main Content -->
+
+    <!-- Sidebar -->
+    <aside class="large-3 columns">
+        <h5 class="sidebar-title">Site</h5>
+        <ul class="side-nav">
+            <li><a href="https://jerinuser.github.io/pynotes/archives.html">Archives</a>
+            <li><a href="https://jerinuser.github.io/pynotes/tags.html">Tags</a>
+        </ul>
+
+		
+        <h5 class="sidebar-title">Categories</h5>
+        <ul class="side-nav">
+            <li><a href="https://jerinuser.github.io/pynotes/category/basics.html">basics</a></li>
+            <li><a href="https://jerinuser.github.io/pynotes/category/pandas-work.html">pandas-work</a></li>
+            <li><a href="https://jerinuser.github.io/pynotes/category/python-basics.html">python-basics</a></li>
+            <li><a href="https://jerinuser.github.io/pynotes/category/stockmarket.html">stockmarket</a></li>
+   
+        </ul>
+
+		
+        <h5 class="sidebar-title">Social</h5>
+        <ul class="side-nav">
+            <li><a href="https://github.com/jerinuser/">GitHub</a></li>
+            <li><a href="<linkedin handle>">LinkedIn</a></li>
+        </ul>
+
+    </aside> <!-- End Sidebar -->
+
+</div> <!-- End Main Content and Sidebar -->
+
+
+<!-- Footer -->
+<footer class="row">
+    <div class="large-12 columns">
+        <hr />
+        <div class="row">
+            <div class="large-6 columns">
+              <!--                  <p>My Python Notes by Jerin</p> -->
+            </div>
+            </div>
+    </div>
+</footer>
+</body>
+</html>

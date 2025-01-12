@@ -47,8 +47,220 @@
 
 
             <article>
+                <a href="https://jerinuser.github.io/pynotes/email-check.html"><h3 class="article-title">Email-Check</h3></a>
+<h6 class="subheader" title="2025-01-12T00:00:00-05:00">Sun 12 January 2025
+</h6>
+
+
+<div class="highlight"><pre><span></span><code><span class="c1"># program to check a valid email </span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">re</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">email_check</span><span class="p">():</span>
+    <span class="n">email</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Enter your email: &quot;</span><span class="p">)</span>
+
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">email</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="s2">&quot;.com&quot;</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Invalid: Email must end with &#39;.com&#39;&quot;</span><span class="p">)</span>
+        <span class="k">return</span>
+
+    <span class="k">if</span> <span class="s2">&quot;@&quot;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">email</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Invalid: Email must contain &#39;@&#39;&quot;</span><span class="p">)</span>
+        <span class="k">return</span>
+
+    <span class="k">if</span> <span class="n">email</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">isdigit</span><span class="p">():</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Invalid: Email should not start with a …</span></code></pre></div><p class="subheader">Category: <a href="https://jerinuser.github.io/pynotes/category/python-basics.html">python-basics</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="https://jerinuser.github.io/pynotes/email-check.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
+                <a href="https://jerinuser.github.io/pynotes/encapsulation.html"><h3 class="article-title">Encapsulation</h3></a>
+<h6 class="subheader" title="2025-01-12T00:00:00-05:00">Sun 12 January 2025
+</h6>
+
+
+<div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">BankAccount</span><span class="p">:</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">balance</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">__balance</span> <span class="o">=</span> <span class="n">balance</span>  <span class="c1"># Private attribute</span>
+
+    <span class="k">def</span> <span class="nf">deposit</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">amount</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">__balance</span> <span class="o">+=</span> <span class="n">amount</span>
+
+    <span class="k">def</span> <span class="nf">withdraw</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">amount</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">amount</span> <span class="o">&gt;</span> <span class="bp">self</span><span class="o">.</span><span class="n">__balance</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Insufficient funds&quot;</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">__balance</span> <span class="o">-=</span> <span class="n">amount</span>
+
+    <span class="k">def</span> <span class="nf">get_balance</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">__balance</span>
+
+<span class="n">account</span> <span class="o">=</span> <span class="n">BankAccount</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
+<span class="n">account</span><span class="o">.</span><span class="n">deposit</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
+<span class="n">account</span><span class="o">.</span><span class="n">withdraw</span><span class="p">(</span><span class="mi">330</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f …</span></code></pre></div><p class="subheader">Category: <a href="https://jerinuser.github.io/pynotes/category/python-basics.html">python-basics</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="https://jerinuser.github.io/pynotes/encapsulation.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
+                <a href="https://jerinuser.github.io/pynotes/even-odd.html"><h3 class="article-title">Even-Odd</h3></a>
+<h6 class="subheader" title="2025-01-12T00:00:00-05:00">Sun 12 January 2025
+</h6>
+
+
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">manipulate_fruits</span><span class="p">():</span>
+
+    <span class="n">fruits</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;apple&quot;</span><span class="p">,</span> <span class="s2">&quot;banana&quot;</span><span class="p">,</span> <span class="s2">&quot;cherry&quot;</span><span class="p">]</span>
+
+
+    <span class="n">fruits</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&quot;orange&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;After Append:&quot;</span><span class="p">,</span> <span class="n">fruits</span><span class="p">)</span>
+
+
+    <span class="n">fruits</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="s2">&quot;banana&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;After Remove:&quot;</span><span class="p">,</span> <span class="n">fruits</span><span class="p">)</span>
+
+
+    <span class="n">popped</span> <span class="o">=</span> <span class="n">fruits</span><span class="o">.</span><span class="n">pop</span><span class="p">()</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Popped Element:&quot;</span><span class="p">,</span> <span class="n">popped</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;After Pop:&quot;</span><span class="p">,</span> <span class="n">fruits</span><span class="p">)</span>
+
+
+<span class="n">manipulate_fruits</span><span class="p">()</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>After Append: [&#39;apple&#39;, &#39;banana&#39;, &#39;cherry&#39;, &#39;orange&#39;]
+After Remove: [&#39;apple&#39;, &#39;cherry&#39;, &#39;orange&#39;]
+Popped Element: orange
+After Pop: [&#39;apple&#39;, &#39;cherry …</code></pre></div><p class="subheader">Category: <a href="https://jerinuser.github.io/pynotes/category/python-basics.html">python-basics</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="https://jerinuser.github.io/pynotes/even-odd.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
+                <a href="https://jerinuser.github.io/pynotes/exception-hadling.html"><h3 class="article-title">Exception-Hadling</h3></a>
+<h6 class="subheader" title="2025-01-12T00:00:00-05:00">Sun 12 January 2025
+</h6>
+
+
+<div class="highlight"><pre><span></span><code><span class="c1">#  created : 20250111</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1">#  https://www.scientecheasy.com/2022/09/reserved-keywords-in-python.html/</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1"># Python Exception Handling Keywords</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">x</span> <span class="o">=</span> <span class="mi">10</span>
+<span class="n">y</span> <span class="o">=</span> <span class="mi">0</span>
+
+<span class="k">try</span><span class="p">:</span>
+    <span class="n">z</span> <span class="o">=</span> <span class="n">x</span> <span class="o">//</span> <span class="n">y</span> 
+    <span class="nb">print</span><span class="p">(</span><span class="n">z</span><span class="p">)</span>
+
+<span class="k">except</span> <span class="ne">ZeroDivisionError</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Cannot divide by zero&quot;</span><span class="p">)</span>
+
+<span class="k">finally</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;finally block always gets executed&quot;</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>Cannot divide by zero
+finally block always gets executed
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1">#  assert Keyword</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">x …</span></code></pre></div><p class="subheader">Category: <a href="https://jerinuser.github.io/pynotes/category/python-basics.html">python-basics</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="https://jerinuser.github.io/pynotes/exception-hadling.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
+                <a href="https://jerinuser.github.io/pynotes/execte-time.html"><h3 class="article-title">Execte-Time</h3></a>
+<h6 class="subheader" title="2025-01-12T00:00:00-05:00">Sun 12 January 2025
+</h6>
+
+
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">time</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">print_even_numbers</span><span class="p">():</span>
+    <span class="n">start_time</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
+
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">20</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">i</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s2">&quot; &quot;</span><span class="p">)</span>
+
+    <span class="n">end_time</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
+    <span class="n">time_taken</span> <span class="o">=</span> <span class="n">end_time</span> <span class="o">-</span> <span class="n">start_time</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Time:&quot;</span><span class="p">,</span> <span class="n">time_taken</span><span class="p">)</span>
+
+<span class="c1"># Call the function</span>
+<span class="n">print_even_numbers</span><span class="p">()</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="mf">0</span><span class="w"> </span><span class="mf">2</span><span class="w"> </span><span class="mf">4</span><span class="w"> </span><span class="mf">6</span><span class="w"> </span><span class="mf">8</span><span class="w"> </span><span class="mf">10</span><span class="w"> </span><span class="mf">12</span><span class="w"> </span><span class="mf">14</span><span class="w"> </span><span class="mf">16</span><span class="w"> </span><span class="mf">18</span><span class="w"> </span>
+<span class="n">Time</span><span class="p">:</span><span class="w"> </span><span class="mf">0.00019240379333496094</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>
+</code></pre></div>
+
+<hr>
+<p><strong>Score: 0</strong></p><p class="subheader">Category: <a href="https://jerinuser.github.io/pynotes/category/python-basics.html">python-basics</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="https://jerinuser.github.io/pynotes/execte-time.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
                 <a href="https://jerinuser.github.io/pynotes/find-lagrgest-number.html"><h3 class="article-title">Find-Lagrgest-Number</h3></a>
-<h6 class="subheader" title="2025-01-03T00:00:00-05:00">Fri 03 January 2025
+<h6 class="subheader" title="2025-01-12T00:00:00-05:00">Sun 12 January 2025
 </h6>
 
 
@@ -80,7 +292,7 @@
 
             <article>
                 <a href="https://jerinuser.github.io/pynotes/find-reverse.html"><h3 class="article-title">Find-Reverse</h3></a>
-<h6 class="subheader" title="2025-01-03T00:00:00-05:00">Fri 03 January 2025
+<h6 class="subheader" title="2025-01-12T00:00:00-05:00">Sun 12 January 2025
 </h6>
 
 
@@ -125,7 +337,7 @@
 
             <article>
                 <a href="https://jerinuser.github.io/pynotes/flatten-list.html"><h3 class="article-title">Flatten-List</h3></a>
-<h6 class="subheader" title="2025-01-03T00:00:00-05:00">Fri 03 January 2025
+<h6 class="subheader" title="2025-01-12T00:00:00-05:00">Sun 12 January 2025
 </h6>
 
 
@@ -163,7 +375,7 @@
 
             <article>
                 <a href="https://jerinuser.github.io/pynotes/frequency.html"><h3 class="article-title">Frequency</h3></a>
-<h6 class="subheader" title="2025-01-03T00:00:00-05:00">Fri 03 January 2025
+<h6 class="subheader" title="2025-01-12T00:00:00-05:00">Sun 12 January 2025
 </h6>
 
 
@@ -199,7 +411,7 @@
 
             <article>
                 <a href="https://jerinuser.github.io/pynotes/functions.html"><h3 class="article-title">Functions</h3></a>
-<h6 class="subheader" title="2025-01-03T00:00:00-05:00">Fri 03 January 2025
+<h6 class="subheader" title="2025-01-12T00:00:00-05:00">Sun 12 January 2025
 </h6>
 
 
@@ -245,194 +457,6 @@ enter another number 3
                 <hr  class="gradient"/>
             </article>
 
-        
-
-
-            <article>
-                <a href="https://jerinuser.github.io/pynotes/inheritance.html"><h3 class="article-title">Inheritance</h3></a>
-<h6 class="subheader" title="2025-01-03T00:00:00-05:00">Fri 03 January 2025
-</h6>
-
-
-<div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">Animal</span><span class="p">:</span>
-    <span class="k">def</span> <span class="nf">speak</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Animal speaks&quot;</span><span class="p">)</span>
-
-<span class="k">class</span> <span class="nc">Dog</span><span class="p">(</span><span class="n">Animal</span><span class="p">):</span>
-    <span class="k">def</span> <span class="nf">speak</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Dog barks&quot;</span><span class="p">)</span>
-
-
-<span class="n">dog_barks</span> <span class="o">=</span> <span class="n">Dog</span><span class="p">()</span>
-<span class="n">dog_barks</span><span class="o">.</span><span class="n">speak</span><span class="p">()</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code>Dog barks
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-
-<hr>
-<p><strong>Score: 0</strong></p><p class="subheader">Category: <a href="https://jerinuser.github.io/pynotes/category/python-basics.html">python-basics</a>
-
-</p>
-
-
-
-                <a class="button radius secondary small right" href="https://jerinuser.github.io/pynotes/inheritance.html">Read More</a>
-                <hr  class="gradient"/>
-            </article>
-
-        
-
-
-            <article>
-                <a href="https://jerinuser.github.io/pynotes/largest-number.html"><h3 class="article-title">Largest-Number</h3></a>
-<h6 class="subheader" title="2025-01-03T00:00:00-05:00">Fri 03 January 2025
-</h6>
-
-
-<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">second_largest</span><span class="p">(</span><span class="n">nums</span><span class="p">):</span>
-    <span class="n">nums</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="nb">max</span><span class="p">(</span><span class="n">nums</span><span class="p">))</span>
-    <span class="k">return</span> <span class="nb">max</span><span class="p">(</span><span class="n">nums</span><span class="p">)</span>
-
-<span class="c1"># Test the function</span>
-<span class="n">nums</span> <span class="o">=</span> <span class="p">[</span><span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">40</span><span class="p">,</span> <span class="mi">50</span><span class="p">]</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Second largest number:&quot;</span><span class="p">,</span> <span class="n">second_largest</span><span class="p">(</span><span class="n">nums</span><span class="p">))</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code>Second largest number: 40
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-
-<hr>
-<p><strong>Score: 0</strong></p><p class="subheader">Category: <a href="https://jerinuser.github.io/pynotes/category/python-basics.html">python-basics</a>
-
-</p>
-
-
-
-                <a class="button radius secondary small right" href="https://jerinuser.github.io/pynotes/largest-number.html">Read More</a>
-                <hr  class="gradient"/>
-            </article>
-
-        
-
-
-            <article>
-                <a href="https://jerinuser.github.io/pynotes/list-exists.html"><h3 class="article-title">List-Exists</h3></a>
-<h6 class="subheader" title="2025-01-03T00:00:00-05:00">Fri 03 January 2025
-</h6>
-
-
-<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">separate_even_odd</span><span class="p">(</span><span class="n">lst</span><span class="p">):</span>
-    <span class="n">even</span> <span class="o">=</span> <span class="p">[]</span>
-    <span class="n">odd</span> <span class="o">=</span> <span class="p">[]</span>
-    <span class="k">for</span> <span class="n">num</span> <span class="ow">in</span> <span class="n">lst</span><span class="p">:</span>
-        <span class="k">if</span> <span class="n">num</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
-            <span class="n">even</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">num</span><span class="p">)</span>
-        <span class="k">else</span><span class="p">:</span>
-            <span class="n">odd</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">num</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Even Numbers:&quot;</span><span class="p">,</span> <span class="n">even</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Odd Numbers:&quot;</span><span class="p">,</span> <span class="n">odd</span><span class="p">)</span>
-
-<span class="c1"># Example usage</span>
-<span class="n">separate_even_odd</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">])</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code>Even Numbers: [2, 4, 6]
-Odd Numbers: [1, 3, 5]
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-
-<hr>
-<p><strong>Score: 0</strong></p><p class="subheader">Category: <a href="https://jerinuser.github.io/pynotes/category/python-basics.html">python-basics</a>
-
-</p>
-
-
-
-                <a class="button radius secondary small right" href="https://jerinuser.github.io/pynotes/list-exists.html">Read More</a>
-                <hr  class="gradient"/>
-            </article>
-
-        
-
-
-            <article>
-                <a href="https://jerinuser.github.io/pynotes/list-frequence.html"><h3 class="article-title">List-Frequence</h3></a>
-<h6 class="subheader" title="2025-01-03T00:00:00-05:00">Fri 03 January 2025
-</h6>
-
-
-<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">Counter</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">frequency</span><span class="p">():</span>
-    <span class="n">nums</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="nb">int</span><span class="p">,</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Enter the numbers (separated by spaces): &quot;</span><span class="p">)</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;,&#39;</span><span class="p">)))</span>
-    <span class="n">frequency</span> <span class="o">=</span> <span class="n">Counter</span><span class="p">(</span><span class="n">nums</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Element frequencies:&quot;</span><span class="p">,</span> <span class="n">frequency</span><span class="p">)</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="n">frequency</span><span class="p">()</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code>Enter the numbers (separated by spaces):  1,23,4,5,64,4,3,2
-
-
-Element frequencies: Counter({4: 2, 1: 1, 23: 1, 5 …</code></pre></div><p class="subheader">Category: <a href="https://jerinuser.github.io/pynotes/category/python-basics.html">python-basics</a>
-
-</p>
-
-
-
-                <a class="button radius secondary small right" href="https://jerinuser.github.io/pynotes/list-frequence.html">Read More</a>
-                <hr  class="gradient"/>
-            </article>
-
-        
-
-
-            <article>
-                <a href="https://jerinuser.github.io/pynotes/list-palindromnic.html"><h3 class="article-title">List-Palindromnic</h3></a>
-<h6 class="subheader" title="2025-01-03T00:00:00-05:00">Fri 03 January 2025
-</h6>
-
-
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">is_list_palindrome</span><span class="p">(</span><span class="n">lst</span><span class="p">):</span>
-    <span class="n">start</span> <span class="o">=</span> <span class="mi">0</span>
-    <span class="n">end</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">lst</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span>
-    <span class="k">while</span> <span class="n">start</span> <span class="o">&lt;</span> <span class="n">end</span><span class="p">:</span>
-        <span class="k">if</span> <span class="n">lst</span><span class="p">[</span><span class="n">start</span><span class="p">]</span> <span class="o">!=</span> <span class="n">lst</span><span class="p">[</span><span class="n">end</span><span class="p">]:</span>
-            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The list is not a palindrome.&quot;</span><span class="p">)</span>
-            <span class="k">return</span>
-        <span class="n">start</span> <span class="o">+=</span> <span class="mi">1</span>
-        <span class="n">end</span> <span class="o">-=</span> <span class="mi">1</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The list is a palindrome.&quot;</span><span class="p">)</span>
-
-<span class="c1"># Example usage</span>
-<span class="n">is_list_palindrome</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">])</span>
-<span class="n">is_list_palindrome</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">])</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code>The list is …</code></pre></div><p class="subheader">Category: <a href="https://jerinuser.github.io/pynotes/category/python-basics.html">python-basics</a>
-
-</p>
-
-
-
-                <a class="button radius secondary small right" href="https://jerinuser.github.io/pynotes/list-palindromnic.html">Read More</a>
-                <hr  class="gradient"/>
-            </article>
-
             <!-- /#posts-list -->
 <div class="pagination-centered">
 <h6 class="subheader">Page 2 of 4</h6>
@@ -461,6 +485,7 @@ Element frequencies: Counter({4: 2, 1: 1, 23: 1, 5 …</code></pre></div><p clas
             <li><a href="https://jerinuser.github.io/pynotes/category/basics.html">basics</a></li>
             <li><a href="https://jerinuser.github.io/pynotes/category/pandas-work.html">pandas-work</a></li>
             <li><a href="https://jerinuser.github.io/pynotes/category/python-basics.html">python-basics</a></li>
+            <li><a href="https://jerinuser.github.io/pynotes/category/stockmarket.html">stockmarket</a></li>
    
         </ul>
 

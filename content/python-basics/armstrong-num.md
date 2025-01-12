@@ -1,8 +1,8 @@
 ---
 title: Armstrong-Num
-date: 2025-01-03
+date: 2025-01-12
 author: Your Name
-cell_count: 3
+cell_count: 4
 score: 0
 ---
 
@@ -24,20 +24,23 @@ def is_armstrong(num):
     else:
         print(num, "is not an Armstrong number.")
 
-# Example usage
-is_armstrong(153)
-is_armstrong(123)
+```
 
+
+```python
+is_armstrong(153)
 ```
 
     153 is an Armstrong number.
-    123 is not an Armstrong number.
 
 
 
 ```python
-
+is_armstrong(123)
 ```
+
+    123 is not an Armstrong number.
+
 
 
 ---

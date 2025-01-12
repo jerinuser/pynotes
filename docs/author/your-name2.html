@@ -47,39 +47,35 @@
 
 
             <article>
-                <a href="https://jerinuser.github.io/pynotes/even-odd.html"><h3 class="article-title">Even-Odd</h3></a>
-<h6 class="subheader" title="2025-01-03T00:00:00-05:00">Fri 03 January 2025
+                <a href="https://jerinuser.github.io/pynotes/data-frame-2.html"><h3 class="article-title">Data-Frame-2</h3></a>
+<h6 class="subheader" title="2025-01-12T00:00:00-05:00">Sun 12 January 2025
 </h6>
 
 
-<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">manipulate_fruits</span><span class="p">():</span>
-    <span class="c1"># Initial list</span>
-    <span class="n">fruits</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;apple&quot;</span><span class="p">,</span> <span class="s2">&quot;banana&quot;</span><span class="p">,</span> <span class="s2">&quot;cherry&quot;</span><span class="p">]</span>
-
-    <span class="c1"># Add an element</span>
-    <span class="n">fruits</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&quot;orange&quot;</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;After Append:&quot;</span><span class="p">,</span> <span class="n">fruits</span><span class="p">)</span>
-
-    <span class="c1"># Remove an element</span>
-    <span class="n">fruits</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="s2">&quot;banana&quot;</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;After Remove:&quot;</span><span class="p">,</span> <span class="n">fruits</span><span class="p">)</span>
-
-    <span class="c1"># Pop an element</span>
-    <span class="n">popped</span> <span class="o">=</span> <span class="n">fruits</span><span class="o">.</span><span class="n">pop</span><span class="p">()</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Popped Element:&quot;</span><span class="p">,</span> <span class="n">popped</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;After Pop:&quot;</span><span class="p">,</span> <span class="n">fruits</span><span class="p">)</span>
-
-<span class="c1"># Call the function</span>
-<span class="n">manipulate_fruits</span><span class="p">()</span>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">pyutil</span> <span class="k">as</span> <span class="nn">pyu</span>
+<span class="n">pyu</span><span class="o">.</span><span class="n">get_local_pyinfo</span><span class="p">()</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code>After Append: [&#39;apple&#39;, &#39;banana …</code></pre></div><p class="subheader">Category: <a href="https://jerinuser.github.io/pynotes/category/python-basics.html">python-basics</a>
+<div class="highlight"><pre><span></span><code><span class="s1">&#39;conda env: py311; pyv: 3.11.9 (main, Apr 19 2024, 16:48:06) </span><span class="cp">[</span><span class="nx">GCC</span><span class="w"> </span><span class="mf">11.2.0</span><span class="cp">]</span><span class="s1">&#39;</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="n">pyu</span><span class="o">.</span><span class="n">ps2</span><span class="p">(</span><span class="s2">&quot;pandas&quot;</span><span class="p">))</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>pandas==2.2.3
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">d</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;col1&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span> <span class="s1">&#39;col2&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">]}</span>
+<span class="c1">#df = pd.DataFrame(data=d, dtype=np …</span></code></pre></div><p class="subheader">Category: <a href="https://jerinuser.github.io/pynotes/category/pandas-work.html">pandas-work</a>
 
 </p>
 
 
 
-                <a class="button radius secondary small right" href="https://jerinuser.github.io/pynotes/even-odd.html">Read More</a>
+                <a class="button radius secondary small right" href="https://jerinuser.github.io/pynotes/data-frame-2.html">Read More</a>
                 <hr  class="gradient"/>
             </article>
 
@@ -87,31 +83,256 @@
 
 
             <article>
-                <a href="https://jerinuser.github.io/pynotes/execte-time.html"><h3 class="article-title">Execte-Time</h3></a>
-<h6 class="subheader" title="2025-01-03T00:00:00-05:00">Fri 03 January 2025
+                <a href="https://jerinuser.github.io/pynotes/data-pandas.html"><h3 class="article-title">Data-Pandas</h3></a>
+<h6 class="subheader" title="2025-01-12T00:00:00-05:00">Sun 12 January 2025
 </h6>
 
 
-<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">time</span>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">pyutil</span> <span class="k">as</span> <span class="nn">pyu</span>
+<span class="n">pyu</span><span class="o">.</span><span class="n">get_local_pyinfo</span><span class="p">()</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">print_even_numbers</span><span class="p">():</span>
-    <span class="n">start_time</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
-
-    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">20</span><span class="p">):</span>
-        <span class="k">if</span> <span class="n">i</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
-            <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s2">&quot; &quot;</span><span class="p">)</span>
-
-    <span class="n">end_time</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
-    <span class="n">time_taken</span> <span class="o">=</span> <span class="n">end_time</span> <span class="o">-</span> <span class="n">start_time</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Time:&quot;</span><span class="p">,</span> <span class="n">time_taken</span><span class="p">)</span>
-
-<span class="c1"># Call the function</span>
-<span class="n">print_even_numbers</span><span class="p">()</span>
+<div class="highlight"><pre><span></span><code><span class="s1">&#39;conda env: py311; pyv: 3.11.9 (main, Apr 19 2024, 16:48:06) </span><span class="cp">[</span><span class="nx">GCC</span><span class="w"> </span><span class="mf">11.2.0</span><span class="cp">]</span><span class="s1">&#39;</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="mf">0</span><span class="w"> </span><span class="mf">2</span><span class="w"> </span><span class="mf">4</span><span class="w"> </span><span class="mf">6</span><span class="w"> </span><span class="mf">8</span><span class="w"> </span><span class="mf">10</span><span class="w"> </span><span class="mf">12</span><span class="w"> </span><span class="mf">14</span><span class="w"> </span><span class="mf">16</span><span class="w"> </span><span class="mf">18</span><span class="w"> </span>
-<span class="n">Time</span><span class="p">:</span><span class="w"> </span><span class="mf">0.0001862049102783203</span>
+<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="n">pyu</span><span class="o">.</span><span class="n">ps2</span><span class="p">(</span><span class="s2">&quot;pandas&quot;</span><span class="p">))</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>pandas==2.2.3
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">data</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;Jason&#39;</span><span class="p">,</span> <span class="s1">&#39;Molly&#39;</span><span class="p">,</span> <span class="s1">&#39;Tina&#39;</span><span class="p">,</span> <span class="s1">&#39;Jake&#39;</span><span class="p">,</span> <span class="s1">&#39;Amy&#39;</span><span class="p">],</span> 
+        <span class="s1">&#39;year&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">2012</span><span class="p">,</span> <span class="mi">2012</span><span class="p">,</span> <span class="mi">2013</span><span class="p">,</span> <span class="mi">2014</span><span class="p">,</span> <span class="mi">2014</span><span class="p">],</span> 
+        <span class="s1">&#39;reports …</span></code></pre></div><p class="subheader">Category: <a href="https://jerinuser.github.io/pynotes/category/pandas-work.html">pandas-work</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="https://jerinuser.github.io/pynotes/data-pandas.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
+                <a href="https://jerinuser.github.io/pynotes/data3-pandas.html"><h3 class="article-title">Data3-Pandas</h3></a>
+<h6 class="subheader" title="2025-01-12T00:00:00-05:00">Sun 12 January 2025
+</h6>
+
+
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">pyutil</span> <span class="k">as</span> <span class="nn">pyu</span>
+<span class="n">pyu</span><span class="o">.</span><span class="n">get_local_pyinfo</span><span class="p">()</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="s1">&#39;conda env: py311; pyv: 3.11.9 (main, Apr 19 2024, 16:48:06) </span><span class="cp">[</span><span class="nx">GCC</span><span class="w"> </span><span class="mf">11.2.0</span><span class="cp">]</span><span class="s1">&#39;</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="n">pyu</span><span class="o">.</span><span class="n">ps2</span><span class="p">(</span><span class="s2">&quot;pandas&quot;</span><span class="p">))</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>pandas==2.2.3
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">d</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;col1&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span> <span class="s1">&#39;col2&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">]}</span>
+
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame …</span></code></pre></div><p class="subheader">Category: <a href="https://jerinuser.github.io/pynotes/category/pandas-work.html">pandas-work</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="https://jerinuser.github.io/pynotes/data3-pandas.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
+                <a href="https://jerinuser.github.io/pynotes/dataframe.html"><h3 class="article-title">Dataframe</h3></a>
+<h6 class="subheader" title="2025-01-12T00:00:00-05:00">Sun 12 January 2025
+</h6>
+
+
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">pyutil</span> <span class="k">as</span> <span class="nn">pyu</span>
+<span class="n">pyu</span><span class="o">.</span><span class="n">get_local_pyinfo</span><span class="p">()</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="s1">&#39;conda env: py311; pyv: 3.11.9 (main, Apr 19 2024, 16:48:06) </span><span class="cp">[</span><span class="nx">GCC</span><span class="w"> </span><span class="mf">11.2.0</span><span class="cp">]</span><span class="s1">&#39;</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="n">pyu</span><span class="o">.</span><span class="n">ps2</span><span class="p">(</span><span class="s2">&quot;pandas&quot;</span><span class="p">))</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>pandas==2.2.3
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">continents_and_medals</span> <span class="o">=</span> <span class="p">{};</span>
+<span class="n">continent</span> <span class="o">=</span> <span class="s1">&#39;asia&#39;</span><span class="p">;</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">sports</span> <span class="o">=</span> <span class="p">{};</span>
+<span class="n">sports</span><span class="p">[</span><span class="s1">&#39;athletics&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+
+<span class="n">continents_and_medals</span><span class="p">[</span><span class="s1">&#39;asia&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">{};</span>
+<span class="n">continents_and_medals</span><span class="p">[</span><span class="s1">&#39;asia&#39;</span><span class="p">][</span><span class="s1">&#39;fencing&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="nb">print …</span></code></pre></div><p class="subheader">Category: <a href="https://jerinuser.github.io/pynotes/category/pandas-work.html">pandas-work</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="https://jerinuser.github.io/pynotes/dataframe.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
+                <a href="https://jerinuser.github.io/pynotes/datet-ime.html"><h3 class="article-title">Datet-Ime</h3></a>
+<h6 class="subheader" title="2025-01-12T00:00:00-05:00">Sun 12 January 2025
+</h6>
+
+
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">datetime</span> <span class="kn">import</span> <span class="n">datetime</span>
+
+<span class="k">def</span> <span class="nf">string_to_date</span><span class="p">(</span><span class="n">date_string</span><span class="p">):</span>
+    <span class="n">date_object</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">strptime</span><span class="p">(</span><span class="n">date_string</span><span class="p">,</span> <span class="s2">&quot;%Y-%m-</span><span class="si">%d</span><span class="s2">&quot;</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">date_object</span>
+
+<span class="c1"># Example usage</span>
+<span class="n">date_string</span> <span class="o">=</span> <span class="s2">&quot;2025-01-02&quot;</span>
+<span class="n">result</span> <span class="o">=</span> <span class="n">string_to_date</span><span class="p">(</span><span class="n">date_string</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="mf">2025</span><span class="o">-</span><span class="mf">01</span><span class="o">-</span><span class="mf">02</span><span class="w"> </span><span class="mf">00</span><span class="p">:</span><span class="mf">00</span><span class="p">:</span><span class="mf">00</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">check_leap_year</span><span class="p">(</span><span class="n">year</span><span class="p">):</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">year</span> <span class="o">%</span> <span class="mi">4</span> <span class="o">==</span> <span class="mi">0</span> <span class="ow">and</span> <span class="n">year</span> <span class="o">%</span> <span class="mi">100</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">)</span> <span class="ow">or</span> <span class="p">(</span><span class="n">year</span> <span class="o">%</span> <span class="mi">400</span> <span class="o">==</span> <span class="mi">0</span><span class="p">):</span>
+        <span class="k">return</span> <span class="s2">&quot;Leap year&quot;</span>
+    <span class="k">else …</span></code></pre></div><p class="subheader">Category: <a href="https://jerinuser.github.io/pynotes/category/python-basics.html">python-basics</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="https://jerinuser.github.io/pynotes/datet-ime.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
+                <a href="https://jerinuser.github.io/pynotes/def-keyword.html"><h3 class="article-title">Def-Keyword</h3></a>
+<h6 class="subheader" title="2025-01-12T00:00:00-05:00">Sun 12 January 2025
+</h6>
+
+
+<div class="highlight"><pre><span></span><code><span class="c1">#  created : 20250111</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1">#  https://www.scientecheasy.com/2022/09/reserved-keywords-in-python.html/</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1">#  def keyword</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">func</span><span class="p">():</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Inside Function&quot;</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">func</span><span class="p">()</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>Inside Function
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1">#  return keyword</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">func_return</span><span class="p">():</span>
+    <span class="n">x</span> <span class="o">=</span> <span class="mi">20</span>
+    <span class="k">return</span> <span class="n">x</span>
+
+<span class="k">def</span> <span class="nf">func_no_return</span><span class="p">():</span>
+    <span class="n">y</span> <span class="o">=</span> <span class="mi">50</span>
+
+    <span class="k">return</span> <span class="n">y</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="n">func_return</span><span class="p">())</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="mf">20</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="n">func_no_return</span><span class="p">())</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="mf">50</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">func</span><span class="p">():</span>
+    <span class="n">x</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">):</span>
+        <span class="n">x …</span></code></pre></div><p class="subheader">Category: <a href="https://jerinuser.github.io/pynotes/category/python-basics.html">python-basics</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="https://jerinuser.github.io/pynotes/def-keyword.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
+                <a href="https://jerinuser.github.io/pynotes/diamond-problem.html"><h3 class="article-title">Diamond-Problem</h3></a>
+<h6 class="subheader" title="2025-01-12T00:00:00-05:00">Sun 12 January 2025
+</h6>
+
+
+<div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">A</span><span class="p">:</span>
+    <span class="k">def</span> <span class="nf">display</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;hello jerin&quot;</span><span class="p">)</span>
+
+<span class="k">class</span> <span class="nc">B</span><span class="p">(</span><span class="n">A</span><span class="p">):</span>
+    <span class="k">pass</span>
+
+<span class="k">class</span> <span class="nc">C</span><span class="p">(</span><span class="n">A</span><span class="p">):</span>
+    <span class="k">pass</span>
+
+<span class="k">class</span> <span class="nc">D</span><span class="p">(</span><span class="n">B</span><span class="p">,</span> <span class="n">C</span><span class="p">):</span>
+    <span class="k">pass</span>
+
+<span class="n">d</span> <span class="o">=</span> <span class="n">D</span><span class="p">()</span>
+<span class="n">b</span> <span class="o">=</span> <span class="n">B</span><span class="p">()</span>
+<span class="n">b</span><span class="o">.</span><span class="n">display</span><span class="p">()</span>
+<span class="n">d</span><span class="o">.</span><span class="n">display</span><span class="p">()</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>hello jerin
+hello jerin
 </code></pre></div>
 
 <div class="highlight"><pre><span></span><code>
@@ -124,7 +345,7 @@
 
 
 
-                <a class="button radius secondary small right" href="https://jerinuser.github.io/pynotes/execte-time.html">Read More</a>
+                <a class="button radius secondary small right" href="https://jerinuser.github.io/pynotes/diamond-problem.html">Read More</a>
                 <hr  class="gradient"/>
             </article>
 
@@ -132,31 +353,30 @@
 
 
             <article>
-                <a href="https://jerinuser.github.io/pynotes/find-lagrgest-number.html"><h3 class="article-title">Find-Lagrgest-Number</h3></a>
-<h6 class="subheader" title="2025-01-03T00:00:00-05:00">Fri 03 January 2025
+                <a href="https://jerinuser.github.io/pynotes/dict-merge.html"><h3 class="article-title">Dict-Merge</h3></a>
+<h6 class="subheader" title="2025-01-12T00:00:00-05:00">Sun 12 January 2025
 </h6>
 
 
-<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">second_largest</span><span class="p">(</span><span class="n">lst</span><span class="p">):</span>
-    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">lst</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mi">2</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;List must have at least two elements.&quot;</span><span class="p">)</span>
-    <span class="k">else</span><span class="p">:</span>
-        <span class="n">unique_list</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">set</span><span class="p">(</span><span class="n">lst</span><span class="p">))</span>  <span class="c1"># Remove duplicates</span>
-        <span class="n">unique_list</span><span class="o">.</span><span class="n">sort</span><span class="p">(</span><span class="n">reverse</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>  <span class="c1"># Sort in descending order</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Second Largest Number:&quot;</span><span class="p">,</span> <span class="n">unique_list</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">merge_dicts</span><span class="p">():</span>
+    <span class="c1"># Define the two dictionaries inside the function</span>
+    <span class="n">my_dict1</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;a&#39;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span> <span class="s1">&#39;c&#39;</span><span class="p">:</span> <span class="mi">3</span><span class="p">}</span>
+    <span class="n">my_dict2</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;d&#39;</span><span class="p">:</span> <span class="mi">4</span><span class="p">,</span> <span class="s1">&#39;e&#39;</span><span class="p">:</span> <span class="mi">5</span><span class="p">,</span> <span class="s1">&#39;f&#39;</span><span class="p">:</span> <span class="mi">6</span><span class="p">}</span>
 
-<span class="c1"># Example usage</span>
-<span class="n">second_largest</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">])</span>
-<span class="n">second_largest</span><span class="p">([</span><span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">])</span>
-</code></pre></div>
+    <span class="c1"># Method 1: Using dictionary unpacking</span>
+    <span class="n">result1</span> <span class="o">=</span> <span class="p">{</span><span class="o">**</span><span class="n">my_dict1</span><span class="p">,</span> <span class="o">**</span><span class="n">my_dict2</span><span class="p">}</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Method 1:&quot;</span><span class="p">,</span> <span class="n">result1</span><span class="p">)</span>
 
-<div class="highlight"><pre><span></span><code>Second Largest …</code></pre></div><p class="subheader">Category: <a href="https://jerinuser.github.io/pynotes/category/python-basics.html">python-basics</a>
+    <span class="c1"># Method 2: Using copy and update</span>
+    <span class="n">result2</span> <span class="o">=</span> <span class="n">my_dict1</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+    <span class="n">result2</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">my_dict2</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Method 2 …</span></code></pre></div><p class="subheader">Category: <a href="https://jerinuser.github.io/pynotes/category/python-basics.html">python-basics</a>
 
 </p>
 
 
 
-                <a class="button radius secondary small right" href="https://jerinuser.github.io/pynotes/find-lagrgest-number.html">Read More</a>
+                <a class="button radius secondary small right" href="https://jerinuser.github.io/pynotes/dict-merge.html">Read More</a>
                 <hr  class="gradient"/>
             </article>
 
@@ -164,44 +384,39 @@
 
 
             <article>
-                <a href="https://jerinuser.github.io/pynotes/find-reverse.html"><h3 class="article-title">Find-Reverse</h3></a>
-<h6 class="subheader" title="2025-01-03T00:00:00-05:00">Fri 03 January 2025
+                <a href="https://jerinuser.github.io/pynotes/donchain-channel-2.html"><h3 class="article-title">Donchain-Channel-2</h3></a>
+<h6 class="subheader" title="2025-01-12T00:00:00-05:00">Sun 12 January 2025
 </h6>
 
 
-<div class="highlight"><pre><span></span><code>
+<div class="highlight"><pre><span></span><code><span class="c1"># Created: 20250104</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">reverse_number</span><span class="p">(</span><span class="n">num</span><span class="p">):</span>
-    <span class="n">reverse</span> <span class="o">=</span> <span class="mi">0</span>
-    <span class="k">while</span> <span class="n">num</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
-        <span class="n">digit</span> <span class="o">=</span> <span class="n">num</span> <span class="o">%</span> <span class="mi">10</span>
-        <span class="n">reverse</span> <span class="o">=</span> <span class="n">reverse</span> <span class="o">*</span> <span class="mi">10</span> <span class="o">+</span> <span class="n">digit</span>
-        <span class="n">num</span> <span class="o">//=</span> <span class="mi">10</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Reversed Number:&quot;</span><span class="p">,</span> <span class="n">reverse</span><span class="p">)</span>
-
-<span class="c1"># Example usage</span>
-<span class="n">reverse_number</span><span class="p">(</span><span class="mi">1234</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">pyutil</span> <span class="k">as</span> <span class="nn">pyu</span>
+<span class="n">pyu</span><span class="o">.</span><span class="n">get_local_pyinfo</span><span class="p">()</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code>Reversed Number: 4321
+<div class="highlight"><pre><span></span><code><span class="s1">&#39;conda env: py311; pyv: 3.11.9 (main, Apr 19 2024, 16:48:06) </span><span class="cp">[</span><span class="nx">GCC</span><span class="w"> </span><span class="mf">11.2.0</span><span class="cp">]</span><span class="s1">&#39;</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="c1"># Count the Digits in a Number</span>
+<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="n">pyu</span><span class="o">.</span><span class="n">ps2</span><span class="p">(</span><span class="s2">&quot;requests&quot;</span><span class="p">))</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">count_digits</span><span class="p">(</span><span class="n">num</span><span class="p">):</span>
-    <span class="n">count</span> <span class="o">=</span> <span class="mi">0</span>
-    <span class="k">while</span> <span class="n">num</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
-        <span class="n">num</span> <span class="o">//=</span> <span class="mi">10</span>
-        <span class="n">count</span> <span class="o">+=</span> <span class="mi">1</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Number of digits …</span></code></pre></div><p class="subheader">Category: <a href="https://jerinuser.github.io/pynotes/category/python-basics.html">python-basics</a>
+<div class="highlight"><pre><span></span><code>requests==2.32.3
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">yfinance</span> <span class="k">as</span> <span class="nn">yf</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1"># Step 1: Download …</span></code></pre></div><p class="subheader">Category: <a href="https://jerinuser.github.io/pynotes/category/stockmarket.html">stockmarket</a>
 
 </p>
 
 
 
-                <a class="button radius secondary small right" href="https://jerinuser.github.io/pynotes/find-reverse.html">Read More</a>
+                <a class="button radius secondary small right" href="https://jerinuser.github.io/pynotes/donchain-channel-2.html">Read More</a>
                 <hr  class="gradient"/>
             </article>
 
@@ -209,246 +424,42 @@
 
 
             <article>
-                <a href="https://jerinuser.github.io/pynotes/flatten-list.html"><h3 class="article-title">Flatten-List</h3></a>
-<h6 class="subheader" title="2025-01-03T00:00:00-05:00">Fri 03 January 2025
+                <a href="https://jerinuser.github.io/pynotes/email-check.html"><h3 class="article-title">Email-Check</h3></a>
+<h6 class="subheader" title="2025-01-12T00:00:00-05:00">Sun 12 January 2025
 </h6>
 
 
-<div class="highlight"><pre><span></span><code>
+<div class="highlight"><pre><span></span><code><span class="c1"># program to check a valid email </span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">flatten</span><span class="p">(</span><span class="n">nested_list</span><span class="p">):</span>
-    <span class="n">flat_list</span> <span class="o">=</span> <span class="p">[]</span>
-    <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">nested_list</span><span class="p">:</span>
-        <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">item</span><span class="p">,</span> <span class="nb">list</span><span class="p">):</span>
-            <span class="n">flat_list</span><span class="o">.</span><span class="n">extend</span><span class="p">(</span><span class="n">flatten</span><span class="p">(</span><span class="n">item</span><span class="p">))</span>
-        <span class="k">else</span><span class="p">:</span>
-            <span class="n">flat_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">item</span><span class="p">)</span>
-    <span class="k">return</span> <span class="n">flat_list</span>
-
-<span class="c1"># Example usage</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">flatten</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">]]]))</span>  <span class="c1"># [1, 2, 3, 4, 5, 6]</span>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">re</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code>[1, 2, 3, 4, 5, 6]
-</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">email_check</span><span class="p">():</span>
+    <span class="n">email</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Enter your email: &quot;</span><span class="p">)</span>
 
-<div class="highlight"><pre><span></span><code><span class="c1"># Check if a List is Sorted …</span></code></pre></div><p class="subheader">Category: <a href="https://jerinuser.github.io/pynotes/category/python-basics.html">python-basics</a>
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">email</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="s2">&quot;.com&quot;</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Invalid: Email must end with &#39;.com&#39;&quot;</span><span class="p">)</span>
+        <span class="k">return</span>
+
+    <span class="k">if</span> <span class="s2">&quot;@&quot;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">email</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Invalid: Email must contain &#39;@&#39;&quot;</span><span class="p">)</span>
+        <span class="k">return</span>
+
+    <span class="k">if</span> <span class="n">email</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">isdigit</span><span class="p">():</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Invalid: Email should not start with a …</span></code></pre></div><p class="subheader">Category: <a href="https://jerinuser.github.io/pynotes/category/python-basics.html">python-basics</a>
 
 </p>
 
 
 
-                <a class="button radius secondary small right" href="https://jerinuser.github.io/pynotes/flatten-list.html">Read More</a>
-                <hr  class="gradient"/>
-            </article>
-
-        
-
-
-            <article>
-                <a href="https://jerinuser.github.io/pynotes/frequency.html"><h3 class="article-title">Frequency</h3></a>
-<h6 class="subheader" title="2025-01-03T00:00:00-05:00">Fri 03 January 2025
-</h6>
-
-
-<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">count_frequency</span><span class="p">(</span><span class="n">lst</span><span class="p">):</span>
-    <span class="n">frequency</span> <span class="o">=</span> <span class="p">{}</span>
-    <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">lst</span><span class="p">:</span>
-        <span class="k">if</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">frequency</span><span class="p">:</span>
-            <span class="n">frequency</span><span class="p">[</span><span class="n">item</span><span class="p">]</span> <span class="o">+=</span> <span class="mi">1</span>
-        <span class="k">else</span><span class="p">:</span>
-            <span class="n">frequency</span><span class="p">[</span><span class="n">item</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Element Frequencies:&quot;</span><span class="p">,</span> <span class="n">frequency</span><span class="p">)</span>
-
-<span class="c1"># Example usage</span>
-<span class="n">count_frequency</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">])</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code>Element Frequencies: {1: 1, 2: 2, 3: 1, 4: 3, 5: 1}
-</code></pre></div>
-
-<hr>
-<p><strong>Score: 0</strong></p><p class="subheader">Category: <a href="https://jerinuser.github.io/pynotes/category/python-basics.html">python-basics</a>
-
-</p>
-
-
-
-                <a class="button radius secondary small right" href="https://jerinuser.github.io/pynotes/frequency.html">Read More</a>
-                <hr  class="gradient"/>
-            </article>
-
-        
-
-
-            <article>
-                <a href="https://jerinuser.github.io/pynotes/functions.html"><h3 class="article-title">Functions</h3></a>
-<h6 class="subheader" title="2025-01-03T00:00:00-05:00">Fri 03 January 2025
-</h6>
-
-
-<div class="highlight"><pre><span></span><code><span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;hi jerin&quot;</span><span class="p">)</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code>hi jerin
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="n">text</span> <span class="o">=</span> <span class="s1">&#39;i am learning&#39;</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="n">text</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code>&#39;i am learning&#39;
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">add_num</span><span class="p">():</span>
-    <span class="n">one</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;enter the nummber&quot;</span><span class="p">))</span>
-    <span class="n">two</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;enter another number&quot;</span><span class="p">))</span>
-    <span class="n">total</span> <span class="o">=</span> <span class="n">one</span> <span class="o">+</span> <span class="n">two</span>
-    <span class="k">return</span> <span class="p">(</span><span class="sa">f</span><span class="s2">&quot;the total of the number is </span><span class="si">{</span><span class="n">total</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="n">add_num</span><span class="p">()</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code>enter the nummber 3
-enter another number 3
-
-
-
-
-
-&#39;the total …</code></pre></div><p class="subheader">Category: <a href="https://jerinuser.github.io/pynotes/category/python-basics.html">python-basics</a>
-
-</p>
-
-
-
-                <a class="button radius secondary small right" href="https://jerinuser.github.io/pynotes/functions.html">Read More</a>
-                <hr  class="gradient"/>
-            </article>
-
-        
-
-
-            <article>
-                <a href="https://jerinuser.github.io/pynotes/inheritance.html"><h3 class="article-title">Inheritance</h3></a>
-<h6 class="subheader" title="2025-01-03T00:00:00-05:00">Fri 03 January 2025
-</h6>
-
-
-<div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">Animal</span><span class="p">:</span>
-    <span class="k">def</span> <span class="nf">speak</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Animal speaks&quot;</span><span class="p">)</span>
-
-<span class="k">class</span> <span class="nc">Dog</span><span class="p">(</span><span class="n">Animal</span><span class="p">):</span>
-    <span class="k">def</span> <span class="nf">speak</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Dog barks&quot;</span><span class="p">)</span>
-
-
-<span class="n">dog_barks</span> <span class="o">=</span> <span class="n">Dog</span><span class="p">()</span>
-<span class="n">dog_barks</span><span class="o">.</span><span class="n">speak</span><span class="p">()</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code>Dog barks
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-
-<hr>
-<p><strong>Score: 0</strong></p><p class="subheader">Category: <a href="https://jerinuser.github.io/pynotes/category/python-basics.html">python-basics</a>
-
-</p>
-
-
-
-                <a class="button radius secondary small right" href="https://jerinuser.github.io/pynotes/inheritance.html">Read More</a>
-                <hr  class="gradient"/>
-            </article>
-
-        
-
-
-            <article>
-                <a href="https://jerinuser.github.io/pynotes/largest-number.html"><h3 class="article-title">Largest-Number</h3></a>
-<h6 class="subheader" title="2025-01-03T00:00:00-05:00">Fri 03 January 2025
-</h6>
-
-
-<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">second_largest</span><span class="p">(</span><span class="n">nums</span><span class="p">):</span>
-    <span class="n">nums</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="nb">max</span><span class="p">(</span><span class="n">nums</span><span class="p">))</span>
-    <span class="k">return</span> <span class="nb">max</span><span class="p">(</span><span class="n">nums</span><span class="p">)</span>
-
-<span class="c1"># Test the function</span>
-<span class="n">nums</span> <span class="o">=</span> <span class="p">[</span><span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">40</span><span class="p">,</span> <span class="mi">50</span><span class="p">]</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Second largest number:&quot;</span><span class="p">,</span> <span class="n">second_largest</span><span class="p">(</span><span class="n">nums</span><span class="p">))</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code>Second largest number: 40
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-
-<hr>
-<p><strong>Score: 0</strong></p><p class="subheader">Category: <a href="https://jerinuser.github.io/pynotes/category/python-basics.html">python-basics</a>
-
-</p>
-
-
-
-                <a class="button radius secondary small right" href="https://jerinuser.github.io/pynotes/largest-number.html">Read More</a>
-                <hr  class="gradient"/>
-            </article>
-
-        
-
-
-            <article>
-                <a href="https://jerinuser.github.io/pynotes/list-exists.html"><h3 class="article-title">List-Exists</h3></a>
-<h6 class="subheader" title="2025-01-03T00:00:00-05:00">Fri 03 January 2025
-</h6>
-
-
-<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">separate_even_odd</span><span class="p">(</span><span class="n">lst</span><span class="p">):</span>
-    <span class="n">even</span> <span class="o">=</span> <span class="p">[]</span>
-    <span class="n">odd</span> <span class="o">=</span> <span class="p">[]</span>
-    <span class="k">for</span> <span class="n">num</span> <span class="ow">in</span> <span class="n">lst</span><span class="p">:</span>
-        <span class="k">if</span> <span class="n">num</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
-            <span class="n">even</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">num</span><span class="p">)</span>
-        <span class="k">else</span><span class="p">:</span>
-            <span class="n">odd</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">num</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Even Numbers:&quot;</span><span class="p">,</span> <span class="n">even</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Odd Numbers:&quot;</span><span class="p">,</span> <span class="n">odd</span><span class="p">)</span>
-
-<span class="c1"># Example usage</span>
-<span class="n">separate_even_odd</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">])</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code>Even Numbers: [2, 4, 6]
-Odd Numbers: [1, 3, 5]
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-
-<hr>
-<p><strong>Score: 0</strong></p><p class="subheader">Category: <a href="https://jerinuser.github.io/pynotes/category/python-basics.html">python-basics</a>
-
-</p>
-
-
-
-                <a class="button radius secondary small right" href="https://jerinuser.github.io/pynotes/list-exists.html">Read More</a>
+                <a class="button radius secondary small right" href="https://jerinuser.github.io/pynotes/email-check.html">Read More</a>
                 <hr  class="gradient"/>
             </article>
 
             <!-- /#posts-list -->
 <div class="pagination-centered">
-<h6 class="subheader">Page 2 of 4</h6>
+<h6 class="subheader">Page 2 of 6</h6>
 
 <p>
             <a href="https://jerinuser.github.io/pynotes/author/your-name.html">&laquo; Prev</a>
@@ -474,6 +485,7 @@ Odd Numbers: [1, 3, 5]
             <li><a href="https://jerinuser.github.io/pynotes/category/basics.html">basics</a></li>
             <li><a href="https://jerinuser.github.io/pynotes/category/pandas-work.html">pandas-work</a></li>
             <li><a href="https://jerinuser.github.io/pynotes/category/python-basics.html">python-basics</a></li>
+            <li><a href="https://jerinuser.github.io/pynotes/category/stockmarket.html">stockmarket</a></li>
    
         </ul>
 

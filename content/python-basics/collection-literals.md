@@ -12,7 +12,7 @@ score: 25
 
 
 ```python
-#  https://www.scientecheasy.com/2022/09/reserved-keywords-in-python.html/
+#  https://www.scientecheasy.com/2022/09/literals-in-python.html/
 ```
 
 

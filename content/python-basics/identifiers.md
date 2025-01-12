@@ -7,12 +7,12 @@ score: 10
 ---
 
 ```python
-#  created : 20250111
+#  created : 20250112
 ```
 
 
 ```python
-#  https://www.scientecheasy.com/2022/09/reserved-keywords-in-python.html/
+#  https://www.scientecheasy.com/2022/09/identifiers-in-python.html/
 ```
 
 

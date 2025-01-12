@@ -47,6 +47,40 @@
 
 
             <article>
+                <a href="https://jerinuser.github.io/pynotes/move-zero.html"><h3 class="article-title">Move-Zero</h3></a>
+<h6 class="subheader" title="2025-01-12T00:00:00-05:00">Sun 12 January 2025
+</h6>
+
+
+<div class="highlight"><pre><span></span><code>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">move_zeroes</span><span class="p">(</span><span class="n">lst</span><span class="p">):</span>
+    <span class="n">non_zero</span> <span class="o">=</span> <span class="p">[</span><span class="n">x</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">lst</span> <span class="k">if</span> <span class="n">x</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">]</span>
+    <span class="n">zeroes</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">*</span> <span class="n">lst</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+    <span class="n">result</span> <span class="o">=</span> <span class="n">non_zero</span> <span class="o">+</span> <span class="n">zeroes</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;List after moving zeroes:&quot;</span><span class="p">,</span> <span class="n">result</span><span class="p">)</span>
+
+<span class="c1"># Example usage</span>
+<span class="n">move_zeroes</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">12</span><span class="p">])</span>
+<span class="n">move_zeroes</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">])</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>List after moving zeroes: [1, 3, 12, 0, 0]
+List after moving …</code></pre></div><p class="subheader">Category: <a href="https://jerinuser.github.io/pynotes/category/python-basics.html">python-basics</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="https://jerinuser.github.io/pynotes/move-zero.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
                 <a href="https://jerinuser.github.io/pynotes/multible-inheritance.html"><h3 class="article-title">Multible-Inheritance</h3></a>
 <h6 class="subheader" title="2025-01-12T00:00:00-05:00">Sun 12 January 2025
 </h6>
@@ -378,95 +412,42 @@ False
 
 
             <article>
-                <a href="https://jerinuser.github.io/pynotes/python-literals.html"><h3 class="article-title">Python-Literals</h3></a>
+                <a href="https://jerinuser.github.io/pynotes/python-delimeter.html"><h3 class="article-title">Python-Delimeter</h3></a>
 <h6 class="subheader" title="2025-01-12T00:00:00-05:00">Sun 12 January 2025
 </h6>
 
 
-<div class="highlight"><pre><span></span><code><span class="c1">#  created : 20250112</span>
+<div class="highlight"><pre><span></span><code><span class="c1">#  created : 20250111</span>
 </code></pre></div>
 
 <div class="highlight"><pre><span></span><code><span class="c1">#  https://www.scientecheasy.com/2022/09/reserved-keywords-in-python.html/</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="c1">#  python literals</span>
+<div class="highlight"><pre><span></span><code><span class="c1">#  list of delimeters </span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="c1"># Types of literals</span>
-
-<span class="c1"># String literals</span>
-<span class="c1"># Numeric literals</span>
-<span class="c1"># Boolean literalsb</span>
-<span class="c1"># Literal Collections</span>
+<div class="highlight"><pre><span></span><code><span class="n">msg</span> <span class="o">=</span> <span class="s1">&#39;hi jerin how are you&#39;</span>  <span class="c1"># --&gt; single quote delimeter</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="c1">#  single line string</span>
+<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">msg</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="n">sigle_line_string</span> <span class="o">=</span> <span class="s1">&#39;Welcome </span><span class="se">\</span>
-<span class="s1">to </span><span class="se">\</span>
-<span class="s1">Scientech Easy&#39;</span>
+<div class="highlight"><pre><span></span><code>hi jerin how are you
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="n">sigle_line_string</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="n">num</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">10</span><span class="p">]</span> <span class="c1"># --&gt; square braces delimiter</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code>Welcome to Scientech Easy
+<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="n">num</span><span class="p">)</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="n">multi_line_string</span> <span class="o">=</span> <span class="s1">&#39;&#39;&#39;Welcome </span><span class="se">\</span>
-<span class="s1">to </span><span class="se">\</span>
-<span class="s1">Scientech Easy, </span><span class="se">\</span>
-<span class="s1">Dhanbad&#39;&#39;&#39;</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="n">multi_line_string</span><span class="p">)</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code>Welcome to Scientech Easy, Dhanbad …</code></pre></div><p class="subheader">Category: <a href="https://jerinuser.github.io/pynotes/category/python-basics.html">python-basics</a>
+<div class="highlight"><pre><span></span><code>[1, 2, 3, 4 …</code></pre></div><p class="subheader">Category: <a href="https://jerinuser.github.io/pynotes/category/python-basics.html">python-basics</a>
 
 </p>
 
 
 
-                <a class="button radius secondary small right" href="https://jerinuser.github.io/pynotes/python-literals.html">Read More</a>
-                <hr  class="gradient"/>
-            </article>
-
-        
-
-
-            <article>
-                <a href="https://jerinuser.github.io/pynotes/replace-negative.html"><h3 class="article-title">Replace-Negative</h3></a>
-<h6 class="subheader" title="2025-01-12T00:00:00-05:00">Sun 12 January 2025
-</h6>
-
-
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">replace_negatives</span><span class="p">(</span><span class="n">lst</span><span class="p">):</span>
-    <span class="n">replaced</span> <span class="o">=</span> <span class="p">[</span><span class="n">x</span> <span class="k">if</span> <span class="n">x</span> <span class="o">&gt;=</span> <span class="mi">0</span> <span class="k">else</span> <span class="mi">0</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">lst</span><span class="p">]</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;List after Replacing Negatives:&quot;</span><span class="p">,</span> <span class="n">replaced</span><span class="p">)</span>
-
-<span class="c1"># Example usage</span>
-<span class="n">replace_negatives</span><span class="p">([</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="o">-</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="o">-</span><span class="mi">5</span><span class="p">])</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code>List after Replacing Negatives: [0, 2, 0, 4, 0]
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="c1"># intersection of a list </span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">list_intersection</span><span class="p">(</span><span class="n">lst1</span><span class="p">,</span> <span class="n">lst2</span><span class="p">):</span>
-    <span class="n">intersection</span> <span class="o">=</span> <span class="p">[</span><span class="n">x</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in …</span></code></pre></div><p class="subheader">Category: <a href="https://jerinuser.github.io/pynotes/category/python-basics.html">python-basics</a>
-
-</p>
-
-
-
-                <a class="button radius secondary small right" href="https://jerinuser.github.io/pynotes/replace-negative.html">Read More</a>
+                <a class="button radius secondary small right" href="https://jerinuser.github.io/pynotes/python-delimeter.html">Read More</a>
                 <hr  class="gradient"/>
             </article>
 

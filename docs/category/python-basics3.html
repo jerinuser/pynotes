@@ -47,15 +47,66 @@
 
 
             <article>
+                <a href="https://jerinuser.github.io/pynotes/functions.html"><h3 class="article-title">Functions</h3></a>
+<h6 class="subheader" title="2025-01-12T00:00:00-05:00">Sun 12 January 2025
+</h6>
+
+
+<div class="highlight"><pre><span></span><code><span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;hi jerin&quot;</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>hi jerin
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">text</span> <span class="o">=</span> <span class="s1">&#39;i am learning&#39;</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">text</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>&#39;i am learning&#39;
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">add_num</span><span class="p">():</span>
+    <span class="n">one</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;enter the nummber&quot;</span><span class="p">))</span>
+    <span class="n">two</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;enter another number&quot;</span><span class="p">))</span>
+    <span class="n">total</span> <span class="o">=</span> <span class="n">one</span> <span class="o">+</span> <span class="n">two</span>
+    <span class="k">return</span> <span class="p">(</span><span class="sa">f</span><span class="s2">&quot;the total of the number is </span><span class="si">{</span><span class="n">total</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">add_num</span><span class="p">()</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>enter the nummber 3
+enter another number 3
+
+
+
+
+
+&#39;the total …</code></pre></div><p class="subheader">Category: <a href="https://jerinuser.github.io/pynotes/category/python-basics.html">python-basics</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="https://jerinuser.github.io/pynotes/functions.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
                 <a href="https://jerinuser.github.io/pynotes/identifiers.html"><h3 class="article-title">Identifiers</h3></a>
 <h6 class="subheader" title="2025-01-12T00:00:00-05:00">Sun 12 January 2025
 </h6>
 
 
-<div class="highlight"><pre><span></span><code><span class="c1">#  created : 20250111</span>
+<div class="highlight"><pre><span></span><code><span class="c1">#  created : 20250112</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="c1">#  https://www.scientecheasy.com/2022/09/reserved-keywords-in-python.html/</span>
+<div class="highlight"><pre><span></span><code><span class="c1">#  https://www.scientecheasy.com/2022/09/identifiers-in-python.html/</span>
 </code></pre></div>
 
 <div class="highlight"><pre><span></span><code><span class="c1">#  Identifiers in Python</span>
@@ -419,47 +470,9 @@ List after moving …</code></pre></div><p class="subheader">Category: <a href="
                 <hr  class="gradient"/>
             </article>
 
-        
-
-
-            <article>
-                <a href="https://jerinuser.github.io/pynotes/overlaoding.html"><h3 class="article-title">Overlaoding</h3></a>
-<h6 class="subheader" title="2025-01-12T00:00:00-05:00">Sun 12 January 2025
-</h6>
-
-
-<div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">Box</span><span class="p">:</span>
-    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">length</span><span class="p">):</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">length</span> <span class="o">=</span> <span class="n">length</span>
-
-    <span class="k">def</span> <span class="fm">__add__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">):</span>
-        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">length</span> <span class="o">+</span> <span class="n">other</span><span class="o">.</span><span class="n">length</span>
-
-<span class="n">box1</span> <span class="o">=</span> <span class="n">Box</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
-<span class="n">box2</span> <span class="o">=</span> <span class="n">Box</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Total Length:&quot;</span><span class="p">,</span> <span class="n">box1</span> <span class="o">+</span> <span class="n">box2</span><span class="p">)</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code>Total Length: 30
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-
-<hr>
-<p><strong>Score: 0</strong></p><p class="subheader">Category: <a href="https://jerinuser.github.io/pynotes/category/python-basics.html">python-basics</a>
-
-</p>
-
-
-
-                <a class="button radius secondary small right" href="https://jerinuser.github.io/pynotes/overlaoding.html">Read More</a>
-                <hr  class="gradient"/>
-            </article>
-
             <!-- /#posts-list -->
 <div class="pagination-centered">
-<h6 class="subheader">Page 3 of 4</h6>
+<h6 class="subheader">Page 3 of 5</h6>
 
 <p>
             <a href="https://jerinuser.github.io/pynotes/category/python-basics2.html">&laquo; Prev</a>

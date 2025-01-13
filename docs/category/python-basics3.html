@@ -47,6 +47,51 @@
 
 
             <article>
+                <a href="https://jerinuser.github.io/pynotes/execte-time.html"><h3 class="article-title">Execte-Time</h3></a>
+<h6 class="subheader" title="2025-01-13T00:00:00-05:00">Mon 13 January 2025
+</h6>
+
+
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">time</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">print_even_numbers</span><span class="p">():</span>
+    <span class="n">start_time</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
+
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">20</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">i</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s2">&quot; &quot;</span><span class="p">)</span>
+
+    <span class="n">end_time</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
+    <span class="n">time_taken</span> <span class="o">=</span> <span class="n">end_time</span> <span class="o">-</span> <span class="n">start_time</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Time:&quot;</span><span class="p">,</span> <span class="n">time_taken</span><span class="p">)</span>
+
+<span class="c1"># Call the function</span>
+<span class="n">print_even_numbers</span><span class="p">()</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="mf">0</span><span class="w"> </span><span class="mf">2</span><span class="w"> </span><span class="mf">4</span><span class="w"> </span><span class="mf">6</span><span class="w"> </span><span class="mf">8</span><span class="w"> </span><span class="mf">10</span><span class="w"> </span><span class="mf">12</span><span class="w"> </span><span class="mf">14</span><span class="w"> </span><span class="mf">16</span><span class="w"> </span><span class="mf">18</span><span class="w"> </span>
+<span class="n">Time</span><span class="p">:</span><span class="w"> </span><span class="mf">0.00019240379333496094</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>
+</code></pre></div>
+
+<hr>
+<p><strong>Score: 0</strong></p><p class="subheader">Category: <a href="https://jerinuser.github.io/pynotes/category/python-basics.html">python-basics</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="https://jerinuser.github.io/pynotes/execte-time.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
                 <a href="https://jerinuser.github.io/pynotes/find-lagrgest-number.html"><h3 class="article-title">Find-Lagrgest-Number</h3></a>
 <h6 class="subheader" title="2025-01-13T00:00:00-05:00">Mon 13 January 2025
 </h6>
@@ -407,79 +452,61 @@ SyntaxError …</code></pre></div><p class="subheader">Category: <a href="https:
 
 
             <article>
-                <a href="https://jerinuser.github.io/pynotes/inheritance.html"><h3 class="article-title">Inheritance</h3></a>
+                <a href="https://jerinuser.github.io/pynotes/identity-operators.html"><h3 class="article-title">Identity-Operators</h3></a>
 <h6 class="subheader" title="2025-01-13T00:00:00-05:00">Mon 13 January 2025
 </h6>
 
 
-<div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">Animal</span><span class="p">:</span>
-    <span class="k">def</span> <span class="nf">speak</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Animal speaks&quot;</span><span class="p">)</span>
-
-<span class="k">class</span> <span class="nc">Dog</span><span class="p">(</span><span class="n">Animal</span><span class="p">):</span>
-    <span class="k">def</span> <span class="nf">speak</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Dog barks&quot;</span><span class="p">)</span>
-
-
-<span class="n">dog_barks</span> <span class="o">=</span> <span class="n">Dog</span><span class="p">()</span>
-<span class="n">dog_barks</span><span class="o">.</span><span class="n">speak</span><span class="p">()</span>
+<div class="highlight"><pre><span></span><code><span class="c1">#  created : 20250113</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code>Dog barks
+<div class="highlight"><pre><span></span><code><span class="c1">#  https://www.scientecheasy.com/2022/10/identity-operators-in-python.html/</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code>
+<div class="highlight"><pre><span></span><code><span class="c1">#  Identity Is operator (is)</span>
 </code></pre></div>
 
-<hr>
-<p><strong>Score: 0</strong></p><p class="subheader">Category: <a href="https://jerinuser.github.io/pynotes/category/python-basics.html">python-basics</a>
+<div class="highlight"><pre><span></span><code><span class="n">x</span> <span class="o">=</span> <span class="mi">20</span>
+<span class="n">y</span> <span class="o">=</span> <span class="mi">20</span>
+<span class="n">result</span> <span class="o">=</span> <span class="n">x</span> <span class="ow">is</span> <span class="n">y</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>True
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">str1</span> <span class="o">=</span> <span class="s2">&quot;Python&quot;</span>
+<span class="n">str2</span> <span class="o">=</span> <span class="s2">&quot;Python&quot;</span>
+<span class="n">result</span> <span class="o">=</span> <span class="n">str1</span> <span class="ow">is</span> <span class="n">str2</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>True
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">name1</span> <span class="o">=</span> <span class="s2">&quot;John&quot;</span>
+<span class="n">name2</span> <span class="o">=</span> <span class="s2">&quot;Jack&quot;</span>
+<span class="n">result</span> <span class="o">=</span> <span class="n">name1</span> <span class="ow">is</span> <span class="n">name2</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>False
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">a</span> <span class="o">=</span> <span class="kc">True</span>
+<span class="n">b …</span></code></pre></div><p class="subheader">Category: <a href="https://jerinuser.github.io/pynotes/category/python-basics.html">python-basics</a>
 
 </p>
 
 
 
-                <a class="button radius secondary small right" href="https://jerinuser.github.io/pynotes/inheritance.html">Read More</a>
-                <hr  class="gradient"/>
-            </article>
-
-        
-
-
-            <article>
-                <a href="https://jerinuser.github.io/pynotes/iteration-keyword.html"><h3 class="article-title">Iteration-Keyword</h3></a>
-<h6 class="subheader" title="2025-01-13T00:00:00-05:00">Mon 13 January 2025
-</h6>
-
-
-<div class="highlight"><pre><span></span><code><span class="c1">#  created : 20250111</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="c1">#  https://www.scientecheasy.com/2022/09/reserved-keywords-in-python.html/</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="c1">#  python iteration keyword</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="k">for</span> <span class="n">count</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">):</span>
-  <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Scientech Easy, Dhanbad&quot;</span><span class="p">)</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code>Scientech Easy, Dhanbad
-Scientech Easy, Dhanbad
-Scientech Easy, Dhanbad
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="n">count</span> <span class="o">=</span> <span class="mi">0</span>
-<span class="k">while</span><span class="p">(</span><span class="n">count</span> <span class="o">&lt;</span> <span class="mi">3</span><span class="p">):</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The current count is: &quot;</span><span class="p">,</span> <span class="n">count</span><span class="p">)</span>
-    <span class="n">count</span> <span class="o">=</span> <span class="n">count</span> <span class="o">+</span> <span class="mi">1</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;While loop ended …</span></code></pre></div><p class="subheader">Category: <a href="https://jerinuser.github.io/pynotes/category/python-basics.html">python-basics</a>
-
-</p>
-
-
-
-                <a class="button radius secondary small right" href="https://jerinuser.github.io/pynotes/iteration-keyword.html">Read More</a>
+                <a class="button radius secondary small right" href="https://jerinuser.github.io/pynotes/identity-operators.html">Read More</a>
                 <hr  class="gradient"/>
             </article>
 

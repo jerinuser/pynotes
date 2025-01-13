@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8" />
+    <!-- Set the viewport width to device width for mobile -->
+    <meta name="viewport" content="width=device-width" />
+
+    <title>Membership-Operator</title>
+
+    <link rel="stylesheet" href="https://jerinuser.github.io/pynotes/theme/css/normalize.css" />
+    <link rel="stylesheet" href="https://jerinuser.github.io/pynotes/theme/css/foundation.min.css" />
+    <link rel="stylesheet" href="https://jerinuser.github.io/pynotes/theme/css/style.css" />
+    <link rel="stylesheet" href="https://jerinuser.github.io/pynotes/theme/css/pygments.css" />	
+    <script src="https://jerinuser.github.io/pynotes/theme/js/modernizr.js"></script>
+</head>
+
+<body>
+
+<!-- Nav Bar -->
+<nav>
+<div class="top-bar">
+<div class="row">
+    <div class="large-9 large-centered columns">
+	    <h1><a href="https://jerinuser.github.io/pynotes">My Python Notes</a></h1>
+    </div>
+</div>
+</div>
+
+<!-- Show menu items and pages -->
+<div class="row">
+<div class="large-9 columns">
+    <ul class="button-group navigation">
+
+    </ul>
+</div>
+</div>
+</nav>
+<!-- End Nav -->
+
+
+<!-- Main Page Content and Sidebar -->
+<div class="row">
+
+    <!-- Main Blog Content -->
+    <div class="large-9 columns">
+<article>
+    <header>
+        <h3 class="article-title"><a href="https://jerinuser.github.io/pynotes/membership-operator.html" rel="bookmark"
+        title="Permalink to Membership-Operator">Membership-Operator</a></h3>
+    </header>
+
+<h6 class="subheader" title="2025-01-13T00:00:00-05:00">Mon 13 January 2025
+</h6>
+
+
+    <div class="highlight"><pre><span></span><code><span class="c1">#  created : 20250113</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1">#  https://www.scientecheasy.com/2022/10/membership-operators-in-python.html/</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1">#  Membership In operator</span>
+<span class="c1"># in </span>
+<span class="c1"># not in</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">my_string</span> <span class="o">=</span> <span class="s1">&#39;Every person loves his country in the world.&#39;</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;E&#39;</span> <span class="ow">in</span> <span class="n">my_string</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;country&#39;</span> <span class="ow">in</span> <span class="n">my_string</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;like&#39;</span> <span class="ow">in</span> <span class="n">my_string</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;lo&#39;</span> <span class="ow">in</span> <span class="n">my_string</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>True
+True
+False
+True
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">my_list</span> <span class="o">=</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">12</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="mi">6</span> <span class="ow">in</span> <span class="n">my_list</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="mi">5</span> <span class="ow">in</span> <span class="n">my_list</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>True
+False
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">my_dict</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="mi">1</span><span class="p">:</span> <span class="s1">&#39;Orange&#39;</span><span class="p">,</span>
+    <span class="mi">2</span><span class="p">:</span> <span class="s1">&#39;Banana&#39;</span><span class="p">,</span>
+    <span class="mi">3</span><span class="p">:</span> <span class="s1">&#39;Apple&#39;</span>
+<span class="p">}</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="mi">1</span> <span class="ow">in</span> <span class="n">my_dict</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="mi">3</span> <span class="ow">in</span> <span class="n">my_dict</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Banana&#39;</span> <span class="ow">in</span> <span class="n">my_dict</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>True
+True
+False
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1"># Membership Not in operator</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">my_string</span> <span class="o">=</span> <span class="s1">&#39;I love Python programming&#39;</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;love&#39;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">my_string</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;like&#39;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">my_string</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;pro&#39;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">my_string</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>False
+True
+False
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">my_list</span> <span class="o">=</span> <span class="p">[</span><span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">40</span><span class="p">,</span> <span class="mi">50</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="mi">15</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">my_list</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="mi">20</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">my_list</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>True
+False
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">num1</span>  <span class="o">=</span> <span class="mi">10</span>
+<span class="n">num2</span> <span class="o">=</span> <span class="mi">30</span>
+<span class="n">my_list</span> <span class="o">=</span> <span class="p">[</span><span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">40</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">60</span> <span class="p">]</span>
+
+<span class="k">if</span><span class="p">(</span><span class="n">num1</span> <span class="ow">in</span> <span class="n">my_list</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">num1</span><span class="p">,</span> <span class="s1">&#39;is present in the given list.&#39;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">num1</span><span class="p">,</span> <span class="s1">&#39;is not present in the given list.&#39;</span><span class="p">)</span>
+
+<span class="k">if</span><span class="p">(</span><span class="n">num2</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">my_list</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">num2</span><span class="p">,</span> <span class="s1">&#39;is not present in the given list.&#39;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">num2</span><span class="p">,</span> <span class="s1">&#39;is present in the given list.&#39;</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="mf">10</span><span class="w"> </span><span class="n">is</span><span class="w"> </span><span class="n">present</span><span class="w"> </span><span class="n">in</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">given</span><span class="w"> </span><span class="kr">list</span><span class="mf">.</span>
+<span class="mf">30</span><span class="w"> </span><span class="n">is</span><span class="w"> </span><span class="ow">not</span><span class="w"> </span><span class="n">present</span><span class="w"> </span><span class="n">in</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">given</span><span class="w"> </span><span class="kr">list</span><span class="mf">.</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>
+</code></pre></div>
+
+<hr>
+<p><strong>Score: 10</strong></p>
+<p class="subheader">Category: <a href="https://jerinuser.github.io/pynotes/category/python-basics.html">python-basics</a>
+
+</p>
+
+
+
+
+</article>
+    </div>
+    <!-- End Main Content -->
+
+    <!-- Sidebar -->
+    <aside class="large-3 columns">
+        <h5 class="sidebar-title">Site</h5>
+        <ul class="side-nav">
+            <li><a href="https://jerinuser.github.io/pynotes/archives.html">Archives</a>
+            <li><a href="https://jerinuser.github.io/pynotes/tags.html">Tags</a>
+        </ul>
+
+		
+        <h5 class="sidebar-title">Categories</h5>
+        <ul class="side-nav">
+            <li><a href="https://jerinuser.github.io/pynotes/category/basics.html">basics</a></li>
+            <li><a href="https://jerinuser.github.io/pynotes/category/pandas-work.html">pandas-work</a></li>
+            <li><a href="https://jerinuser.github.io/pynotes/category/python-basics.html">python-basics</a></li>
+            <li><a href="https://jerinuser.github.io/pynotes/category/stockmarket.html">stockmarket</a></li>
+   
+        </ul>
+
+		
+        <h5 class="sidebar-title">Social</h5>
+        <ul class="side-nav">
+            <li><a href="https://github.com/jerinuser/">GitHub</a></li>
+            <li><a href="<linkedin handle>">LinkedIn</a></li>
+        </ul>
+
+    </aside> <!-- End Sidebar -->
+
+</div> <!-- End Main Content and Sidebar -->
+
+
+<!-- Footer -->
+<footer class="row">
+    <div class="large-12 columns">
+        <hr />
+        <div class="row">
+            <div class="large-6 columns">
+              <!--                  <p>My Python Notes by Jerin</p> -->
+            </div>
+            </div>
+    </div>
+</footer>
+</body>
+</html>

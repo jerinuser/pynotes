@@ -47,6 +47,62 @@
 
 
             <article>
+                <a href="https://jerinuser.github.io/pynotes/comparison-operators.html"><h3 class="article-title">Comparison-Operators</h3></a>
+<h6 class="subheader" title="2025-01-13T00:00:00-05:00">Mon 13 January 2025
+</h6>
+
+
+<div class="highlight"><pre><span></span><code><span class="c1">#  created : 20250113</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1">#  https://www.scientecheasy.com/2022/10/comparison-operators-in-python.html/</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1">#  Comparison  Operators</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1"># Equal to (==)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">x</span> <span class="o">=</span> <span class="mi">20</span>
+<span class="n">y</span> <span class="o">=</span> <span class="mi">20</span>
+<span class="nb">print</span><span class="p">(</span> <span class="n">x</span> <span class="o">==</span> <span class="n">y</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>True
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">p</span> <span class="o">=</span> <span class="s1">&#39;My name is John&#39;</span>
+<span class="n">q</span> <span class="o">=</span> <span class="s1">&#39;My name is John&#39;</span>
+<span class="nb">print</span><span class="p">(</span> <span class="n">p</span> <span class="o">==</span> <span class="n">q</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>True
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">r</span> <span class="o">=</span> <span class="s1">&#39;Text&#39;</span>
+<span class="n">s</span> <span class="o">=</span> <span class="s1">&#39;text&#39;</span>
+<span class="nb">print</span><span class="p">(</span> <span class="n">r</span> <span class="o">==</span> <span class="n">s</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>False
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">t</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">]</span>
+<span class="n">u …</span></code></pre></div><p class="subheader">Category: <a href="https://jerinuser.github.io/pynotes/category/python-basics.html">python-basics</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="https://jerinuser.github.io/pynotes/comparison-operators.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
                 <a href="https://jerinuser.github.io/pynotes/datet-ime.html"><h3 class="article-title">Datet-Ime</h3></a>
 <h6 class="subheader" title="2025-01-13T00:00:00-05:00">Mon 13 January 2025
 </h6>
@@ -427,51 +483,6 @@ finally block always gets executed
 
 
                 <a class="button radius secondary small right" href="https://jerinuser.github.io/pynotes/exception-hadling.html">Read More</a>
-                <hr  class="gradient"/>
-            </article>
-
-        
-
-
-            <article>
-                <a href="https://jerinuser.github.io/pynotes/execte-time.html"><h3 class="article-title">Execte-Time</h3></a>
-<h6 class="subheader" title="2025-01-13T00:00:00-05:00">Mon 13 January 2025
-</h6>
-
-
-<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">time</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">print_even_numbers</span><span class="p">():</span>
-    <span class="n">start_time</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
-
-    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">20</span><span class="p">):</span>
-        <span class="k">if</span> <span class="n">i</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
-            <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s2">&quot; &quot;</span><span class="p">)</span>
-
-    <span class="n">end_time</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
-    <span class="n">time_taken</span> <span class="o">=</span> <span class="n">end_time</span> <span class="o">-</span> <span class="n">start_time</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">Time:&quot;</span><span class="p">,</span> <span class="n">time_taken</span><span class="p">)</span>
-
-<span class="c1"># Call the function</span>
-<span class="n">print_even_numbers</span><span class="p">()</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="mf">0</span><span class="w"> </span><span class="mf">2</span><span class="w"> </span><span class="mf">4</span><span class="w"> </span><span class="mf">6</span><span class="w"> </span><span class="mf">8</span><span class="w"> </span><span class="mf">10</span><span class="w"> </span><span class="mf">12</span><span class="w"> </span><span class="mf">14</span><span class="w"> </span><span class="mf">16</span><span class="w"> </span><span class="mf">18</span><span class="w"> </span>
-<span class="n">Time</span><span class="p">:</span><span class="w"> </span><span class="mf">0.00019240379333496094</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-
-<hr>
-<p><strong>Score: 0</strong></p><p class="subheader">Category: <a href="https://jerinuser.github.io/pynotes/category/python-basics.html">python-basics</a>
-
-</p>
-
-
-
-                <a class="button radius secondary small right" href="https://jerinuser.github.io/pynotes/execte-time.html">Read More</a>
                 <hr  class="gradient"/>
             </article>
 

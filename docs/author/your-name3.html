@@ -47,6 +47,72 @@
 
 
             <article>
+                <a href="https://jerinuser.github.io/pynotes/def-keyword.html"><h3 class="article-title">Def-Keyword</h3></a>
+<h6 class="subheader" title="2025-01-13T00:00:00-05:00">Mon 13 January 2025
+</h6>
+
+
+<div class="highlight"><pre><span></span><code><span class="c1">#  created : 20250111</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1">#  https://www.scientecheasy.com/2022/09/reserved-keywords-in-python.html/</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1">#  def keyword</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">func</span><span class="p">():</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Inside Function&quot;</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">func</span><span class="p">()</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>Inside Function
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1">#  return keyword</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">func_return</span><span class="p">():</span>
+    <span class="n">x</span> <span class="o">=</span> <span class="mi">20</span>
+    <span class="k">return</span> <span class="n">x</span>
+
+<span class="k">def</span> <span class="nf">func_no_return</span><span class="p">():</span>
+    <span class="n">y</span> <span class="o">=</span> <span class="mi">50</span>
+
+    <span class="k">return</span> <span class="n">y</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="n">func_return</span><span class="p">())</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="mf">20</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="n">func_no_return</span><span class="p">())</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="mf">50</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">func</span><span class="p">():</span>
+    <span class="n">x</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">):</span>
+        <span class="n">x …</span></code></pre></div><p class="subheader">Category: <a href="https://jerinuser.github.io/pynotes/category/python-basics.html">python-basics</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="https://jerinuser.github.io/pynotes/def-keyword.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
                 <a href="https://jerinuser.github.io/pynotes/diamond-problem.html"><h3 class="article-title">Diamond-Problem</h3></a>
 <h6 class="subheader" title="2025-01-13T00:00:00-05:00">Mon 13 January 2025
 </h6>
@@ -409,47 +475,6 @@ finally block always gets executed
 
 
                 <a class="button radius secondary small right" href="https://jerinuser.github.io/pynotes/execte-time.html">Read More</a>
-                <hr  class="gradient"/>
-            </article>
-
-        
-
-
-            <article>
-                <a href="https://jerinuser.github.io/pynotes/facker-pandas.html"><h3 class="article-title">Facker-Pandas</h3></a>
-<h6 class="subheader" title="2025-01-13T00:00:00-05:00">Mon 13 January 2025
-</h6>
-
-
-<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">pyutil</span> <span class="k">as</span> <span class="nn">pyu</span>
-<span class="n">pyu</span><span class="o">.</span><span class="n">get_local_pyinfo</span><span class="p">()</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="s1">&#39;conda env: py311; pyv: 3.11.9 (main, Apr 19 2024, 16:48:06) </span><span class="cp">[</span><span class="nx">GCC</span><span class="w"> </span><span class="mf">11.2.0</span><span class="cp">]</span><span class="s1">&#39;</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="n">pyu</span><span class="o">.</span><span class="n">ps2</span><span class="p">(</span><span class="s2">&quot;pandas&quot;</span><span class="p">))</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code>pandas==2.2.3
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">enum</span> <span class="kn">import</span> <span class="n">Enum</span>
-<span class="kn">from</span> <span class="nn">faker</span> <span class="kn">import</span> <span class="n">Faker</span>
-<span class="kn">import</span> <span class="nn">random</span>
-<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="n">fake</span> <span class="o">=</span> <span class="n">Faker</span><span class="p">()</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">JobRole …</span></code></pre></div><p class="subheader">Category: <a href="https://jerinuser.github.io/pynotes/category/pandas-work.html">pandas-work</a>
-
-</p>
-
-
-
-                <a class="button radius secondary small right" href="https://jerinuser.github.io/pynotes/facker-pandas.html">Read More</a>
                 <hr  class="gradient"/>
             </article>
 

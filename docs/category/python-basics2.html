@@ -47,6 +47,118 @@
 
 
             <article>
+                <a href="https://jerinuser.github.io/pynotes/def-keyword.html"><h3 class="article-title">Def-Keyword</h3></a>
+<h6 class="subheader" title="2025-01-13T00:00:00-05:00">Mon 13 January 2025
+</h6>
+
+
+<div class="highlight"><pre><span></span><code><span class="c1">#  created : 20250111</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1">#  https://www.scientecheasy.com/2022/09/reserved-keywords-in-python.html/</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1">#  def keyword</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">func</span><span class="p">():</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Inside Function&quot;</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">func</span><span class="p">()</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>Inside Function
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1">#  return keyword</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">func_return</span><span class="p">():</span>
+    <span class="n">x</span> <span class="o">=</span> <span class="mi">20</span>
+    <span class="k">return</span> <span class="n">x</span>
+
+<span class="k">def</span> <span class="nf">func_no_return</span><span class="p">():</span>
+    <span class="n">y</span> <span class="o">=</span> <span class="mi">50</span>
+
+    <span class="k">return</span> <span class="n">y</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="n">func_return</span><span class="p">())</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="mf">20</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="n">func_no_return</span><span class="p">())</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="mf">50</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">func</span><span class="p">():</span>
+    <span class="n">x</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">):</span>
+        <span class="n">x …</span></code></pre></div><p class="subheader">Category: <a href="https://jerinuser.github.io/pynotes/category/python-basics.html">python-basics</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="https://jerinuser.github.io/pynotes/def-keyword.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
+                <a href="https://jerinuser.github.io/pynotes/diamond-problem.html"><h3 class="article-title">Diamond-Problem</h3></a>
+<h6 class="subheader" title="2025-01-13T00:00:00-05:00">Mon 13 January 2025
+</h6>
+
+
+<div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">A</span><span class="p">:</span>
+    <span class="k">def</span> <span class="nf">display</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;hello jerin&quot;</span><span class="p">)</span>
+
+<span class="k">class</span> <span class="nc">B</span><span class="p">(</span><span class="n">A</span><span class="p">):</span>
+    <span class="k">pass</span>
+
+<span class="k">class</span> <span class="nc">C</span><span class="p">(</span><span class="n">A</span><span class="p">):</span>
+    <span class="k">pass</span>
+
+<span class="k">class</span> <span class="nc">D</span><span class="p">(</span><span class="n">B</span><span class="p">,</span> <span class="n">C</span><span class="p">):</span>
+    <span class="k">pass</span>
+
+<span class="n">d</span> <span class="o">=</span> <span class="n">D</span><span class="p">()</span>
+<span class="n">b</span> <span class="o">=</span> <span class="n">B</span><span class="p">()</span>
+<span class="n">b</span><span class="o">.</span><span class="n">display</span><span class="p">()</span>
+<span class="n">d</span><span class="o">.</span><span class="n">display</span><span class="p">()</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>hello jerin
+hello jerin
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>
+</code></pre></div>
+
+<hr>
+<p><strong>Score: 0</strong></p><p class="subheader">Category: <a href="https://jerinuser.github.io/pynotes/category/python-basics.html">python-basics</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="https://jerinuser.github.io/pynotes/diamond-problem.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
                 <a href="https://jerinuser.github.io/pynotes/dict-merge.html"><h3 class="article-title">Dict-Merge</h3></a>
 <h6 class="subheader" title="2025-01-13T00:00:00-05:00">Mon 13 January 2025
 </h6>
@@ -355,110 +467,6 @@ finally block always gets executed
 
 
                 <a class="button radius secondary small right" href="https://jerinuser.github.io/pynotes/find-lagrgest-number.html">Read More</a>
-                <hr  class="gradient"/>
-            </article>
-
-        
-
-
-            <article>
-                <a href="https://jerinuser.github.io/pynotes/find-reverse.html"><h3 class="article-title">Find-Reverse</h3></a>
-<h6 class="subheader" title="2025-01-13T00:00:00-05:00">Mon 13 January 2025
-</h6>
-
-
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">reverse_number</span><span class="p">(</span><span class="n">num</span><span class="p">):</span>
-    <span class="n">reverse</span> <span class="o">=</span> <span class="mi">0</span>
-    <span class="k">while</span> <span class="n">num</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
-        <span class="n">digit</span> <span class="o">=</span> <span class="n">num</span> <span class="o">%</span> <span class="mi">10</span>
-        <span class="n">reverse</span> <span class="o">=</span> <span class="n">reverse</span> <span class="o">*</span> <span class="mi">10</span> <span class="o">+</span> <span class="n">digit</span>
-        <span class="n">num</span> <span class="o">//=</span> <span class="mi">10</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Reversed Number:&quot;</span><span class="p">,</span> <span class="n">reverse</span><span class="p">)</span>
-
-<span class="c1"># Example usage</span>
-<span class="n">reverse_number</span><span class="p">(</span><span class="mi">1234</span><span class="p">)</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code>Reversed Number: 4321
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="c1"># Count the Digits in a Number</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">count_digits</span><span class="p">(</span><span class="n">num</span><span class="p">):</span>
-    <span class="n">count</span> <span class="o">=</span> <span class="mi">0</span>
-    <span class="k">while</span> <span class="n">num</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
-        <span class="n">num</span> <span class="o">//=</span> <span class="mi">10</span>
-        <span class="n">count</span> <span class="o">+=</span> <span class="mi">1</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Number of digits …</span></code></pre></div><p class="subheader">Category: <a href="https://jerinuser.github.io/pynotes/category/python-basics.html">python-basics</a>
-
-</p>
-
-
-
-                <a class="button radius secondary small right" href="https://jerinuser.github.io/pynotes/find-reverse.html">Read More</a>
-                <hr  class="gradient"/>
-            </article>
-
-        
-
-
-            <article>
-                <a href="https://jerinuser.github.io/pynotes/first-python-programe.html"><h3 class="article-title">First-Python-Programe</h3></a>
-<h6 class="subheader" title="2025-01-13T00:00:00-05:00">Mon 13 January 2025
-</h6>
-
-
-<div class="highlight"><pre><span></span><code><span class="c1">#  created : 20250112</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="c1">#  https://www.scientecheasy.com/2022/09/first-python-program.html/</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="c1">#  frist python programe in python </span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hi Jerin&quot;</span><span class="p">)</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code>Hi Jerin
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hello World&quot;</span><span class="p">)</span>
-<span class="n">person</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;enter your name&quot;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hello&quot;</span><span class="p">,</span><span class="n">person</span><span class="p">)</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code>Hello World
-
-
-enter your name Jerin
-
-
-Hello Jerin
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="n">num1</span> <span class="o">=</span> <span class="mi">10</span> 
-
-<span class="n">num2</span> <span class="o">=</span> <span class="mi">20</span> 
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="n">num1</span><span class="o">+</span><span class="n">num2</span><span class="p">)</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="mf">30</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="n">number1</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input …</span></code></pre></div><p class="subheader">Category: <a href="https://jerinuser.github.io/pynotes/category/python-basics.html">python-basics</a>
-
-</p>
-
-
-
-                <a class="button radius secondary small right" href="https://jerinuser.github.io/pynotes/first-python-programe.html">Read More</a>
                 <hr  class="gradient"/>
             </article>
 

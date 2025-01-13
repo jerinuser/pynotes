@@ -172,6 +172,50 @@ enter another number 3
 
 
             <article>
+                <a href="https://jerinuser.github.io/pynotes/global-local-variable.html"><h3 class="article-title">Global-Local-Variable</h3></a>
+<h6 class="subheader" title="2025-01-13T00:00:00-05:00">Mon 13 January 2025
+</h6>
+
+
+<div class="highlight"><pre><span></span><code><span class="c1">#  created : 20250113</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1">#  https://www.scientecheasy.com/2022/09/global-and-local-variables-in-python.html/</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1">#  Global and Local Variables</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">x</span> <span class="o">=</span> <span class="mi">10</span> <span class="c1"># --&gt; global variable</span>
+<span class="k">def</span> <span class="nf">numm</span><span class="p">():</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Inside function: &quot;</span><span class="p">,</span><span class="n">x</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">numm</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;outside function: &quot;</span><span class="p">,</span><span class="n">x</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>Inside function:  10
+outside function:  10
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">x</span> <span class="o">=</span> <span class="mi">20</span> <span class="c1"># a global variable.</span>
+<span class="k">def</span> <span class="nf">my_function</span><span class="p">():</span>
+
+    <span class="n">x</span> <span class="o">=</span> <span class="mi">20</span> <span class="o">*</span> <span class="mi">30</span> <span class="c1"># Here, interpreter will treat as …</span></code></pre></div><p class="subheader">Category: <a href="https://jerinuser.github.io/pynotes/category/python-basics.html">python-basics</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="https://jerinuser.github.io/pynotes/global-local-variable.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
                 <a href="https://jerinuser.github.io/pynotes/ichimoku-3.html"><h3 class="article-title">Ichimoku-3</h3></a>
 <h6 class="subheader" title="2025-01-13T00:00:00-05:00">Mon 13 January 2025
 </h6>
@@ -415,48 +459,6 @@ Scientech Easy, Dhanbad
 
 
                 <a class="button radius secondary small right" href="https://jerinuser.github.io/pynotes/largest-number.html">Read More</a>
-                <hr  class="gradient"/>
-            </article>
-
-        
-
-
-            <article>
-                <a href="https://jerinuser.github.io/pynotes/list-exists.html"><h3 class="article-title">List-Exists</h3></a>
-<h6 class="subheader" title="2025-01-13T00:00:00-05:00">Mon 13 January 2025
-</h6>
-
-
-<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">separate_even_odd</span><span class="p">(</span><span class="n">lst</span><span class="p">):</span>
-    <span class="n">even</span> <span class="o">=</span> <span class="p">[]</span>
-    <span class="n">odd</span> <span class="o">=</span> <span class="p">[]</span>
-    <span class="k">for</span> <span class="n">num</span> <span class="ow">in</span> <span class="n">lst</span><span class="p">:</span>
-        <span class="k">if</span> <span class="n">num</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
-            <span class="n">even</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">num</span><span class="p">)</span>
-        <span class="k">else</span><span class="p">:</span>
-            <span class="n">odd</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">num</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Even Numbers:&quot;</span><span class="p">,</span> <span class="n">even</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Odd Numbers:&quot;</span><span class="p">,</span> <span class="n">odd</span><span class="p">)</span>
-
-<span class="c1"># Example usage</span>
-<span class="n">separate_even_odd</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">])</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code>Even Numbers: [2, 4, 6]
-Odd Numbers: [1, 3, 5]
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-
-<hr>
-<p><strong>Score: 0</strong></p><p class="subheader">Category: <a href="https://jerinuser.github.io/pynotes/category/python-basics.html">python-basics</a>
-
-</p>
-
-
-
-                <a class="button radius secondary small right" href="https://jerinuser.github.io/pynotes/list-exists.html">Read More</a>
                 <hr  class="gradient"/>
             </article>
 

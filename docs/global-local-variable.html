@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8" />
+    <!-- Set the viewport width to device width for mobile -->
+    <meta name="viewport" content="width=device-width" />
+
+    <title>Global-Local-Variable</title>
+
+    <link rel="stylesheet" href="https://jerinuser.github.io/pynotes/theme/css/normalize.css" />
+    <link rel="stylesheet" href="https://jerinuser.github.io/pynotes/theme/css/foundation.min.css" />
+    <link rel="stylesheet" href="https://jerinuser.github.io/pynotes/theme/css/style.css" />
+    <link rel="stylesheet" href="https://jerinuser.github.io/pynotes/theme/css/pygments.css" />	
+    <script src="https://jerinuser.github.io/pynotes/theme/js/modernizr.js"></script>
+</head>
+
+<body>
+
+<!-- Nav Bar -->
+<nav>
+<div class="top-bar">
+<div class="row">
+    <div class="large-9 large-centered columns">
+	    <h1><a href="https://jerinuser.github.io/pynotes">My Python Notes</a></h1>
+    </div>
+</div>
+</div>
+
+<!-- Show menu items and pages -->
+<div class="row">
+<div class="large-9 columns">
+    <ul class="button-group navigation">
+
+    </ul>
+</div>
+</div>
+</nav>
+<!-- End Nav -->
+
+
+<!-- Main Page Content and Sidebar -->
+<div class="row">
+
+    <!-- Main Blog Content -->
+    <div class="large-9 columns">
+<article>
+    <header>
+        <h3 class="article-title"><a href="https://jerinuser.github.io/pynotes/global-local-variable.html" rel="bookmark"
+        title="Permalink to Global-Local-Variable">Global-Local-Variable</a></h3>
+    </header>
+
+<h6 class="subheader" title="2025-01-13T00:00:00-05:00">Mon 13 January 2025
+</h6>
+
+
+    <div class="highlight"><pre><span></span><code><span class="c1">#  created : 20250113</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1">#  https://www.scientecheasy.com/2022/09/global-and-local-variables-in-python.html/</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1">#  Global and Local Variables</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">x</span> <span class="o">=</span> <span class="mi">10</span> <span class="c1"># --&gt; global variable</span>
+<span class="k">def</span> <span class="nf">numm</span><span class="p">():</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Inside function: &quot;</span><span class="p">,</span><span class="n">x</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">numm</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;outside function: &quot;</span><span class="p">,</span><span class="n">x</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>Inside function:  10
+outside function:  10
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">x</span> <span class="o">=</span> <span class="mi">20</span> <span class="c1"># a global variable.</span>
+<span class="k">def</span> <span class="nf">my_function</span><span class="p">():</span>
+
+    <span class="n">x</span> <span class="o">=</span> <span class="mi">20</span> <span class="o">*</span> <span class="mi">30</span> <span class="c1"># Here, interpreter will treat as a local variable.</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Inside function: &quot;</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">my_function</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Outside function: &quot;</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>Inside function:  600
+Outside function:  20
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">name</span> <span class="o">=</span> <span class="s1">&#39;John&#39;</span> <span class="c1"># a global variable.</span>
+<span class="k">def</span> <span class="nf">my_function1</span><span class="p">():</span>
+    <span class="k">global</span> <span class="n">name</span>
+    <span class="n">name</span> <span class="o">=</span> <span class="s1">&#39;Bob&#39;</span> <span class="c1"># Here, changing the value of global variable inside the</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Inside function: &quot;</span><span class="p">,</span><span class="n">name</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">my_function2</span><span class="p">():</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Inside another function: &quot;</span><span class="p">,</span><span class="n">name</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">my_function1</span><span class="p">()</span>
+<span class="n">my_function2</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Outside function: &quot;</span><span class="p">,</span><span class="n">name</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>Inside function:  Bob
+Inside another function:  Bob
+Outside function:  Bob
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">city</span> <span class="o">=</span> <span class="s1">&#39;New York&#39;</span> <span class="c1"># a global variable.</span>
+<span class="k">def</span> <span class="nf">my_function1</span><span class="p">():</span>
+    <span class="k">global</span> <span class="n">city</span> <span class="c1"># --&gt;assigned a new value to a variable</span>
+    <span class="n">city</span> <span class="o">=</span> <span class="s1">&#39;Dhanbad&#39;</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Inside my_function1: &quot;</span><span class="p">,</span> <span class="n">city</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">my_function2</span><span class="p">():</span>
+    <span class="k">global</span> <span class="n">city</span>  <span class="c1"># --&gt; assigend a new value to a variable</span>
+    <span class="n">city</span> <span class="o">=</span> <span class="s1">&#39;Sydney&#39;</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Inside my_function2: &quot;</span><span class="p">,</span><span class="n">city</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">my_function1</span><span class="p">()</span>
+<span class="n">my_function2</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Outside function: &quot;</span><span class="p">,</span> <span class="n">city</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>Inside my_function1:  Dhanbad
+Inside my_function2:  Sydney
+Outside function:  Sydney
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1">#  Local Variable</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">my_func</span><span class="p">():</span>
+    <span class="n">city</span> <span class="o">=</span> <span class="s1">&#39;Dhanbad&#39;</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">city</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">my_func</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">city</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>Dhanbad
+Sydney
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">message1</span> <span class="o">=</span> <span class="s2">&quot;This is a global variable, and we can access it anywhere in the program.&quot;</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">display</span><span class="p">():</span>
+<span class="c1"># Declare a local variable and assign it a value.</span>
+    <span class="n">message2</span> <span class="o">=</span> <span class="s2">&quot;This is a local variable, and we can access it only inside the function body.&quot;</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">message2</span><span class="p">)</span> <span class="c1"># Accessing local variable from inside the function.</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">message1</span><span class="p">);</span> <span class="c1"># Accessing the global variable.</span>
+<span class="n">display</span><span class="p">()</span> 
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">This</span><span class="w"> </span><span class="k">is</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="n">global</span><span class="w"> </span><span class="n">variable</span><span class="p">,</span><span class="w"> </span><span class="ow">and</span><span class="w"> </span><span class="n">we</span><span class="w"> </span><span class="n">can</span><span class="w"> </span><span class="n">access</span><span class="w"> </span><span class="n">it</span><span class="w"> </span><span class="n">anywhere</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">program</span><span class="o">.</span>
+<span class="n">This</span><span class="w"> </span><span class="k">is</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="n">local</span><span class="w"> </span><span class="n">variable</span><span class="p">,</span><span class="w"> </span><span class="ow">and</span><span class="w"> </span><span class="n">we</span><span class="w"> </span><span class="n">can</span><span class="w"> </span><span class="n">access</span><span class="w"> </span><span class="n">it</span><span class="w"> </span><span class="n">only</span><span class="w"> </span><span class="n">inside</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">function</span><span class="w"> </span><span class="n">body</span><span class="o">.</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1"># Declare global variables.</span>
+<span class="n">student1</span> <span class="o">=</span> <span class="s2">&quot;John&quot;</span>
+<span class="n">student2</span> <span class="o">=</span> <span class="s2">&quot;Larry&quot;</span>
+
+<span class="k">def</span> <span class="nf">showMe</span><span class="p">():</span>
+    <span class="n">student2</span> <span class="o">=</span> <span class="s2">&quot;Harry&quot;</span> <span class="c1"># Here, local variable is sharing the same name as global variable.</span>
+    <span class="n">student3</span> <span class="o">=</span> <span class="s2">&quot;Deep&quot;</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">student2</span><span class="p">,</span> <span class="s2">&quot; &quot;</span><span class="p">,</span><span class="n">student3</span><span class="p">)</span>
+
+<span class="n">showMe</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">student1</span><span class="p">,</span> <span class="s2">&quot; &quot;</span><span class="p">,</span> <span class="n">student2</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>Harry   Deep
+John   Larry
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>
+</code></pre></div>
+
+<hr>
+<p><strong>Score: 15</strong></p>
+<p class="subheader">Category: <a href="https://jerinuser.github.io/pynotes/category/python-basics.html">python-basics</a>
+
+</p>
+
+
+
+
+</article>
+    </div>
+    <!-- End Main Content -->
+
+    <!-- Sidebar -->
+    <aside class="large-3 columns">
+        <h5 class="sidebar-title">Site</h5>
+        <ul class="side-nav">
+            <li><a href="https://jerinuser.github.io/pynotes/archives.html">Archives</a>
+            <li><a href="https://jerinuser.github.io/pynotes/tags.html">Tags</a>
+        </ul>
+
+		
+        <h5 class="sidebar-title">Categories</h5>
+        <ul class="side-nav">
+            <li><a href="https://jerinuser.github.io/pynotes/category/basics.html">basics</a></li>
+            <li><a href="https://jerinuser.github.io/pynotes/category/pandas-work.html">pandas-work</a></li>
+            <li><a href="https://jerinuser.github.io/pynotes/category/python-basics.html">python-basics</a></li>
+            <li><a href="https://jerinuser.github.io/pynotes/category/stockmarket.html">stockmarket</a></li>
+   
+        </ul>
+
+		
+        <h5 class="sidebar-title">Social</h5>
+        <ul class="side-nav">
+            <li><a href="https://github.com/jerinuser/">GitHub</a></li>
+            <li><a href="<linkedin handle>">LinkedIn</a></li>
+        </ul>
+
+    </aside> <!-- End Sidebar -->
+
+</div> <!-- End Main Content and Sidebar -->
+
+
+<!-- Footer -->
+<footer class="row">
+    <div class="large-12 columns">
+        <hr />
+        <div class="row">
+            <div class="large-6 columns">
+              <!--                  <p>My Python Notes by Jerin</p> -->
+            </div>
+            </div>
+    </div>
+</footer>
+</body>
+</html>

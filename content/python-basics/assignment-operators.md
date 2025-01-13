@@ -2,7 +2,7 @@
 title: Assignment-Operators
 date: 2025-01-13
 author: Your Name
-cell_count: 43
+cell_count: 44
 score: 40
 ---
 
@@ -318,6 +318,17 @@ print("Result of (x = x | y) = ", x)
 ```python
 x ^= y # It's equivalent to x = x ^ y.
 ```
+
+
+```python
+x = 20
+y = 10
+x ^= y
+print("Result of (x = x ^ y) = ", x)
+```
+
+    Result of (x = x ^ y) =  30
+
 
 
 ```python

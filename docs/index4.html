@@ -47,6 +47,38 @@
 
 
             <article>
+                <a href="https://jerinuser.github.io/pynotes/find-lagrgest-number.html"><h3 class="article-title">Find-Lagrgest-Number</h3></a>
+<h6 class="subheader" title="2025-01-13T00:00:00-05:00">Mon 13 January 2025
+</h6>
+
+
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">second_largest</span><span class="p">(</span><span class="n">lst</span><span class="p">):</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">lst</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mi">2</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;List must have at least two elements.&quot;</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">unique_list</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">set</span><span class="p">(</span><span class="n">lst</span><span class="p">))</span>  <span class="c1"># Remove duplicates</span>
+        <span class="n">unique_list</span><span class="o">.</span><span class="n">sort</span><span class="p">(</span><span class="n">reverse</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>  <span class="c1"># Sort in descending order</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Second Largest Number:&quot;</span><span class="p">,</span> <span class="n">unique_list</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+
+<span class="c1"># Example usage</span>
+<span class="n">second_largest</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">])</span>
+<span class="n">second_largest</span><span class="p">([</span><span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">])</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>Second Largest …</code></pre></div><p class="subheader">Category: <a href="https://jerinuser.github.io/pynotes/category/python-basics.html">python-basics</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="https://jerinuser.github.io/pynotes/find-lagrgest-number.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
                 <a href="https://jerinuser.github.io/pynotes/find-reverse.html"><h3 class="article-title">Find-Reverse</h3></a>
 <h6 class="subheader" title="2025-01-13T00:00:00-05:00">Mon 13 January 2025
 </h6>
@@ -450,50 +482,9 @@ SyntaxError …</code></pre></div><p class="subheader">Category: <a href="https:
                 <hr  class="gradient"/>
             </article>
 
-        
-
-
-            <article>
-                <a href="https://jerinuser.github.io/pynotes/iteration-keyword.html"><h3 class="article-title">Iteration-Keyword</h3></a>
-<h6 class="subheader" title="2025-01-13T00:00:00-05:00">Mon 13 January 2025
-</h6>
-
-
-<div class="highlight"><pre><span></span><code><span class="c1">#  created : 20250111</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="c1">#  https://www.scientecheasy.com/2022/09/reserved-keywords-in-python.html/</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="c1">#  python iteration keyword</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="k">for</span> <span class="n">count</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">):</span>
-  <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Scientech Easy, Dhanbad&quot;</span><span class="p">)</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code>Scientech Easy, Dhanbad
-Scientech Easy, Dhanbad
-Scientech Easy, Dhanbad
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="n">count</span> <span class="o">=</span> <span class="mi">0</span>
-<span class="k">while</span><span class="p">(</span><span class="n">count</span> <span class="o">&lt;</span> <span class="mi">3</span><span class="p">):</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The current count is: &quot;</span><span class="p">,</span> <span class="n">count</span><span class="p">)</span>
-    <span class="n">count</span> <span class="o">=</span> <span class="n">count</span> <span class="o">+</span> <span class="mi">1</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;While loop ended …</span></code></pre></div><p class="subheader">Category: <a href="https://jerinuser.github.io/pynotes/category/python-basics.html">python-basics</a>
-
-</p>
-
-
-
-                <a class="button radius secondary small right" href="https://jerinuser.github.io/pynotes/iteration-keyword.html">Read More</a>
-                <hr  class="gradient"/>
-            </article>
-
             <!-- /#posts-list -->
 <div class="pagination-centered">
-<h6 class="subheader">Page 4 of 7</h6>
+<h6 class="subheader">Page 4 of 8</h6>
 
 <p>
             <a href="https://jerinuser.github.io/pynotes/index3.html">&laquo; Prev</a>

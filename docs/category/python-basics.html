@@ -450,36 +450,55 @@
 
 
             <article>
-                <a href="https://jerinuser.github.io/pynotes/datet-ime.html"><h3 class="article-title">Datet-Ime</h3></a>
+                <a href="https://jerinuser.github.io/pynotes/comparison-operators.html"><h3 class="article-title">Comparison-Operators</h3></a>
 <h6 class="subheader" title="2025-01-13T00:00:00-05:00">Mon 13 January 2025
 </h6>
 
 
-<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">datetime</span> <span class="kn">import</span> <span class="n">datetime</span>
-
-<span class="k">def</span> <span class="nf">string_to_date</span><span class="p">(</span><span class="n">date_string</span><span class="p">):</span>
-    <span class="n">date_object</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">strptime</span><span class="p">(</span><span class="n">date_string</span><span class="p">,</span> <span class="s2">&quot;%Y-%m-</span><span class="si">%d</span><span class="s2">&quot;</span><span class="p">)</span>
-    <span class="k">return</span> <span class="n">date_object</span>
-
-<span class="c1"># Example usage</span>
-<span class="n">date_string</span> <span class="o">=</span> <span class="s2">&quot;2025-01-02&quot;</span>
-<span class="n">result</span> <span class="o">=</span> <span class="n">string_to_date</span><span class="p">(</span><span class="n">date_string</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="c1">#  created : 20250113</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="mf">2025</span><span class="o">-</span><span class="mf">01</span><span class="o">-</span><span class="mf">02</span><span class="w"> </span><span class="mf">00</span><span class="p">:</span><span class="mf">00</span><span class="p">:</span><span class="mf">00</span>
+<div class="highlight"><pre><span></span><code><span class="c1">#  https://www.scientecheasy.com/2022/10/comparison-operators-in-python.html/</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">check_leap_year</span><span class="p">(</span><span class="n">year</span><span class="p">):</span>
-    <span class="k">if</span> <span class="p">(</span><span class="n">year</span> <span class="o">%</span> <span class="mi">4</span> <span class="o">==</span> <span class="mi">0</span> <span class="ow">and</span> <span class="n">year</span> <span class="o">%</span> <span class="mi">100</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">)</span> <span class="ow">or</span> <span class="p">(</span><span class="n">year</span> <span class="o">%</span> <span class="mi">400</span> <span class="o">==</span> <span class="mi">0</span><span class="p">):</span>
-        <span class="k">return</span> <span class="s2">&quot;Leap year&quot;</span>
-    <span class="k">else …</span></code></pre></div><p class="subheader">Category: <a href="https://jerinuser.github.io/pynotes/category/python-basics.html">python-basics</a>
+<div class="highlight"><pre><span></span><code><span class="c1">#  Comparison  Operators</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1"># Equal to (==)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">x</span> <span class="o">=</span> <span class="mi">20</span>
+<span class="n">y</span> <span class="o">=</span> <span class="mi">20</span>
+<span class="nb">print</span><span class="p">(</span> <span class="n">x</span> <span class="o">==</span> <span class="n">y</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>True
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">p</span> <span class="o">=</span> <span class="s1">&#39;My name is John&#39;</span>
+<span class="n">q</span> <span class="o">=</span> <span class="s1">&#39;My name is John&#39;</span>
+<span class="nb">print</span><span class="p">(</span> <span class="n">p</span> <span class="o">==</span> <span class="n">q</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>True
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">r</span> <span class="o">=</span> <span class="s1">&#39;Text&#39;</span>
+<span class="n">s</span> <span class="o">=</span> <span class="s1">&#39;text&#39;</span>
+<span class="nb">print</span><span class="p">(</span> <span class="n">r</span> <span class="o">==</span> <span class="n">s</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>False
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">t</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">]</span>
+<span class="n">u …</span></code></pre></div><p class="subheader">Category: <a href="https://jerinuser.github.io/pynotes/category/python-basics.html">python-basics</a>
 
 </p>
 
 
 
-                <a class="button radius secondary small right" href="https://jerinuser.github.io/pynotes/datet-ime.html">Read More</a>
+                <a class="button radius secondary small right" href="https://jerinuser.github.io/pynotes/comparison-operators.html">Read More</a>
                 <hr  class="gradient"/>
             </article>
 

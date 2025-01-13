@@ -1,6 +1,6 @@
 ---
 title: Exception-Hadling
-date: 2025-01-12
+date: 2025-01-13
 author: Your Name
 cell_count: 8
 score: 5

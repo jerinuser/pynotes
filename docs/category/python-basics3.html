@@ -47,8 +47,82 @@
 
 
             <article>
+                <a href="https://jerinuser.github.io/pynotes/flatten-list.html"><h3 class="article-title">Flatten-List</h3></a>
+<h6 class="subheader" title="2025-01-13T00:00:00-05:00">Mon 13 January 2025
+</h6>
+
+
+<div class="highlight"><pre><span></span><code>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">flatten</span><span class="p">(</span><span class="n">nested_list</span><span class="p">):</span>
+    <span class="n">flat_list</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">nested_list</span><span class="p">:</span>
+        <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">item</span><span class="p">,</span> <span class="nb">list</span><span class="p">):</span>
+            <span class="n">flat_list</span><span class="o">.</span><span class="n">extend</span><span class="p">(</span><span class="n">flatten</span><span class="p">(</span><span class="n">item</span><span class="p">))</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">flat_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">item</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">flat_list</span>
+
+<span class="c1"># Example usage</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">flatten</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">]]]))</span>  <span class="c1"># [1, 2, 3, 4, 5, 6]</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>[1, 2, 3, 4, 5, 6]
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1"># Check if a List is Sorted …</span></code></pre></div><p class="subheader">Category: <a href="https://jerinuser.github.io/pynotes/category/python-basics.html">python-basics</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="https://jerinuser.github.io/pynotes/flatten-list.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
+                <a href="https://jerinuser.github.io/pynotes/frequency.html"><h3 class="article-title">Frequency</h3></a>
+<h6 class="subheader" title="2025-01-13T00:00:00-05:00">Mon 13 January 2025
+</h6>
+
+
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">count_frequency</span><span class="p">(</span><span class="n">lst</span><span class="p">):</span>
+    <span class="n">frequency</span> <span class="o">=</span> <span class="p">{}</span>
+    <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">lst</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">frequency</span><span class="p">:</span>
+            <span class="n">frequency</span><span class="p">[</span><span class="n">item</span><span class="p">]</span> <span class="o">+=</span> <span class="mi">1</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">frequency</span><span class="p">[</span><span class="n">item</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Element Frequencies:&quot;</span><span class="p">,</span> <span class="n">frequency</span><span class="p">)</span>
+
+<span class="c1"># Example usage</span>
+<span class="n">count_frequency</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">])</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>Element Frequencies: {1: 1, 2: 2, 3: 1, 4: 3, 5: 1}
+</code></pre></div>
+
+<hr>
+<p><strong>Score: 0</strong></p><p class="subheader">Category: <a href="https://jerinuser.github.io/pynotes/category/python-basics.html">python-basics</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="https://jerinuser.github.io/pynotes/frequency.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
                 <a href="https://jerinuser.github.io/pynotes/functions.html"><h3 class="article-title">Functions</h3></a>
-<h6 class="subheader" title="2025-01-12T00:00:00-05:00">Sun 12 January 2025
+<h6 class="subheader" title="2025-01-13T00:00:00-05:00">Mon 13 January 2025
 </h6>
 
 
@@ -99,7 +173,7 @@ enter another number 3
 
             <article>
                 <a href="https://jerinuser.github.io/pynotes/identifiers.html"><h3 class="article-title">Identifiers</h3></a>
-<h6 class="subheader" title="2025-01-12T00:00:00-05:00">Sun 12 January 2025
+<h6 class="subheader" title="2025-01-13T00:00:00-05:00">Mon 13 January 2025
 </h6>
 
 
@@ -154,7 +228,7 @@ SyntaxError …</code></pre></div><p class="subheader">Category: <a href="https:
 
             <article>
                 <a href="https://jerinuser.github.io/pynotes/inheritance.html"><h3 class="article-title">Inheritance</h3></a>
-<h6 class="subheader" title="2025-01-12T00:00:00-05:00">Sun 12 January 2025
+<h6 class="subheader" title="2025-01-13T00:00:00-05:00">Mon 13 January 2025
 </h6>
 
 
@@ -193,7 +267,7 @@ SyntaxError …</code></pre></div><p class="subheader">Category: <a href="https:
 
             <article>
                 <a href="https://jerinuser.github.io/pynotes/iteration-keyword.html"><h3 class="article-title">Iteration-Keyword</h3></a>
-<h6 class="subheader" title="2025-01-12T00:00:00-05:00">Sun 12 January 2025
+<h6 class="subheader" title="2025-01-13T00:00:00-05:00">Mon 13 January 2025
 </h6>
 
 
@@ -234,7 +308,7 @@ Scientech Easy, Dhanbad
 
             <article>
                 <a href="https://jerinuser.github.io/pynotes/largest-number.html"><h3 class="article-title">Largest-Number</h3></a>
-<h6 class="subheader" title="2025-01-12T00:00:00-05:00">Sun 12 January 2025
+<h6 class="subheader" title="2025-01-13T00:00:00-05:00">Mon 13 January 2025
 </h6>
 
 
@@ -269,7 +343,7 @@ Scientech Easy, Dhanbad
 
             <article>
                 <a href="https://jerinuser.github.io/pynotes/list-exists.html"><h3 class="article-title">List-Exists</h3></a>
-<h6 class="subheader" title="2025-01-12T00:00:00-05:00">Sun 12 January 2025
+<h6 class="subheader" title="2025-01-13T00:00:00-05:00">Mon 13 January 2025
 </h6>
 
 
@@ -311,7 +385,7 @@ Odd Numbers: [1, 3, 5]
 
             <article>
                 <a href="https://jerinuser.github.io/pynotes/list-frequence.html"><h3 class="article-title">List-Frequence</h3></a>
-<h6 class="subheader" title="2025-01-12T00:00:00-05:00">Sun 12 January 2025
+<h6 class="subheader" title="2025-01-13T00:00:00-05:00">Mon 13 January 2025
 </h6>
 
 
@@ -345,7 +419,7 @@ Element frequencies: Counter({4: 2, 1: 1, 23: 1, 5 …</code></pre></div><p clas
 
             <article>
                 <a href="https://jerinuser.github.io/pynotes/list-palindromnic.html"><h3 class="article-title">List-Palindromnic</h3></a>
-<h6 class="subheader" title="2025-01-12T00:00:00-05:00">Sun 12 January 2025
+<h6 class="subheader" title="2025-01-13T00:00:00-05:00">Mon 13 January 2025
 </h6>
 
 
@@ -375,98 +449,6 @@ Element frequencies: Counter({4: 2, 1: 1, 23: 1, 5 …</code></pre></div><p clas
 
 
                 <a class="button radius secondary small right" href="https://jerinuser.github.io/pynotes/list-palindromnic.html">Read More</a>
-                <hr  class="gradient"/>
-            </article>
-
-        
-
-
-            <article>
-                <a href="https://jerinuser.github.io/pynotes/move-zero.html"><h3 class="article-title">Move-Zero</h3></a>
-<h6 class="subheader" title="2025-01-12T00:00:00-05:00">Sun 12 January 2025
-</h6>
-
-
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">move_zeroes</span><span class="p">(</span><span class="n">lst</span><span class="p">):</span>
-    <span class="n">non_zero</span> <span class="o">=</span> <span class="p">[</span><span class="n">x</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">lst</span> <span class="k">if</span> <span class="n">x</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">]</span>
-    <span class="n">zeroes</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">*</span> <span class="n">lst</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
-    <span class="n">result</span> <span class="o">=</span> <span class="n">non_zero</span> <span class="o">+</span> <span class="n">zeroes</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;List after moving zeroes:&quot;</span><span class="p">,</span> <span class="n">result</span><span class="p">)</span>
-
-<span class="c1"># Example usage</span>
-<span class="n">move_zeroes</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">12</span><span class="p">])</span>
-<span class="n">move_zeroes</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">])</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code>List after moving zeroes: [1, 3, 12, 0, 0]
-List after moving …</code></pre></div><p class="subheader">Category: <a href="https://jerinuser.github.io/pynotes/category/python-basics.html">python-basics</a>
-
-</p>
-
-
-
-                <a class="button radius secondary small right" href="https://jerinuser.github.io/pynotes/move-zero.html">Read More</a>
-                <hr  class="gradient"/>
-            </article>
-
-        
-
-
-            <article>
-                <a href="https://jerinuser.github.io/pynotes/multible-inheritance.html"><h3 class="article-title">Multible-Inheritance</h3></a>
-<h6 class="subheader" title="2025-01-12T00:00:00-05:00">Sun 12 January 2025
-</h6>
-
-
-<div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">Father</span><span class="p">:</span>
-    <span class="k">def</span> <span class="nf">skill</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Driving&quot;</span><span class="p">)</span>
-
-<span class="k">class</span> <span class="nc">Mother</span><span class="p">:</span>
-    <span class="k">def</span> <span class="nf">skill</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Cooking&quot;</span><span class="p">)</span>
-
-<span class="k">class</span> <span class="nc">Child</span><span class="p">(</span><span class="n">Father</span><span class="p">,</span> <span class="n">Mother</span><span class="p">):</span>
-    <span class="k">pass</span>
-
-<span class="n">child</span> <span class="o">=</span> <span class="n">Child</span><span class="p">()</span>
-<span class="n">child</span><span class="o">.</span><span class="n">skill</span><span class="p">()</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code>Driving
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">GrandParent</span><span class="p">:</span>
-    <span class="k">def</span> <span class="nf">display</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;GrandParent Display&quot;</span><span class="p">)</span>
-
-<span class="k">class</span> <span class="nc">Parent</span><span class="p">(</span><span class="n">GrandParent</span><span class="p">):</span>
-    <span class="k">pass</span>
-
-<span class="k">class</span> <span class="nc">Child</span><span class="p">(</span><span class="n">Parent</span><span class="p">):</span>
-    <span class="k">pass</span>
-
-<span class="n">child</span> <span class="o">=</span> <span class="n">Child</span><span class="p">()</span>
-<span class="n">child</span><span class="o">.</span><span class="n">display</span><span class="p">()</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code>GrandParent Display
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-
-<hr>
-<p><strong>Score: 0</strong></p><p class="subheader">Category: <a href="https://jerinuser.github.io/pynotes/category/python-basics.html">python-basics</a>
-
-</p>
-
-
-
-                <a class="button radius secondary small right" href="https://jerinuser.github.io/pynotes/multible-inheritance.html">Read More</a>
                 <hr  class="gradient"/>
             </article>
 

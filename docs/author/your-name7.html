@@ -47,6 +47,77 @@
 
 
             <article>
+                <a href="https://jerinuser.github.io/pynotes/overlaoding.html"><h3 class="article-title">Overlaoding</h3></a>
+<h6 class="subheader" title="2025-01-25T00:00:00-05:00">Sat 25 January 2025
+</h6>
+
+
+<div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">Box</span><span class="p">:</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">length</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">length</span> <span class="o">=</span> <span class="n">length</span>
+
+    <span class="k">def</span> <span class="fm">__add__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">length</span> <span class="o">+</span> <span class="n">other</span><span class="o">.</span><span class="n">length</span>
+
+<span class="n">box1</span> <span class="o">=</span> <span class="n">Box</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+<span class="n">box2</span> <span class="o">=</span> <span class="n">Box</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Total Length:&quot;</span><span class="p">,</span> <span class="n">box1</span> <span class="o">+</span> <span class="n">box2</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>Total Length: 30
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>
+</code></pre></div>
+
+<hr>
+<p><strong>Score: 0</strong></p><p class="subheader">Category: <a href="https://jerinuser.github.io/pynotes/category/python-basics.html">python-basics</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="https://jerinuser.github.io/pynotes/overlaoding.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
+                <a href="https://jerinuser.github.io/pynotes/palindrome.html"><h3 class="article-title">Palindrome</h3></a>
+<h6 class="subheader" title="2025-01-25T00:00:00-05:00">Sat 25 January 2025
+</h6>
+
+
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">check_palindrome</span><span class="p">(</span><span class="n">input_string</span><span class="p">):</span>
+    <span class="c1"># Check if the string is a palindrome (ignoring case)</span>
+    <span class="n">is_palindrome</span> <span class="o">=</span> <span class="n">input_string</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">==</span> <span class="n">input_string</span><span class="p">[::</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>
+
+    <span class="k">if</span> <span class="n">is_palindrome</span><span class="p">:</span>
+        <span class="k">return</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">input_string</span><span class="si">}</span><span class="s2"> is a palindrome&quot;</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">return</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">input_string</span><span class="si">}</span><span class="s2"> is not a palindrome&quot;</span>
+
+<span class="c1"># Test the function</span>
+<span class="n">input_string</span> <span class="o">=</span> <span class="s2">&quot;Able was I ere I saw Elba&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">check_palindrome</span><span class="p">(</span><span class="n">input_string</span><span class="p">))</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>Able was …</code></pre></div><p class="subheader">Category: <a href="https://jerinuser.github.io/pynotes/category/python-basics.html">python-basics</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="https://jerinuser.github.io/pynotes/palindrome.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
                 <a href="https://jerinuser.github.io/pynotes/pandas-df.html"><h3 class="article-title">Pandas-Df</h3></a>
 <h6 class="subheader" title="2025-01-25T00:00:00-05:00">Sat 25 January 2025
 </h6>
@@ -366,118 +437,6 @@ False
 
 
                 <a class="button radius secondary small right" href="https://jerinuser.github.io/pynotes/python-docstring.html">Read More</a>
-                <hr  class="gradient"/>
-            </article>
-
-        
-
-
-            <article>
-                <a href="https://jerinuser.github.io/pynotes/python-indentations.html"><h3 class="article-title">Python-Indentations</h3></a>
-<h6 class="subheader" title="2025-01-25T00:00:00-05:00">Sat 25 January 2025
-</h6>
-
-
-<div class="highlight"><pre><span></span><code><span class="c1">#  created : 20250112</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="c1">#  https://www.scientecheasy.com/2022/09/indentation-in-python.html/</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="c1">#  Python indentations</span>
-
-<span class="c1">#  in python indendation means the whitespace </span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="c1">#  after function definition we have to give four indendation</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">display</span><span class="p">():</span>
-  <span class="n">var</span> <span class="o">=</span> <span class="s2">&quot;Scientech Easy&quot;</span> 
-  <span class="nb">print</span><span class="p">(</span><span class="n">var</span><span class="p">)</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="n">display</span><span class="p">()</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code>Scientech Easy
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">display</span><span class="p">(</span><span class="n">parameter</span><span class="p">):</span>
-    <span class="n">var</span> <span class="o">=</span> <span class="s2">&quot;Hello&quot;</span> 
-    <span class="nb">print</span><span class="p">(</span><span class="n">var</span><span class="p">)</span> 
-    <span class="nb">print</span><span class="p">(</span><span class="n">var</span><span class="p">,</span> <span class="n">parameter</span><span class="p">)</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="n">display</span><span class="p">(</span><span class="s2">&quot;Python&quot;</span><span class="p">)</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code>Hello …</code></pre></div><p class="subheader">Category: <a href="https://jerinuser.github.io/pynotes/category/python-basics.html">python-basics</a>
-
-</p>
-
-
-
-                <a class="button radius secondary small right" href="https://jerinuser.github.io/pynotes/python-indentations.html">Read More</a>
-                <hr  class="gradient"/>
-            </article>
-
-        
-
-
-            <article>
-                <a href="https://jerinuser.github.io/pynotes/python-literals.html"><h3 class="article-title">Python-Literals</h3></a>
-<h6 class="subheader" title="2025-01-25T00:00:00-05:00">Sat 25 January 2025
-</h6>
-
-
-<div class="highlight"><pre><span></span><code><span class="c1">#  created : 20250112</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="c1">#  https://www.scientecheasy.com/2022/09/literals-in-python.html/</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="c1">#  python literals</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="c1"># Types of literals</span>
-
-<span class="c1"># String literals</span>
-<span class="c1"># Numeric literals</span>
-<span class="c1"># Boolean literalsb</span>
-<span class="c1"># Literal Collections</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="c1">#  single line string</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="n">sigle_line_string</span> <span class="o">=</span> <span class="s1">&#39;Welcome </span><span class="se">\</span>
-<span class="s1">to </span><span class="se">\</span>
-<span class="s1">Scientech Easy&#39;</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="n">sigle_line_string</span><span class="p">)</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code>Welcome to Scientech Easy
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="n">multi_line_string</span> <span class="o">=</span> <span class="s1">&#39;&#39;&#39;Welcome </span><span class="se">\</span>
-<span class="s1">to </span><span class="se">\</span>
-<span class="s1">Scientech Easy, </span><span class="se">\</span>
-<span class="s1">Dhanbad&#39;&#39;&#39;</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="n">multi_line_string</span><span class="p">)</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code>Welcome to Scientech Easy, Dhanbad …</code></pre></div><p class="subheader">Category: <a href="https://jerinuser.github.io/pynotes/category/python-basics.html">python-basics</a>
-
-</p>
-
-
-
-                <a class="button radius secondary small right" href="https://jerinuser.github.io/pynotes/python-literals.html">Read More</a>
                 <hr  class="gradient"/>
             </article>
 

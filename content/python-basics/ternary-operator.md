@@ -1,8 +1,8 @@
 ---
 title: Ternary-Operator
-date: 2025-01-13
+date: 2025-01-25
 author: Your Name
-cell_count: 13
+cell_count: 14
 score: 10
 ---
 
@@ -127,6 +127,22 @@ num1, num2 = 10, 20
 # Nested ternary operator.
 num = "num1 = num2" if(num1 == num2) else "num1 > num2" if(num1 > num2) else "num2 > num1"
 print(num)
+```
+
+    num2 > num1
+
+
+
+```python
+num1, num2 = 10, 20
+# Nested if-else statement.
+if num1 != num2:
+    if num1 > num2:
+        print("num1 > num2")
+    else:
+        print("num2 > num1")
+else:
+    print("num1 = num2")
 ```
 
     num2 > num1

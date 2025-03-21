@@ -1,6 +1,6 @@
 ---
 title: Prime-Number
-date: 2025-03-16
+date: 2025-03-21
 author: Your Name
 cell_count: 3
 score: 0

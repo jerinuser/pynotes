@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8" />
+    <!-- Set the viewport width to device width for mobile -->
+    <meta name="viewport" content="width=device-width" />
+
+    <title>User-Defined-Functions</title>
+
+    <link rel="stylesheet" href="https://jerinuser.github.io/pynotes/theme/css/normalize.css" />
+    <link rel="stylesheet" href="https://jerinuser.github.io/pynotes/theme/css/foundation.min.css" />
+    <link rel="stylesheet" href="https://jerinuser.github.io/pynotes/theme/css/style.css" />
+    <link rel="stylesheet" href="https://jerinuser.github.io/pynotes/theme/css/pygments.css" />	
+    <script src="https://jerinuser.github.io/pynotes/theme/js/modernizr.js"></script>
+</head>
+
+<body>
+
+<!-- Nav Bar -->
+<nav>
+<div class="top-bar">
+<div class="row">
+    <div class="large-9 large-centered columns">
+	    <h1><a href="https://jerinuser.github.io/pynotes">My Python Notes</a></h1>
+    </div>
+</div>
+</div>
+
+<!-- Show menu items and pages -->
+<div class="row">
+<div class="large-9 columns">
+    <ul class="button-group navigation">
+
+    </ul>
+</div>
+</div>
+</nav>
+<!-- End Nav -->
+
+
+<!-- Main Page Content and Sidebar -->
+<div class="row">
+
+    <!-- Main Blog Content -->
+    <div class="large-9 columns">
+<article>
+    <header>
+        <h3 class="article-title"><a href="https://jerinuser.github.io/pynotes/user-defined-functions.html" rel="bookmark"
+        title="Permalink to User-Defined-Functions">User-Defined-Functions</a></h3>
+    </header>
+
+<h6 class="subheader" title="2025-03-21T00:00:00-04:00">Fri 21 March 2025
+</h6>
+
+
+    <div class="highlight"><pre><span></span><code><span class="c1">#  created : 20250321</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1">#  https://www.scientecheasy.com/2022/12/user-defined-functions-in-python.html/</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1"># Syntax of User defined Function</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1"># def function_name(parameter_list): # function header</span>
+<span class="c1">#     . . . . . .</span>
+<span class="c1">#     body_of_the_function</span>
+<span class="c1">#     . . . . . .</span>
+<span class="c1">#     return &lt;value(s)&gt;</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1"># user defined function definition</span>
+<span class="k">def</span> <span class="nf">greeting</span><span class="p">():</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Hello world!&#39;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Welcome to the world of the programming!&#39;</span><span class="p">)</span>
+<span class="c1"># Function calling.</span>
+<span class="n">greeting</span><span class="p">()</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>Hello world!
+Welcome to the world of the programming!
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1"># Simple Python function to check even and odd.</span>
+<span class="k">def</span> <span class="nf">evenOdd</span><span class="p">(</span><span class="n">x</span><span class="p">):</span> <span class="c1"># function header. x is a local variable.</span>
+    <span class="k">if</span> <span class="n">x</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Number&#39;</span><span class="p">,</span><span class="n">x</span><span class="p">,</span><span class="s1">&#39;is even&#39;</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Number&#39;</span><span class="p">,</span><span class="n">x</span><span class="p">,</span><span class="s1">&#39;is odd&#39;</span><span class="p">)</span>
+<span class="c1"># Calling functions by passing two argument values.</span>
+<span class="n">evenOdd</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span>
+<span class="n">evenOdd</span><span class="p">(</span><span class="mi">25</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>Number 20 is even
+Number 25 is odd
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1"># Function definition having two parameters, such as name and age.</span>
+<span class="k">def</span> <span class="nf">person</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">age</span><span class="p">):</span> <span class="c1"># Here, name and age are local variables.</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">age</span><span class="p">)</span>
+<span class="n">person</span><span class="p">(</span><span class="s1">&#39;John&#39;</span><span class="p">,</span> <span class="mi">24</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>John
+24
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1"># Function to find the sum of three numbers.</span>
+<span class="k">def</span> <span class="nf">sum_three_numbers</span><span class="p">(</span><span class="n">n1</span><span class="p">,</span> <span class="n">n2</span><span class="p">,</span> <span class="n">n3</span><span class="p">):</span> <span class="c1"># Here, n1, n2, n3 are local variables.</span>
+    <span class="nb">sum</span> <span class="o">=</span> <span class="n">n1</span> <span class="o">+</span> <span class="n">n2</span> <span class="o">+</span> <span class="n">n3</span>  <span class="c1"># Here, sum is a local variable.</span>
+    <span class="k">return</span> <span class="nb">sum</span>
+
+<span class="c1"># Calling a function by passing three argument values.</span>
+<span class="c1"># We will store the returned value into a variable named s.</span>
+<span class="n">s</span> <span class="o">=</span> <span class="n">sum_three_numbers</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">40</span><span class="p">)</span> <span class="c1"># Here, s is a global variable.</span>
+
+<span class="c1"># Displaying the value of s in the console.</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Sum of three numbers = &#39;</span><span class="p">,</span><span class="n">s</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>Sum of three numbers =  90
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>
+</code></pre></div>
+
+<hr>
+<p><strong>Score: 5</strong></p>
+<p class="subheader">Category: <a href="https://jerinuser.github.io/pynotes/category/python-basics.html">python-basics</a>
+
+</p>
+
+
+
+
+</article>
+    </div>
+    <!-- End Main Content -->
+
+    <!-- Sidebar -->
+    <aside class="large-3 columns">
+        <h5 class="sidebar-title">Site</h5>
+        <ul class="side-nav">
+            <li><a href="https://jerinuser.github.io/pynotes/archives.html">Archives</a>
+            <li><a href="https://jerinuser.github.io/pynotes/tags.html">Tags</a>
+        </ul>
+
+		
+        <h5 class="sidebar-title">Categories</h5>
+        <ul class="side-nav">
+            <li><a href="https://jerinuser.github.io/pynotes/category/basics.html">basics</a></li>
+            <li><a href="https://jerinuser.github.io/pynotes/category/pandas-work.html">pandas-work</a></li>
+            <li><a href="https://jerinuser.github.io/pynotes/category/python-basics.html">python-basics</a></li>
+            <li><a href="https://jerinuser.github.io/pynotes/category/stockmarket.html">stockmarket</a></li>
+   
+        </ul>
+
+		
+        <h5 class="sidebar-title">Social</h5>
+        <ul class="side-nav">
+            <li><a href="https://github.com/jerinuser/">GitHub</a></li>
+            <li><a href="<linkedin handle>">LinkedIn</a></li>
+        </ul>
+
+    </aside> <!-- End Sidebar -->
+
+</div> <!-- End Main Content and Sidebar -->
+
+
+<!-- Footer -->
+<footer class="row">
+    <div class="large-12 columns">
+        <hr />
+        <div class="row">
+            <div class="large-6 columns">
+              <!--                  <p>My Python Notes by Jerin</p> -->
+            </div>
+            </div>
+    </div>
+</footer>
+</body>
+</html>

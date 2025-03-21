@@ -1,6 +1,6 @@
 ---
 title: Loops-Python
-date: 2025-03-16
+date: 2025-03-21
 author: Your Name
 cell_count: 7
 score: 5

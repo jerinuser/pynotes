@@ -47,8 +47,100 @@
 
 
             <article>
+                <a href="https://jerinuser.github.io/pynotes/move-zero.html"><h3 class="article-title">Move-Zero</h3></a>
+<h6 class="subheader" title="2025-03-21T00:00:00-04:00">Fri 21 March 2025
+</h6>
+
+
+<div class="highlight"><pre><span></span><code>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">move_zeroes</span><span class="p">(</span><span class="n">lst</span><span class="p">):</span>
+    <span class="n">non_zero</span> <span class="o">=</span> <span class="p">[</span><span class="n">x</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">lst</span> <span class="k">if</span> <span class="n">x</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">]</span>
+    <span class="n">zeroes</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">*</span> <span class="n">lst</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+    <span class="n">result</span> <span class="o">=</span> <span class="n">non_zero</span> <span class="o">+</span> <span class="n">zeroes</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;List after moving zeroes:&quot;</span><span class="p">,</span> <span class="n">result</span><span class="p">)</span>
+
+<span class="c1"># Example usage</span>
+<span class="n">move_zeroes</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">12</span><span class="p">])</span>
+<span class="n">move_zeroes</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">])</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>List after moving zeroes: [1, 3, 12, 0, 0]
+List after moving …</code></pre></div><p class="subheader">Category: <a href="https://jerinuser.github.io/pynotes/category/python-basics.html">python-basics</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="https://jerinuser.github.io/pynotes/move-zero.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
+                <a href="https://jerinuser.github.io/pynotes/multible-inheritance.html"><h3 class="article-title">Multible-Inheritance</h3></a>
+<h6 class="subheader" title="2025-03-21T00:00:00-04:00">Fri 21 March 2025
+</h6>
+
+
+<div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">Father</span><span class="p">:</span>
+    <span class="k">def</span> <span class="nf">skill</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Driving&quot;</span><span class="p">)</span>
+
+<span class="k">class</span> <span class="nc">Mother</span><span class="p">:</span>
+    <span class="k">def</span> <span class="nf">skill</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Cooking&quot;</span><span class="p">)</span>
+
+<span class="k">class</span> <span class="nc">Child</span><span class="p">(</span><span class="n">Father</span><span class="p">,</span> <span class="n">Mother</span><span class="p">):</span>
+    <span class="k">pass</span>
+
+<span class="n">child</span> <span class="o">=</span> <span class="n">Child</span><span class="p">()</span>
+<span class="n">child</span><span class="o">.</span><span class="n">skill</span><span class="p">()</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>Driving
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">GrandParent</span><span class="p">:</span>
+    <span class="k">def</span> <span class="nf">display</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;GrandParent Display&quot;</span><span class="p">)</span>
+
+<span class="k">class</span> <span class="nc">Parent</span><span class="p">(</span><span class="n">GrandParent</span><span class="p">):</span>
+    <span class="k">pass</span>
+
+<span class="k">class</span> <span class="nc">Child</span><span class="p">(</span><span class="n">Parent</span><span class="p">):</span>
+    <span class="k">pass</span>
+
+<span class="n">child</span> <span class="o">=</span> <span class="n">Child</span><span class="p">()</span>
+<span class="n">child</span><span class="o">.</span><span class="n">display</span><span class="p">()</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>GrandParent Display
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>
+</code></pre></div>
+
+<hr>
+<p><strong>Score: 0</strong></p><p class="subheader">Category: <a href="https://jerinuser.github.io/pynotes/category/python-basics.html">python-basics</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="https://jerinuser.github.io/pynotes/multible-inheritance.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
                 <a href="https://jerinuser.github.io/pynotes/nested-if.html"><h3 class="article-title">Nested-If</h3></a>
-<h6 class="subheader" title="2025-03-16T00:00:00-04:00">Sun 16 March 2025
+<h6 class="subheader" title="2025-03-21T00:00:00-04:00">Fri 21 March 2025
 </h6>
 
 
@@ -93,7 +185,7 @@
 
             <article>
                 <a href="https://jerinuser.github.io/pynotes/nested-loop.html"><h3 class="article-title">Nested-Loop</h3></a>
-<h6 class="subheader" title="2025-03-16T00:00:00-04:00">Sun 16 March 2025
+<h6 class="subheader" title="2025-03-21T00:00:00-04:00">Fri 21 March 2025
 </h6>
 
 
@@ -127,7 +219,7 @@
 
             <article>
                 <a href="https://jerinuser.github.io/pynotes/operator-precedence.html"><h3 class="article-title">Operator-Precedence</h3></a>
-<h6 class="subheader" title="2025-03-16T00:00:00-04:00">Sun 16 March 2025
+<h6 class="subheader" title="2025-03-21T00:00:00-04:00">Fri 21 March 2025
 </h6>
 
 
@@ -158,7 +250,7 @@
 
             <article>
                 <a href="https://jerinuser.github.io/pynotes/overlaoding.html"><h3 class="article-title">Overlaoding</h3></a>
-<h6 class="subheader" title="2025-03-16T00:00:00-04:00">Sun 16 March 2025
+<h6 class="subheader" title="2025-03-21T00:00:00-04:00">Fri 21 March 2025
 </h6>
 
 
@@ -196,7 +288,7 @@
 
             <article>
                 <a href="https://jerinuser.github.io/pynotes/palindrome.html"><h3 class="article-title">Palindrome</h3></a>
-<h6 class="subheader" title="2025-03-16T00:00:00-04:00">Sun 16 March 2025
+<h6 class="subheader" title="2025-03-21T00:00:00-04:00">Fri 21 March 2025
 </h6>
 
 
@@ -229,7 +321,7 @@
 
             <article>
                 <a href="https://jerinuser.github.io/pynotes/pass-statement.html"><h3 class="article-title">Pass-Statement</h3></a>
-<h6 class="subheader" title="2025-03-16T00:00:00-04:00">Sun 16 March 2025
+<h6 class="subheader" title="2025-03-21T00:00:00-04:00">Fri 21 March 2025
 </h6>
 
 
@@ -268,7 +360,7 @@
 
             <article>
                 <a href="https://jerinuser.github.io/pynotes/positive-negative.html"><h3 class="article-title">Positive-Negative</h3></a>
-<h6 class="subheader" title="2025-03-16T00:00:00-04:00">Sun 16 March 2025
+<h6 class="subheader" title="2025-03-21T00:00:00-04:00">Fri 21 March 2025
 </h6>
 
 
@@ -311,7 +403,7 @@
 
             <article>
                 <a href="https://jerinuser.github.io/pynotes/prime-number.html"><h3 class="article-title">Prime-Number</h3></a>
-<h6 class="subheader" title="2025-03-16T00:00:00-04:00">Sun 16 March 2025
+<h6 class="subheader" title="2025-03-21T00:00:00-04:00">Fri 21 March 2025
 </h6>
 
 
@@ -346,92 +438,6 @@ False
 
 
                 <a class="button radius secondary small right" href="https://jerinuser.github.io/pynotes/prime-number.html">Read More</a>
-                <hr  class="gradient"/>
-            </article>
-
-        
-
-
-            <article>
-                <a href="https://jerinuser.github.io/pynotes/python-buildin-types.html"><h3 class="article-title">Python-Buildin-Types</h3></a>
-<h6 class="subheader" title="2025-03-16T00:00:00-04:00">Sun 16 March 2025
-</h6>
-
-
-<div class="highlight"><pre><span></span><code><span class="c1">#  created : 20250113</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="c1">#  https://www.scientecheasy.com/2022/09/data-types-in-python.html/</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="c1">#  Dynamic data</span>
-
-<span class="c1">#  which means we dont want to specify a data type when assigning to a variable</span>
-<span class="c1">#  the change in the value leads to a change in data type</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="n">my_var</span> <span class="o">=</span> <span class="s2">&quot;Hi Friends!&quot;</span> <span class="c1"># holding string.</span>
-<span class="n">my_var</span> <span class="o">=</span> <span class="mi">25</span> <span class="c1"># same variable holding numeric …</span></code></pre></div><p class="subheader">Category: <a href="https://jerinuser.github.io/pynotes/category/python-basics.html">python-basics</a>
-
-</p>
-
-
-
-                <a class="button radius secondary small right" href="https://jerinuser.github.io/pynotes/python-buildin-types.html">Read More</a>
-                <hr  class="gradient"/>
-            </article>
-
-        
-
-
-            <article>
-                <a href="https://jerinuser.github.io/pynotes/python-comments.html"><h3 class="article-title">Python-Comments</h3></a>
-<h6 class="subheader" title="2025-03-16T00:00:00-04:00">Sun 16 March 2025
-</h6>
-
-
-<div class="highlight"><pre><span></span><code><span class="c1">#  created : 20250112</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="c1">#  https://www.scientecheasy.com/2022/09/comments-in-python.html/</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="c1">#  in python comments are written in (#) symbol</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Hello mate!!&#39;</span><span class="p">)</span>  <span class="c1"># this will not get print in the output</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code>Hello mate!!
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;Jerin&quot;</span> <span class="c1"># Variable declaration and initialization.</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code>Jerin
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="c1">#  multi line comments used like this </span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="sd">&#39;&#39;&#39;</span>
-<span class="sd">I </span>
-<span class="sd">am</span>
-<span class="sd">multiline </span>
-<span class="sd">comments</span>
-<span class="sd">&#39;&#39;&#39;</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code>&#39;\nI …</code></pre></div><p class="subheader">Category: <a href="https://jerinuser.github.io/pynotes/category/python-basics.html">python-basics</a>
-
-</p>
-
-
-
-                <a class="button radius secondary small right" href="https://jerinuser.github.io/pynotes/python-comments.html">Read More</a>
                 <hr  class="gradient"/>
             </article>
 

@@ -47,8 +47,46 @@
 
 
             <article>
+                <a href="https://jerinuser.github.io/pynotes/flatten-list.html"><h3 class="article-title">Flatten-List</h3></a>
+<h6 class="subheader" title="2025-03-21T00:00:00-04:00">Fri 21 March 2025
+</h6>
+
+
+<div class="highlight"><pre><span></span><code>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">flatten</span><span class="p">(</span><span class="n">nested_list</span><span class="p">):</span>
+    <span class="n">flat_list</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">nested_list</span><span class="p">:</span>
+        <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">item</span><span class="p">,</span> <span class="nb">list</span><span class="p">):</span>
+            <span class="n">flat_list</span><span class="o">.</span><span class="n">extend</span><span class="p">(</span><span class="n">flatten</span><span class="p">(</span><span class="n">item</span><span class="p">))</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">flat_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">item</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">flat_list</span>
+
+<span class="c1"># Example usage</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">flatten</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">]]]))</span>  <span class="c1"># [1, 2, 3, 4, 5, 6]</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>[1, 2, 3, 4, 5, 6]
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1"># Check if a List is Sorted …</span></code></pre></div><p class="subheader">Category: <a href="https://jerinuser.github.io/pynotes/category/python-basics.html">python-basics</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="https://jerinuser.github.io/pynotes/flatten-list.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
                 <a href="https://jerinuser.github.io/pynotes/for-loop.html"><h3 class="article-title">For-Loop</h3></a>
-<h6 class="subheader" title="2025-03-16T00:00:00-04:00">Sun 16 March 2025
+<h6 class="subheader" title="2025-03-21T00:00:00-04:00">Fri 21 March 2025
 </h6>
 
 
@@ -84,7 +122,7 @@ You are the high scorer!
 
             <article>
                 <a href="https://jerinuser.github.io/pynotes/frequency.html"><h3 class="article-title">Frequency</h3></a>
-<h6 class="subheader" title="2025-03-16T00:00:00-04:00">Sun 16 March 2025
+<h6 class="subheader" title="2025-03-21T00:00:00-04:00">Fri 21 March 2025
 </h6>
 
 
@@ -119,8 +157,46 @@ You are the high scorer!
 
 
             <article>
+                <a href="https://jerinuser.github.io/pynotes/function-arguments.html"><h3 class="article-title">Function-Arguments</h3></a>
+<h6 class="subheader" title="2025-03-21T00:00:00-04:00">Fri 21 March 2025
+</h6>
+
+
+<div class="highlight"><pre><span></span><code><span class="c1">#  created : 20250321</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1">#  https://www.scientecheasy.com/2022/12/arguments-in-python.html/</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1"># Default Arguments in Python</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">studentInfo</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">gender</span> <span class="o">=</span> <span class="s1">&#39;Male&#39;</span><span class="p">):</span>
+<span class="c1"># This function displays the student&#39;s info passed in the function parameters.</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Name:&#39;</span><span class="p">,</span><span class="n">name</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Gender:&#39;</span><span class="p">,</span><span class="n">gender</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="c1"># Main program.</span>
+<span class="c1"># Function call 1.</span>
+<span class="n">studentInfo</span><span class="p">(</span><span class="s1">&#39;Deepak&#39;</span><span class="p">)</span>
+<span class="c1"># Function call 2.</span>
+<span class="n">studentInfo</span><span class="p">(</span><span class="s1">&#39;Tripti&#39;</span><span class="p">,</span> <span class="n">gender …</span></code></pre></div><p class="subheader">Category: <a href="https://jerinuser.github.io/pynotes/category/python-basics.html">python-basics</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="https://jerinuser.github.io/pynotes/function-arguments.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
                 <a href="https://jerinuser.github.io/pynotes/functions.html"><h3 class="article-title">Functions</h3></a>
-<h6 class="subheader" title="2025-03-16T00:00:00-04:00">Sun 16 March 2025
+<h6 class="subheader" title="2025-03-21T00:00:00-04:00">Fri 21 March 2025
 </h6>
 
 
@@ -171,7 +247,7 @@ enter another number 3
 
             <article>
                 <a href="https://jerinuser.github.io/pynotes/global-local-variable.html"><h3 class="article-title">Global-Local-Variable</h3></a>
-<h6 class="subheader" title="2025-03-16T00:00:00-04:00">Sun 16 March 2025
+<h6 class="subheader" title="2025-03-21T00:00:00-04:00">Fri 21 March 2025
 </h6>
 
 
@@ -215,7 +291,7 @@ outside function:  10
 
             <article>
                 <a href="https://jerinuser.github.io/pynotes/ichimoku-3.html"><h3 class="article-title">Ichimoku-3</h3></a>
-<h6 class="subheader" title="2025-03-16T00:00:00-04:00">Sun 16 March 2025
+<h6 class="subheader" title="2025-03-21T00:00:00-04:00">Fri 21 March 2025
 </h6>
 
 
@@ -255,7 +331,7 @@ outside function:  10
 
             <article>
                 <a href="https://jerinuser.github.io/pynotes/identifiers.html"><h3 class="article-title">Identifiers</h3></a>
-<h6 class="subheader" title="2025-03-16T00:00:00-04:00">Sun 16 March 2025
+<h6 class="subheader" title="2025-03-21T00:00:00-04:00">Fri 21 March 2025
 </h6>
 
 
@@ -310,7 +386,7 @@ SyntaxError …</code></pre></div><p class="subheader">Category: <a href="https:
 
             <article>
                 <a href="https://jerinuser.github.io/pynotes/identity-operators.html"><h3 class="article-title">Identity-Operators</h3></a>
-<h6 class="subheader" title="2025-03-16T00:00:00-04:00">Sun 16 March 2025
+<h6 class="subheader" title="2025-03-21T00:00:00-04:00">Fri 21 March 2025
 </h6>
 
 
@@ -372,7 +448,7 @@ SyntaxError …</code></pre></div><p class="subheader">Category: <a href="https:
 
             <article>
                 <a href="https://jerinuser.github.io/pynotes/if-else.html"><h3 class="article-title">If-Else</h3></a>
-<h6 class="subheader" title="2025-03-16T00:00:00-04:00">Sun 16 March 2025
+<h6 class="subheader" title="2025-03-21T00:00:00-04:00">Fri 21 March 2025
 </h6>
 
 
@@ -407,93 +483,6 @@ SyntaxError …</code></pre></div><p class="subheader">Category: <a href="https:
 
 
                 <a class="button radius secondary small right" href="https://jerinuser.github.io/pynotes/if-else.html">Read More</a>
-                <hr  class="gradient"/>
-            </article>
-
-        
-
-
-            <article>
-                <a href="https://jerinuser.github.io/pynotes/if-statement.html"><h3 class="article-title">If-Statement</h3></a>
-<h6 class="subheader" title="2025-03-16T00:00:00-04:00">Sun 16 March 2025
-</h6>
-
-
-<div class="highlight"><pre><span></span><code><span class="c1">#  created : 20250125</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="c1">#  https://www.scientecheasy.com/2022/10/if-statement-in-python.html/</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="c1"># Syntax of if Statement in Python</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="c1"># if test_condition:</span>
-<span class="c1">#     Python statement(s) to be executed if condition is true.</span>
-<span class="c1"># or,</span>
-<span class="c1"># if(test_condition):</span>
-<span class="c1">#     statement(s)</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">per</span><span class="p">():</span>
-    <span class="n">myPer</span> <span class="o">=</span> <span class="mi">92</span>
-    <span class="k">if</span> <span class="n">myPer</span> <span class="o">&gt;=</span> <span class="mi">80</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Grade A&quot;</span><span class="p">)</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="n">per</span><span class="p">()</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code>Grade A
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">check</span><span class="p">():</span>
-    <span class="k">if</span><span class="p">(</span><span class="kc">True …</span></code></pre></div><p class="subheader">Category: <a href="https://jerinuser.github.io/pynotes/category/python-basics.html">python-basics</a>
-
-</p>
-
-
-
-                <a class="button radius secondary small right" href="https://jerinuser.github.io/pynotes/if-statement.html">Read More</a>
-                <hr  class="gradient"/>
-            </article>
-
-        
-
-
-            <article>
-                <a href="https://jerinuser.github.io/pynotes/inheritance.html"><h3 class="article-title">Inheritance</h3></a>
-<h6 class="subheader" title="2025-03-16T00:00:00-04:00">Sun 16 March 2025
-</h6>
-
-
-<div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">Animal</span><span class="p">:</span>
-    <span class="k">def</span> <span class="nf">speak</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Animal speaks&quot;</span><span class="p">)</span>
-
-<span class="k">class</span> <span class="nc">Dog</span><span class="p">(</span><span class="n">Animal</span><span class="p">):</span>
-    <span class="k">def</span> <span class="nf">speak</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Dog barks&quot;</span><span class="p">)</span>
-
-
-<span class="n">dog_barks</span> <span class="o">=</span> <span class="n">Dog</span><span class="p">()</span>
-<span class="n">dog_barks</span><span class="o">.</span><span class="n">speak</span><span class="p">()</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code>Dog barks
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code>
-</code></pre></div>
-
-<hr>
-<p><strong>Score: 0</strong></p><p class="subheader">Category: <a href="https://jerinuser.github.io/pynotes/category/python-basics.html">python-basics</a>
-
-</p>
-
-
-
-                <a class="button radius secondary small right" href="https://jerinuser.github.io/pynotes/inheritance.html">Read More</a>
                 <hr  class="gradient"/>
             </article>
 

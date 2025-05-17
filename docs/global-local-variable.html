@@ -48,7 +48,7 @@
         title="Permalink to Global-Local-Variable">Global-Local-Variable</a></h3>
     </header>
 
-<h6 class="subheader" title="2025-03-21T00:00:00-04:00">Fri 21 March 2025
+<h6 class="subheader" title="2025-05-17T00:00:00-04:00">Sat 17 May 2025
 </h6>
 
 
@@ -62,7 +62,7 @@
 </code></pre></div>
 
 <div class="highlight"><pre><span></span><code><span class="n">x</span> <span class="o">=</span> <span class="mi">10</span> <span class="c1"># --&gt; global variable</span>
-<span class="k">def</span> <span class="nf">numm</span><span class="p">():</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">numm</span><span class="p">():</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Inside function: &quot;</span><span class="p">,</span><span class="n">x</span><span class="p">)</span>
 </code></pre></div>
 
@@ -75,7 +75,7 @@ outside function:  10
 </code></pre></div>
 
 <div class="highlight"><pre><span></span><code><span class="n">x</span> <span class="o">=</span> <span class="mi">20</span> <span class="c1"># a global variable.</span>
-<span class="k">def</span> <span class="nf">my_function</span><span class="p">():</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">my_function</span><span class="p">():</span>
 
     <span class="n">x</span> <span class="o">=</span> <span class="mi">20</span> <span class="o">*</span> <span class="mi">30</span> <span class="c1"># Here, interpreter will treat as a local variable.</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Inside function: &quot;</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span>
@@ -90,14 +90,14 @@ Outside function:  20
 </code></pre></div>
 
 <div class="highlight"><pre><span></span><code><span class="n">name</span> <span class="o">=</span> <span class="s1">&#39;John&#39;</span> <span class="c1"># a global variable.</span>
-<span class="k">def</span> <span class="nf">my_function1</span><span class="p">():</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">my_function1</span><span class="p">():</span>
     <span class="k">global</span> <span class="n">name</span>
     <span class="n">name</span> <span class="o">=</span> <span class="s1">&#39;Bob&#39;</span> <span class="c1"># Here, changing the value of global variable inside the</span>
 
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Inside function: &quot;</span><span class="p">,</span><span class="n">name</span><span class="p">)</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">my_function2</span><span class="p">():</span>
+<div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">my_function2</span><span class="p">():</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Inside another function: &quot;</span><span class="p">,</span><span class="n">name</span><span class="p">)</span>
 </code></pre></div>
 
@@ -112,11 +112,11 @@ Outside function:  Bob
 </code></pre></div>
 
 <div class="highlight"><pre><span></span><code><span class="n">city</span> <span class="o">=</span> <span class="s1">&#39;New York&#39;</span> <span class="c1"># a global variable.</span>
-<span class="k">def</span> <span class="nf">my_function1</span><span class="p">():</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">my_function1</span><span class="p">():</span>
     <span class="k">global</span> <span class="n">city</span> <span class="c1"># --&gt;assigned a new value to a variable</span>
     <span class="n">city</span> <span class="o">=</span> <span class="s1">&#39;Dhanbad&#39;</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Inside my_function1: &quot;</span><span class="p">,</span> <span class="n">city</span><span class="p">)</span>
-<span class="k">def</span> <span class="nf">my_function2</span><span class="p">():</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">my_function2</span><span class="p">():</span>
     <span class="k">global</span> <span class="n">city</span>  <span class="c1"># --&gt; assigend a new value to a variable</span>
     <span class="n">city</span> <span class="o">=</span> <span class="s1">&#39;Sydney&#39;</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Inside my_function2: &quot;</span><span class="p">,</span><span class="n">city</span><span class="p">)</span>
@@ -135,7 +135,7 @@ Outside function:  Sydney
 <div class="highlight"><pre><span></span><code><span class="c1">#  Local Variable</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">my_func</span><span class="p">():</span>
+<div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">my_func</span><span class="p">():</span>
     <span class="n">city</span> <span class="o">=</span> <span class="s1">&#39;Dhanbad&#39;</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">city</span><span class="p">)</span>
 </code></pre></div>
@@ -151,7 +151,7 @@ Sydney
 <div class="highlight"><pre><span></span><code><span class="n">message1</span> <span class="o">=</span> <span class="s2">&quot;This is a global variable, and we can access it anywhere in the program.&quot;</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">display</span><span class="p">():</span>
+<div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">display</span><span class="p">():</span>
 <span class="c1"># Declare a local variable and assign it a value.</span>
     <span class="n">message2</span> <span class="o">=</span> <span class="s2">&quot;This is a local variable, and we can access it only inside the function body.&quot;</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">message2</span><span class="p">)</span> <span class="c1"># Accessing local variable from inside the function.</span>
@@ -168,7 +168,7 @@ Sydney
 <span class="n">student1</span> <span class="o">=</span> <span class="s2">&quot;John&quot;</span>
 <span class="n">student2</span> <span class="o">=</span> <span class="s2">&quot;Larry&quot;</span>
 
-<span class="k">def</span> <span class="nf">showMe</span><span class="p">():</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">showMe</span><span class="p">():</span>
     <span class="n">student2</span> <span class="o">=</span> <span class="s2">&quot;Harry&quot;</span> <span class="c1"># Here, local variable is sharing the same name as global variable.</span>
     <span class="n">student3</span> <span class="o">=</span> <span class="s2">&quot;Deep&quot;</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">student2</span><span class="p">,</span> <span class="s2">&quot; &quot;</span><span class="p">,</span><span class="n">student3</span><span class="p">)</span>

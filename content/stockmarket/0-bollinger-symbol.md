@@ -1,6 +1,6 @@
 ---
 title: 0-Bollinger-Symbol
-date: 2025-03-21
+date: 2025-05-17
 author: Your Name
 cell_count: 11
 score: 10

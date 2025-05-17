@@ -48,7 +48,7 @@
         title="Permalink to Function-Arguments">Function-Arguments</a></h3>
     </header>
 
-<h6 class="subheader" title="2025-03-21T00:00:00-04:00">Fri 21 March 2025
+<h6 class="subheader" title="2025-05-17T00:00:00-04:00">Sat 17 May 2025
 </h6>
 
 
@@ -61,7 +61,7 @@
 <div class="highlight"><pre><span></span><code><span class="c1"># Default Arguments in Python</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">studentInfo</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">gender</span> <span class="o">=</span> <span class="s1">&#39;Male&#39;</span><span class="p">):</span>
+<div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">studentInfo</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">gender</span> <span class="o">=</span> <span class="s1">&#39;Male&#39;</span><span class="p">):</span>
 <span class="c1"># This function displays the student&#39;s info passed in the function parameters.</span>
     <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Name:&#39;</span><span class="p">,</span><span class="n">name</span><span class="p">)</span>
     <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Gender:&#39;</span><span class="p">,</span><span class="n">gender</span><span class="p">)</span>
@@ -80,7 +80,7 @@
 <span class="n">Gender</span><span class="o">:</span><span class="w"> </span><span class="n">Female</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">studentInfo</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">rollNo</span> <span class="o">=</span> <span class="mi">20</span><span class="p">,</span> <span class="n">branch</span> <span class="o">=</span> <span class="s1">&#39;Electrical&#39;</span><span class="p">):</span>
+<div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">studentInfo</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">rollNo</span> <span class="o">=</span> <span class="mi">20</span><span class="p">,</span> <span class="n">branch</span> <span class="o">=</span> <span class="s1">&#39;Electrical&#39;</span><span class="p">):</span>
     <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Name:&#39;</span><span class="p">,</span><span class="n">name</span><span class="p">,</span><span class="s1">&#39;Roll no:&#39;</span><span class="p">,</span><span class="n">rollNo</span><span class="p">,</span><span class="s1">&#39;Branch:&#39;</span><span class="p">,</span><span class="n">branch</span><span class="p">)</span>
 </code></pre></div>
 
@@ -104,7 +104,7 @@
 </code></pre></div>
 
 <div class="highlight"><pre><span></span><code><span class="c1"># Program to find the area and perimeter of rectangle using function required arguments.</span>
-<span class="k">def</span> <span class="nf">rectangle</span><span class="p">(</span><span class="n">length</span><span class="p">,</span> <span class="n">breadth</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">rectangle</span><span class="p">(</span><span class="n">length</span><span class="p">,</span> <span class="n">breadth</span><span class="p">):</span>
     <span class="n">areaRec</span> <span class="o">=</span> <span class="n">length</span> <span class="o">*</span> <span class="n">breadth</span> <span class="c1"># Area of rectangle.</span>
     <span class="n">perRec</span> <span class="o">=</span> <span class="mi">2</span> <span class="o">*</span> <span class="p">(</span><span class="n">length</span> <span class="o">+</span> <span class="n">breadth</span><span class="p">)</span> <span class="c1"># Perimeter of rectangle.</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Area of rectangle = &quot;</span><span class="p">,</span><span class="n">areaRec</span><span class="p">)</span>
@@ -112,7 +112,7 @@
 </code></pre></div>
 
 <div class="highlight"><pre><span></span><code><span class="c1"># Main program.</span>
-<span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">main</span><span class="p">():</span>
     <span class="n">ln</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Enter the length of rectangle: &quot;</span><span class="p">))</span>
     <span class="n">br</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Enter the breadth of rectangle: &quot;</span><span class="p">))</span>
     <span class="n">rectangle</span><span class="p">(</span><span class="n">ln</span><span class="p">)</span> <span class="c1"># Intentionaly missing one argument value.</span>
@@ -147,13 +147,13 @@
 </code></pre></div>
 
 <div class="highlight"><pre><span></span><code><span class="c1"># Displaying persons info.</span>
-<span class="k">def</span> <span class="nf">display</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">age</span><span class="p">,</span> <span class="n">gender</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">display</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">age</span><span class="p">,</span> <span class="n">gender</span><span class="p">):</span>
     <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Name:&#39;</span><span class="p">,</span><span class="n">name</span><span class="p">)</span>
     <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Age:&#39;</span><span class="p">,</span><span class="n">age</span><span class="p">)</span>
     <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Gender:&#39;</span><span class="p">,</span><span class="n">gender</span><span class="p">)</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
+<div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">main</span><span class="p">():</span>
  <span class="c1"># First function call.</span>
     <span class="n">display</span><span class="p">(</span><span class="s1">&#39;John&#39;</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="s1">&#39;M&#39;</span><span class="p">)</span> <span class="c1"># function calling from another function.</span>
  <span class="c1"># Second function call.</span>
@@ -172,11 +172,11 @@
 </code></pre></div>
 
 <div class="highlight"><pre><span></span><code><span class="c1"># Displaying persons info.</span>
-<span class="k">def</span> <span class="nf">display</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">age</span><span class="p">,</span> <span class="n">gender</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">display</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">age</span><span class="p">,</span> <span class="n">gender</span><span class="p">):</span>
     <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Name:&#39;</span><span class="p">,</span><span class="n">name</span><span class="p">)</span>
     <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Age:&#39;</span><span class="p">,</span><span class="n">age</span><span class="p">)</span>
     <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Gender:&#39;</span><span class="p">,</span><span class="n">gender</span><span class="p">)</span>
-<span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">main</span><span class="p">():</span>
   <span class="c1"># First function call.</span>
     <span class="n">display</span><span class="p">(</span><span class="s1">&#39;Herry&#39;</span><span class="p">,</span> <span class="n">age</span> <span class="o">=</span> <span class="mi">20</span><span class="p">,</span> <span class="n">gender</span> <span class="o">=</span> <span class="s1">&#39;M&#39;</span><span class="p">)</span> <span class="c1"># function calling from another function.</span>
   <span class="c1"># Second function call.</span>
@@ -195,7 +195,7 @@
 <div class="highlight"><pre><span></span><code><span class="c1"># Variable length Arguments</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">my_function</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">):</span> <span class="c1"># args is the name of variable length parameters.</span>
+<div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">my_function</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">):</span> <span class="c1"># args is the name of variable length parameters.</span>
     <span class="s2">&quot;function docstring&quot;</span>
     <span class="c1"># body of the function</span>
     <span class="k">return</span> <span class="p">[</span><span class="n">expression</span><span class="p">]</span>
@@ -205,7 +205,7 @@
 </code></pre></div>
 
 <div class="highlight"><pre><span></span><code><span class="c1"># Function definition with variable length parameters. </span>
-<span class="k">def</span> <span class="nf">my_function</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">):</span> <span class="c1"># Here, args is name of formal parameter.</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">my_function</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">):</span> <span class="c1"># Here, args is name of formal parameter.</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">args</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Calling function with two arguments&#39;</span><span class="p">)</span>
 <span class="n">my_function</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">)</span>
@@ -225,9 +225,9 @@
 </code></pre></div>
 
 <div class="highlight"><pre><span></span><code><span class="c1"># Function definition with one formal parameter and variable length parameters.</span>
-<span class="k">def</span> <span class="nf">listDay</span><span class="p">(</span><span class="n">arg1</span><span class="p">,</span> <span class="o">*</span><span class="n">arg2</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">listDay</span><span class="p">(</span><span class="n">arg1</span><span class="p">,</span> <span class="o">*</span><span class="n">arg2</span><span class="p">):</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">arg1</span><span class="p">,</span> <span class="n">arg2</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">)</span>
-<span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">main</span><span class="p">():</span>
     <span class="n">listDay</span><span class="p">(</span><span class="s1">&#39;Name of days are:&#39;</span><span class="p">,</span> <span class="s1">&#39;Sunday&#39;</span><span class="p">,</span> <span class="s1">&#39;Monday&#39;</span><span class="p">,</span> <span class="s1">&#39;Tuesday&#39;</span><span class="p">,</span> <span class="s1">&#39;Wednesday&#39;</span><span class="p">,</span> <span class="s1">&#39;Thursday&#39;</span><span class="p">,</span> <span class="s1">&#39;Friday&#39;</span><span class="p">,</span> <span class="s1">&#39;Saturday&#39;</span><span class="p">)</span>
 <span class="n">main</span><span class="p">()</span> <span class="c1"># function calling.</span>
 </code></pre></div>

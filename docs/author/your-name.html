@@ -47,14 +47,14 @@
 
             <article>
                 <a href="https://jerinuser.github.io/pynotes/0-bollinger-symbol.html"><h3 class="article-title">0-Bollinger-Symbol</h3></a>
-<h6 class="subheader" title="2025-03-21T00:00:00-04:00">Fri 21 March 2025
+<h6 class="subheader" title="2025-05-17T00:00:00-04:00">Sat 17 May 2025
 </h6>
 
 
 <div class="highlight"><pre><span></span><code><span class="c1"># Created: 20250104</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">pyutil</span> <span class="k">as</span> <span class="nn">pyu</span>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">pyutil</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pyu</span>
 <span class="n">pyu</span><span class="o">.</span><span class="n">get_local_pyinfo</span><span class="p">()</span>
 </code></pre></div>
 
@@ -67,9 +67,9 @@
 <div class="highlight"><pre><span></span><code>requests==2.32.3
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">yfinance</span> <span class="k">as</span> <span class="nn">yf</span>
-<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">yfinance</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">yf</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
 </code></pre></div>
 
 <div class="highlight"><pre><span></span><code><span class="c1"># Step 1: Download data</span>
@@ -81,7 +81,7 @@
 <span class="n">data</span> <span class="o">=</span> <span class="n">yf</span><span class="o">.</span><span class="n">download</span><span class="p">(</span><span class="n">symbol</span><span class="p">,</span> <span class="n">start</span><span class="o">=</span><span class="n">start</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="n">end</span><span class="p">)</span>
 
 <span class="c1"># Step 2: Define a function to calculate Bollinger Bands</span>
-<span class="k">def</span> <span class="nf">bollinger_bands</span><span class="p">(</span><span class="n">price</span><span class="p">,</span> <span class="n">window</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span> <span class="n">num_sd</span><span class="o">=</span><span class="mi">2</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">bollinger_bands</span><span class="p">(</span><span class="n">price</span><span class="p">,</span> <span class="n">window</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span> <span class="n">num_sd</span><span class="o">=</span><span class="mi">2</span><span class="p">):</span>
     <span class="n">rolling_mean</span> <span class="o">=</span> <span class="n">price</span><span class="p">[</span><span class="s1">&#39;Close&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">rolling</span><span class="p">(</span><span class="n">window</span><span class="o">=</span><span class="n">window</span><span class="p">)</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
     <span class="n">rolling_std</span> <span class="o">=</span> <span class="n">price</span><span class="p">[</span><span class="s1">&#39;Close&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">rolling</span><span class="p">(</span><span class="n">window</span><span class="o">=</span><span class="n">window</span><span class="p">)</span><span class="o">.</span><span class="n">std</span><span class="p">()</span>
 
@@ -110,7 +110,7 @@
 </code></pre></div>
 
 <p><img alt="png" src="/pynotes/images/0-bollinger-symbol_4_1.png"></p>
-<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">show_bollinger_bands</span><span class="p">(</span><span class="n">symbol</span><span class="p">):</span>
+<div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">show_bollinger_bands</span><span class="p">(</span><span class="n">symbol</span><span class="p">):</span>
 
     <span class="c1"># Step 1: Download data</span>
     <span class="n">start</span> <span class="o">=</span> <span class="s2">&quot;1976-01-01&quot;</span>
@@ -120,7 +120,7 @@
     <span class="n">data</span> <span class="o">=</span> <span class="n">yf</span><span class="o">.</span><span class="n">download</span><span class="p">(</span><span class="n">symbol</span><span class="p">,</span> <span class="n">start</span><span class="o">=</span><span class="n">start</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="n">end</span><span class="p">)</span>
 
     <span class="c1"># Step 2: Define a function to calculate Bollinger Bands</span>
-    <span class="k">def</span> <span class="nf">bollinger_bands</span><span class="p">(</span><span class="n">price</span><span class="p">,</span> <span class="n">window</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span> <span class="n">num_sd</span><span class="o">=</span><span class="mi">2</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">bollinger_bands</span><span class="p">(</span><span class="n">price</span><span class="p">,</span> <span class="n">window</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span> <span class="n">num_sd</span><span class="o">=</span><span class="mi">2</span><span class="p">):</span>
         <span class="n">rolling_mean</span> <span class="o">=</span> <span class="n">price</span><span class="p">[</span><span class="s1">&#39;Close&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">rolling</span><span class="p">(</span><span class="n">window</span><span class="o">=</span><span class="n">window</span><span class="p">)</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
         <span class="n">rolling_std</span> <span class="o">=</span> <span class="n">price</span><span class="p">[</span><span class="s1">&#39;Close&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">rolling</span><span class="p">(</span><span class="n">window</span><span class="o">=</span><span class="n">window</span><span class="p">)</span><span class="o">.</span><span class="n">std</span><span class="p">()</span>
 
@@ -194,7 +194,7 @@
 
             <article>
                 <a href="https://jerinuser.github.io/pynotes/aaemp.html"><h3 class="article-title">Aaemp</h3></a>
-<h6 class="subheader" title="2025-03-21T00:00:00-04:00">Fri 21 March 2025
+<h6 class="subheader" title="2025-05-17T00:00:00-04:00">Sat 17 May 2025
 </h6>
 
 
@@ -223,7 +223,7 @@
 
             <article>
                 <a href="https://jerinuser.github.io/pynotes/access-element.html"><h3 class="article-title">Access-Element</h3></a>
-<h6 class="subheader" title="2025-03-21T00:00:00-04:00">Fri 21 March 2025
+<h6 class="subheader" title="2025-05-17T00:00:00-04:00">Sat 17 May 2025
 </h6>
 
 
@@ -233,7 +233,7 @@
 <div class="highlight"><pre><span></span><code>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">access_list_element</span><span class="p">(</span><span class="n">lst</span><span class="p">,</span> <span class="n">index</span><span class="p">):</span>
+<div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">access_list_element</span><span class="p">(</span><span class="n">lst</span><span class="p">,</span> <span class="n">index</span><span class="p">):</span>
     <span class="k">try</span><span class="p">:</span>
         <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Element:&quot;</span><span class="p">,</span> <span class="n">lst</span><span class="p">[</span><span class="n">index</span><span class="p">])</span>
     <span class="k">except</span> <span class="ne">IndexError</span><span class="p">:</span>
@@ -273,12 +273,12 @@
 
             <article>
                 <a href="https://jerinuser.github.io/pynotes/add-a-new-column.html"><h3 class="article-title">Add-A-New-Column</h3></a>
-<h6 class="subheader" title="2025-03-21T00:00:00-04:00">Fri 21 March 2025
+<h6 class="subheader" title="2025-05-17T00:00:00-04:00">Sat 17 May 2025
 </h6>
 
 
 <p>Add a New Column</p>
-<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
 </code></pre></div>
 
 <div class="highlight"><pre><span></span><code><span class="n">data</span> <span class="o">=</span> <span class="p">{</span>
@@ -330,7 +330,7 @@
 
             <article>
                 <a href="https://jerinuser.github.io/pynotes/advanced-for-loop.html"><h3 class="article-title">Advanced-For-Loop</h3></a>
-<h6 class="subheader" title="2025-03-21T00:00:00-04:00">Fri 21 March 2025
+<h6 class="subheader" title="2025-05-17T00:00:00-04:00">Sat 17 May 2025
 </h6>
 
 
@@ -367,7 +367,7 @@
 
             <article>
                 <a href="https://jerinuser.github.io/pynotes/advanced-while-loop.html"><h3 class="article-title">Advanced-While-Loop</h3></a>
-<h6 class="subheader" title="2025-03-21T00:00:00-04:00">Fri 21 March 2025
+<h6 class="subheader" title="2025-05-17T00:00:00-04:00">Sat 17 May 2025
 </h6>
 
 
@@ -405,14 +405,14 @@ Sum of all digits in …</code></pre></div><p class="subheader">Category: <a hre
 
             <article>
                 <a href="https://jerinuser.github.io/pynotes/age-calculator.html"><h3 class="article-title">Age-Calculator</h3></a>
-<h6 class="subheader" title="2025-03-21T00:00:00-04:00">Fri 21 March 2025
+<h6 class="subheader" title="2025-05-17T00:00:00-04:00">Sat 17 May 2025
 </h6>
 
 
-<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">datetime</span> <span class="kn">import</span> <span class="n">datetime</span>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">datetime</span><span class="w"> </span><span class="kn">import</span> <span class="n">datetime</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">get_age</span><span class="p">(</span><span class="n">d</span><span class="p">):</span>
+<div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">get_age</span><span class="p">(</span><span class="n">d</span><span class="p">):</span>
     <span class="n">d1</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">()</span>
     <span class="n">months</span> <span class="o">=</span> <span class="p">(</span><span class="n">d1</span><span class="o">.</span><span class="n">year</span> <span class="o">-</span> <span class="n">d</span><span class="o">.</span><span class="n">year</span><span class="p">)</span> <span class="o">*</span> <span class="mi">12</span> <span class="o">+</span> <span class="n">d1</span><span class="o">.</span><span class="n">month</span> <span class="o">-</span> <span class="n">d</span><span class="o">.</span><span class="n">month</span>
 
@@ -448,7 +448,7 @@ Sum of all digits in …</code></pre></div><p class="subheader">Category: <a hre
 
             <article>
                 <a href="https://jerinuser.github.io/pynotes/arithmatic-operators.html"><h3 class="article-title">Arithmatic-Operators</h3></a>
-<h6 class="subheader" title="2025-03-21T00:00:00-04:00">Fri 21 March 2025
+<h6 class="subheader" title="2025-05-17T00:00:00-04:00">Sat 17 May 2025
 </h6>
 
 
@@ -495,14 +495,14 @@ Sum of all digits in …</code></pre></div><p class="subheader">Category: <a hre
 
             <article>
                 <a href="https://jerinuser.github.io/pynotes/armstrong-num.html"><h3 class="article-title">Armstrong-Num</h3></a>
-<h6 class="subheader" title="2025-03-21T00:00:00-04:00">Fri 21 March 2025
+<h6 class="subheader" title="2025-05-17T00:00:00-04:00">Sat 17 May 2025
 </h6>
 
 
 <div class="highlight"><pre><span></span><code>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">is_armstrong</span><span class="p">(</span><span class="n">num</span><span class="p">):</span>
+<div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">is_armstrong</span><span class="p">(</span><span class="n">num</span><span class="p">):</span>
     <span class="n">temp</span> <span class="o">=</span> <span class="n">num</span>
     <span class="n">sum_of_cubes</span> <span class="o">=</span> <span class="mi">0</span>
     <span class="k">while</span> <span class="n">temp</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
@@ -539,7 +539,7 @@ Sum of all digits in …</code></pre></div><p class="subheader">Category: <a hre
 
             <article>
                 <a href="https://jerinuser.github.io/pynotes/assignment-operators.html"><h3 class="article-title">Assignment-Operators</h3></a>
-<h6 class="subheader" title="2025-03-21T00:00:00-04:00">Fri 21 March 2025
+<h6 class="subheader" title="2025-05-17T00:00:00-04:00">Sat 17 May 2025
 </h6>
 
 

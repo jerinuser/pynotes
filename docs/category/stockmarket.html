@@ -47,14 +47,14 @@
 
             <article>
                 <a href="https://jerinuser.github.io/pynotes/0-bollinger-symbol.html"><h3 class="article-title">0-Bollinger-Symbol</h3></a>
-<h6 class="subheader" title="2025-03-21T00:00:00-04:00">Fri 21 March 2025
+<h6 class="subheader" title="2025-05-17T00:00:00-04:00">Sat 17 May 2025
 </h6>
 
 
 <div class="highlight"><pre><span></span><code><span class="c1"># Created: 20250104</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">pyutil</span> <span class="k">as</span> <span class="nn">pyu</span>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">pyutil</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pyu</span>
 <span class="n">pyu</span><span class="o">.</span><span class="n">get_local_pyinfo</span><span class="p">()</span>
 </code></pre></div>
 
@@ -67,9 +67,9 @@
 <div class="highlight"><pre><span></span><code>requests==2.32.3
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">yfinance</span> <span class="k">as</span> <span class="nn">yf</span>
-<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">yfinance</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">yf</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
 </code></pre></div>
 
 <div class="highlight"><pre><span></span><code><span class="c1"># Step 1: Download data</span>
@@ -81,7 +81,7 @@
 <span class="n">data</span> <span class="o">=</span> <span class="n">yf</span><span class="o">.</span><span class="n">download</span><span class="p">(</span><span class="n">symbol</span><span class="p">,</span> <span class="n">start</span><span class="o">=</span><span class="n">start</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="n">end</span><span class="p">)</span>
 
 <span class="c1"># Step 2: Define a function to calculate Bollinger Bands</span>
-<span class="k">def</span> <span class="nf">bollinger_bands</span><span class="p">(</span><span class="n">price</span><span class="p">,</span> <span class="n">window</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span> <span class="n">num_sd</span><span class="o">=</span><span class="mi">2</span><span class="p">):</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">bollinger_bands</span><span class="p">(</span><span class="n">price</span><span class="p">,</span> <span class="n">window</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span> <span class="n">num_sd</span><span class="o">=</span><span class="mi">2</span><span class="p">):</span>
     <span class="n">rolling_mean</span> <span class="o">=</span> <span class="n">price</span><span class="p">[</span><span class="s1">&#39;Close&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">rolling</span><span class="p">(</span><span class="n">window</span><span class="o">=</span><span class="n">window</span><span class="p">)</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
     <span class="n">rolling_std</span> <span class="o">=</span> <span class="n">price</span><span class="p">[</span><span class="s1">&#39;Close&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">rolling</span><span class="p">(</span><span class="n">window</span><span class="o">=</span><span class="n">window</span><span class="p">)</span><span class="o">.</span><span class="n">std</span><span class="p">()</span>
 
@@ -110,7 +110,7 @@
 </code></pre></div>
 
 <p><img alt="png" src="/pynotes/images/0-bollinger-symbol_4_1.png"></p>
-<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">show_bollinger_bands</span><span class="p">(</span><span class="n">symbol</span><span class="p">):</span>
+<div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">show_bollinger_bands</span><span class="p">(</span><span class="n">symbol</span><span class="p">):</span>
 
     <span class="c1"># Step 1: Download data</span>
     <span class="n">start</span> <span class="o">=</span> <span class="s2">&quot;1976-01-01&quot;</span>
@@ -120,7 +120,7 @@
     <span class="n">data</span> <span class="o">=</span> <span class="n">yf</span><span class="o">.</span><span class="n">download</span><span class="p">(</span><span class="n">symbol</span><span class="p">,</span> <span class="n">start</span><span class="o">=</span><span class="n">start</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="n">end</span><span class="p">)</span>
 
     <span class="c1"># Step 2: Define a function to calculate Bollinger Bands</span>
-    <span class="k">def</span> <span class="nf">bollinger_bands</span><span class="p">(</span><span class="n">price</span><span class="p">,</span> <span class="n">window</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span> <span class="n">num_sd</span><span class="o">=</span><span class="mi">2</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">bollinger_bands</span><span class="p">(</span><span class="n">price</span><span class="p">,</span> <span class="n">window</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span> <span class="n">num_sd</span><span class="o">=</span><span class="mi">2</span><span class="p">):</span>
         <span class="n">rolling_mean</span> <span class="o">=</span> <span class="n">price</span><span class="p">[</span><span class="s1">&#39;Close&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">rolling</span><span class="p">(</span><span class="n">window</span><span class="o">=</span><span class="n">window</span><span class="p">)</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
         <span class="n">rolling_std</span> <span class="o">=</span> <span class="n">price</span><span class="p">[</span><span class="s1">&#39;Close&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">rolling</span><span class="p">(</span><span class="n">window</span><span class="o">=</span><span class="n">window</span><span class="p">)</span><span class="o">.</span><span class="n">std</span><span class="p">()</span>
 
@@ -194,14 +194,14 @@
 
             <article>
                 <a href="https://jerinuser.github.io/pynotes/donchain-channel-2.html"><h3 class="article-title">Donchain-Channel-2</h3></a>
-<h6 class="subheader" title="2025-03-21T00:00:00-04:00">Fri 21 March 2025
+<h6 class="subheader" title="2025-05-17T00:00:00-04:00">Sat 17 May 2025
 </h6>
 
 
 <div class="highlight"><pre><span></span><code><span class="c1"># Created: 20250104</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">pyutil</span> <span class="k">as</span> <span class="nn">pyu</span>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">pyutil</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pyu</span>
 <span class="n">pyu</span><span class="o">.</span><span class="n">get_local_pyinfo</span><span class="p">()</span>
 </code></pre></div>
 
@@ -214,9 +214,9 @@
 <div class="highlight"><pre><span></span><code>requests==2.32.3
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">yfinance</span> <span class="k">as</span> <span class="nn">yf</span>
-<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">yfinance</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">yf</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
 </code></pre></div>
 
 <div class="highlight"><pre><span></span><code><span class="c1"># Step 1: Download …</span></code></pre></div><p class="subheader">Category: <a href="https://jerinuser.github.io/pynotes/category/stockmarket.html">stockmarket</a>
@@ -234,14 +234,14 @@
 
             <article>
                 <a href="https://jerinuser.github.io/pynotes/ichimoku-3.html"><h3 class="article-title">Ichimoku-3</h3></a>
-<h6 class="subheader" title="2025-03-21T00:00:00-04:00">Fri 21 March 2025
+<h6 class="subheader" title="2025-05-17T00:00:00-04:00">Sat 17 May 2025
 </h6>
 
 
 <div class="highlight"><pre><span></span><code><span class="c1"># Created: 20250104</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">pyutil</span> <span class="k">as</span> <span class="nn">pyu</span>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">pyutil</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pyu</span>
 <span class="n">pyu</span><span class="o">.</span><span class="n">get_local_pyinfo</span><span class="p">()</span>
 </code></pre></div>
 
@@ -254,9 +254,9 @@
 <div class="highlight"><pre><span></span><code>requests==2.32.3
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">yfinance</span> <span class="k">as</span> <span class="nn">yf</span>
-<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">yfinance</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">yf</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
 </code></pre></div>
 
 <div class="highlight"><pre><span></span><code><span class="c1"># Step 1: Download …</span></code></pre></div><p class="subheader">Category: <a href="https://jerinuser.github.io/pynotes/category/stockmarket.html">stockmarket</a>
@@ -274,14 +274,14 @@
 
             <article>
                 <a href="https://jerinuser.github.io/pynotes/keltner-channel-1.html"><h3 class="article-title">Keltner-Channel-1</h3></a>
-<h6 class="subheader" title="2025-03-21T00:00:00-04:00">Fri 21 March 2025
+<h6 class="subheader" title="2025-05-17T00:00:00-04:00">Sat 17 May 2025
 </h6>
 
 
 <div class="highlight"><pre><span></span><code><span class="c1"># Created: 20250104</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">pyutil</span> <span class="k">as</span> <span class="nn">pyu</span>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">pyutil</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pyu</span>
 <span class="n">pyu</span><span class="o">.</span><span class="n">get_local_pyinfo</span><span class="p">()</span>
 </code></pre></div>
 
@@ -294,9 +294,9 @@
 <div class="highlight"><pre><span></span><code>requests==2.32.3
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">yfinance</span> <span class="k">as</span> <span class="nn">yf</span>
-<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">yfinance</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">yf</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
 </code></pre></div>
 
 <div class="highlight"><pre><span></span><code><span class="c1"># Step 1: Download …</span></code></pre></div><p class="subheader">Category: <a href="https://jerinuser.github.io/pynotes/category/stockmarket.html">stockmarket</a>
@@ -314,14 +314,14 @@
 
             <article>
                 <a href="https://jerinuser.github.io/pynotes/zzemp.html"><h3 class="article-title">Zzemp</h3></a>
-<h6 class="subheader" title="2025-03-21T00:00:00-04:00">Fri 21 March 2025
+<h6 class="subheader" title="2025-05-17T00:00:00-04:00">Sat 17 May 2025
 </h6>
 
 
 <div class="highlight"><pre><span></span><code><span class="c1"># Created: 20250104</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">pyutil</span> <span class="k">as</span> <span class="nn">pyu</span>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">pyutil</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pyu</span>
 <span class="n">pyu</span><span class="o">.</span><span class="n">get_local_pyinfo</span><span class="p">()</span>
 </code></pre></div>
 

@@ -48,11 +48,11 @@
         title="Permalink to Sum-Positive">Sum-Positive</a></h3>
     </header>
 
-<h6 class="subheader" title="2025-03-21T00:00:00-04:00">Fri 21 March 2025
+<h6 class="subheader" title="2025-05-17T00:00:00-04:00">Sat 17 May 2025
 </h6>
 
 
-    <div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">sum_positives</span><span class="p">(</span><span class="n">lst</span><span class="p">):</span>
+    <div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">sum_positives</span><span class="p">(</span><span class="n">lst</span><span class="p">):</span>
     <span class="n">positive_sum</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="n">x</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">lst</span> <span class="k">if</span> <span class="n">x</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">)</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Sum of Positive Numbers:&quot;</span><span class="p">,</span> <span class="n">positive_sum</span><span class="p">)</span>
 
@@ -63,7 +63,7 @@
 <div class="highlight"><pre><span></span><code>Sum of Positive Numbers: 10
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">shift_list</span><span class="p">(</span><span class="n">lst</span><span class="p">,</span> <span class="n">k</span><span class="p">):</span>
+<div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">shift_list</span><span class="p">(</span><span class="n">lst</span><span class="p">,</span> <span class="n">k</span><span class="p">):</span>
     <span class="n">k</span> <span class="o">=</span> <span class="n">k</span> <span class="o">%</span> <span class="nb">len</span><span class="p">(</span><span class="n">lst</span><span class="p">)</span>  <span class="c1"># Handle shifts larger than list length</span>
     <span class="n">shifted</span> <span class="o">=</span> <span class="n">lst</span><span class="p">[</span><span class="o">-</span><span class="n">k</span><span class="p">:]</span> <span class="o">+</span> <span class="n">lst</span><span class="p">[:</span><span class="o">-</span><span class="n">k</span><span class="p">]</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Shifted List:&quot;</span><span class="p">,</span> <span class="n">shifted</span><span class="p">)</span>

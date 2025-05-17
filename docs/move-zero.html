@@ -48,14 +48,14 @@
         title="Permalink to Move-Zero">Move-Zero</a></h3>
     </header>
 
-<h6 class="subheader" title="2025-03-21T00:00:00-04:00">Fri 21 March 2025
+<h6 class="subheader" title="2025-05-17T00:00:00-04:00">Sat 17 May 2025
 </h6>
 
 
     <div class="highlight"><pre><span></span><code>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">move_zeroes</span><span class="p">(</span><span class="n">lst</span><span class="p">):</span>
+<div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">move_zeroes</span><span class="p">(</span><span class="n">lst</span><span class="p">):</span>
     <span class="n">non_zero</span> <span class="o">=</span> <span class="p">[</span><span class="n">x</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">lst</span> <span class="k">if</span> <span class="n">x</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">]</span>
     <span class="n">zeroes</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">*</span> <span class="n">lst</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
     <span class="n">result</span> <span class="o">=</span> <span class="n">non_zero</span> <span class="o">+</span> <span class="n">zeroes</span>
@@ -73,7 +73,7 @@ List after moving zeroes: [0, 0, 0]
 <div class="highlight"><pre><span></span><code><span class="c1"># Split a List into Two Based on a Condition</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">split_list</span><span class="p">(</span><span class="n">lst</span><span class="p">,</span> <span class="n">condition</span><span class="p">):</span>
+<div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">split_list</span><span class="p">(</span><span class="n">lst</span><span class="p">,</span> <span class="n">condition</span><span class="p">):</span>
     <span class="n">true_list</span> <span class="o">=</span> <span class="p">[</span><span class="n">x</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">lst</span> <span class="k">if</span> <span class="n">condition</span><span class="p">(</span><span class="n">x</span><span class="p">)]</span>
     <span class="n">false_list</span> <span class="o">=</span> <span class="p">[</span><span class="n">x</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">lst</span> <span class="k">if</span> <span class="ow">not</span> <span class="n">condition</span><span class="p">(</span><span class="n">x</span><span class="p">)]</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Condition True:&quot;</span><span class="p">,</span> <span class="n">true_list</span><span class="p">)</span>
